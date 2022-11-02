@@ -25,7 +25,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #000000;
-  background: #ffffff;
+  background-image: url("./images/AnaSayfa/background.png");
   margin-top: 0px;
   padding: 0;
 }
