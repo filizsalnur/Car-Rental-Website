@@ -19,6 +19,13 @@ npm run build
 ```
 npm run lint
 ```
+### npm packages
+```
+npm install vue bootstrap bootstrap-vue
+npm install vue-router@4
+npm install @vuepic/vue-datepicker
+npm install vue3-carousel
+```
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
