@@ -19,6 +19,12 @@ npm run build
 ```
 npm run lint
 ```
+### npm packages
+```
+npm install vue bootstrap bootstrap-vue
+npm install vue-router@4
+npm install -S litepie-datepicker
+```
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
