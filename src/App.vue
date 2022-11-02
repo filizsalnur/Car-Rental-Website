@@ -26,6 +26,11 @@ export default {
   text-align: center;
   color: #000000;
   background-image: url("./images/AnaSayfa/background.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 739px;
+  width: 1920px;
+  background-color: #ffff;
   margin-top: 0px;
   padding: 0;
 }

@@ -35,12 +35,7 @@
           <button class="button5">Uygun Araçları Bul <img src="@/images/AnaSayfa/searchIcon.png" alt="icon"></button>
         </div>
         <div v-if="tarihController==true">
-          <div class="flex">
-              <litepie-datepicker
-                placeholder="My Placeholder"
-                v-model="dateValue"
-              ></litepie-datepicker>
-            </div>
+          
         </div>
       </div>
     </div>
@@ -64,9 +59,11 @@
   </div><!--Uygun araç bul bitiş-->
 
 
- <!-- <div class="icon2"><img src="@/images/AnaSayfa/plus.png" alt="icon" ></div>-->
 
-  <div class="space1"><!--Mavi kısım-->  
+<div class="space2"><!--Mavi kısım-->  
+  <div class="icon2"><img src="@/images/AnaSayfa/plus.png" alt="icon" ></div>
+
+  <div class="space1">
     <div class="container">
       <div class="row">
       <div class="col">
@@ -74,27 +71,46 @@
         <div class="text9">araç kiralamak artık çok kolay!</div>
       </div></div>
       </div>
+    </div>
   </div><!--Mavi kısım bitiş-->
-
-
-  <div class="image2"><!--Kampanyalar-->
-
-  </div><!--Kampanyalar bitiş-->
-  <div class="text7">Tüm Kampanyaları Gör <img src="@/images/AnaSayfa/KampanyaIcon.png" alt="icon" ></div>
+  <!--Kampanyalar-->
+  <Carousel :autoplay="2000" :wrap-around="true">
+      <Slide v-for="slide in 7" :key="slide">
+        <div class="image2"><img src="@/images/AnaSayfa/background2.png" alt="icon" ></div>
+      </Slide>
+      <template #addons>
+        <Pagination />
+      </template>
+    </Carousel>
+    <div class="button6">Tüm Kampanyaları Gör <img src="@/images/AnaSayfa/KampanyaIcon.png" alt="icon" ></div>
+  <!--Kampanyalar bitiş-->
 </div> <!--div class="center" kapanış-->
+
+  <div class="space3"><!--İş ortaklarımız-->
+    <div class="center">
+    <div class="text7">İş Ortaklarımız</div>
+    
+    </div>
+  </div><!--İş ortaklarımız bitiş-->
+  
+  
   <FooterApp/>
  
 </template>
 
 <script >
-import { ref } from 'vue';
-import LitepieDatepicker from 'litepie-datepicker';
+
+import 'vue3-carousel/dist/carousel.css'
+import { Carousel, Slide, Pagination} from 'vue3-carousel'
+
 import FooterApp from './FooterApp.vue';
 export default {
   name: "AnaSayfa",
   components: {
     FooterApp,
-    LitepieDatepicker,
+    Carousel,
+    Slide,
+    Pagination,
   },
   data() {
     return {
@@ -103,13 +119,6 @@ export default {
       tarihController:false,
     }
   },
-  setup() {
-      const dateValue = ref([]);
-      
-      return {
-        dateValue
-      };
-    },
   methods: {
   
   },
@@ -179,7 +188,8 @@ export default {
   font-family: "Quicksand" ;
   font-size: 13pt;
   color: #2a2a2a;
-  padding-top: 5px;
+  margin-top: 30px;
+  float: left;
 }
 .text8{
   position: relative;
@@ -207,7 +217,7 @@ export default {
   border: none;
   font-family: "Quicksand" ;
   font-size: 11pt;
-  margin-right: 3px;
+  margin-right: 6px;
   margin-top: 18px;
   border-radius: 8px;
 }
@@ -246,7 +256,8 @@ export default {
 }
 .button5 {
   height: 59px;
-  width : 197px;
+  width : 200px;
+  float:right;
   background-color: #e51c3d;
   color: #ffffff;
   border: none;
@@ -256,6 +267,19 @@ export default {
   margin-left:15px;
   border-radius: 8px;
 }
+.button6 {
+  height: 18px;
+  width : 174px;
+  background-color: #ffffff;
+  color: #2a2a2a;
+  border: none;
+  margin: 0 auto;
+  font-family: "Quicksand" ;
+  font-size: 11pt;
+  margin-top: 6px;
+  border-radius: 8px;
+}
+
 .space1 {
   height: 306px;
   width : 1220px;
@@ -264,12 +288,39 @@ export default {
   border: none;
   font-family: "Quicksand" ;
   font-size: 12pt;
+  border-radius: 8px;
+  bottom: unset;
+  position: absolute;
+  top: 45px;
+  z-index: 1;
+}
+.space2 {
+  height: 200px;
+  width : 1220px;
+
+  color: #ffffff;
+  border: none;
+  font-family: "Quicksand" ;
+  font-size: 12pt;
   margin-top: 30px;
+  margin-bottom: 100px;
   border-radius: 8px;
   background-repeat: no-repeat;
   background-size:cover;
-  z-index: 15;
-  float:left;
+  position: relative;
+}
+.space3 {
+  height: 200px;
+  width : 1928px;
+  background-color: #e6ecf8;
+  color: #2a2a2a;
+  border: none;
+  font-family: "Quicksand" ;
+  font-size: 12pt;
+  border-radius: 8px;
+  position: relative;
+  top: 45px;
+
 }
 .image{
   background: url("@/images/AnaSayfa/background.png") ;
@@ -280,18 +331,8 @@ export default {
   
 }
 .image2 {
-  color: #ffffff;
-  border: none;
-  font-family: "Quicksand" ;
-  font-size: 12pt;
-  margin-top: 160px;
+  margin-top: 50px;
   border-radius: 8px;
-  background: url("@/images/AnaSayfa/background2.png") ;
-  background-repeat: no-repeat;
-  background-size:cover;
-  height: 240px;
-  width: 1220px;
-
 }
 .icon{
   margin-left: 72px;
@@ -302,9 +343,29 @@ export default {
   line-height: 0;
 }
 .icon2{
-	z-index: 15;
-	left: 738px;
-	top: 589px;
+	left: 380px;
+  position: absolute;
+  z-index: 2;
+}
+.carousel__item {
+  min-height: 200px;
+  width: 100%;
+  background-color: var(--vc-clr-primary);
+  color: var(--vc-clr-white);
+  font-size: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.carousel__slide {
+  padding: 10px;
+}
+
+.carousel__prev,
+.carousel__next {
+  box-sizing: content-box;
+  border: 5px solid white;
+}
 </style>
