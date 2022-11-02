@@ -11,6 +11,7 @@
     "bootstrap": "^5.2.2",
     "bootstrap-vue": "^2.23.1",
     "core-js": "^3.8.3",
+    "litepie-datepicker": "^1.0.14",
     "vue": "^3.2.41",
     "vue-router": "^4.1.6"
   },
