@@ -1,10 +1,10 @@
 <template>
-  <div clas="background"><div class="center">
+  <div class="center"> <!--Ana Sayfanın kenar kısıtlamlarını belirler-->
     <div class="text1">SENİN İÇİN EN UYGUN ARACI</div>
     <div class="text2">ara, bul ve kirala</div>
     <div class="text3">En uygun fiyat garantisi ile ister online öde, ister aracı teslim alırken öde!</div>
     
-    <div class="container">
+    <div class="container"> <!--Uygun araç bul-->
       <div class="row">
       <div class="col">
         <div class="nav-left">
@@ -61,24 +61,27 @@
       </div>
       <div class="col"></div>
     </div>    
-  </div>
-  <div class="icon2"><img src="@/images/AnaSayfa/plus.png" alt="icon" ></div>
-  <div class="space1">
-  <div class="container">
+  </div><!--Uygun araç bul bitiş-->
+
+
+ <!-- <div class="icon2"><img src="@/images/AnaSayfa/plus.png" alt="icon" ></div>-->
+
+  <div class="space1"><!--Mavi kısım-->  
+    <div class="container">
       <div class="row">
       <div class="col">
         <div class="text8">ÖN ÖDEME FIRSATI İLE</div>
         <div class="text9">araç kiralamak artık çok kolay!</div>
       </div></div>
-  </div>
-  
-</div>
-</div>
-</div> 
-<div class="center">
-  <div class="image2"></div>
+      </div>
+  </div><!--Mavi kısım bitiş-->
+
+
+  <div class="image2"><!--Kampanyalar-->
+
+  </div><!--Kampanyalar bitiş-->
   <div class="text7">Tüm Kampanyaları Gör <img src="@/images/AnaSayfa/KampanyaIcon.png" alt="icon" ></div>
-</div> 
+</div> <!--div class="center" kapanış-->
   <FooterApp/>
  
 </template>
@@ -176,7 +179,6 @@ export default {
   font-family: "Quicksand" ;
   font-size: 13pt;
   color: #2a2a2a;
-  margin-left: 6px;
   padding-top: 5px;
 }
 .text8{
@@ -283,7 +285,6 @@ export default {
   font-family: "Quicksand" ;
   font-size: 12pt;
   margin-top: 160px;
-  margin-left: 6px;
   border-radius: 8px;
   background: url("@/images/AnaSayfa/background2.png") ;
   background-repeat: no-repeat;
@@ -301,7 +302,6 @@ export default {
   line-height: 0;
 }
 .icon2{
-	position: absolute;
 	z-index: 15;
 	left: 738px;
 	top: 589px;
