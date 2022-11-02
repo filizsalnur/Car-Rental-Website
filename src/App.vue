@@ -1,16 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HeaderApp/>
+  <router-view></router-view>
+
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderApp from './components/HeaderApp.vue'
+
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    HeaderApp,
+}
 }
 </script>
 
@@ -20,7 +24,25 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #000000;
+  background: #ffffff;
+  margin-top: 0px;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: local("Quicksand"),
+   url(./fonts/quicksand/Quicksand-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "PoppinsBold";
+  src: local("PoppinsBold"),
+   url(./fonts/poppins/Poppins-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"),
+   url(./fonts/poppins/Poppins-Medium.ttf) format("truetype");
 }
 </style>
