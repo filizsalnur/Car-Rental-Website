@@ -25,6 +25,7 @@ npm install vue bootstrap bootstrap-vue
 npm install vue-router@4
 npm install vue3-carousel
 npm install vue-tailwind --save
+npm install vue-responsive
 ```
 
 ### Customize configuration
