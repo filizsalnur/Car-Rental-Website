@@ -69,10 +69,19 @@
       <div class="col">
         <div class="text8">ÖN ÖDEME FIRSATI İLE</div>
         <div class="text9">araç kiralamak artık çok kolay!</div>
+      </div>
+        <div class="col">
+        <img src="@/images/AnaSayfa/plus2.png" alt="icon" class="icon3" >
+      </div></div>
+      <div class="row">
+      <div class="col">
+        <div class="text9" style="margin-top:45px">Kiralama ücretinin ufak bir kısmını ödeyin</div>
+        <div class="text9">ve aracınızı rezerve edin...</div>
       </div></div>
       </div>
     </div>
   </div><!--Mavi kısım bitiş-->
+
   <!--Kampanyalar-->
   <Carousel :autoplay="2000" :wrap-around="true">
       <Slide v-for="slide in 7" :key="slide">
@@ -92,7 +101,58 @@
     
     </div>
   </div><!--İş ortaklarımız bitiş-->
-  
+
+  <div class="center">
+
+    <div class="container"><!--Uçak kısmı-->
+      <div class="row">
+      <div class="col-12">
+        <div class="text7">Popüler Havalimanları</div>
+      </div>
+      </div>
+      <div class="row">
+      <div class="col-6">
+        <div class="plane1">
+        <div class="text8">ÖN ÖDEME FIRSATI İLE</div>
+        <div class="text9">araç kiralamak artık çok kolay!</div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="plane2">
+        <div class="text8">ÖN ÖDEME FIRSATI İLE</div>
+        <div class="text9">araç kiralamak artık çok kolay!</div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="plane3">
+        <div class="text8">ÖN ÖDEME FIRSATI İLE</div>
+        <div class="text9">araç kiralamak artık çok kolay!</div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        <div class="plane4">
+        <div class="text8">ÖN ÖDEME FIRSATI İLE</div>
+        <div class="text9">araç kiralamak artık çok kolay!</div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="plane5">
+        <div class="text8">ÖN ÖDEME FIRSATI İLE</div>
+        <div class="text9">araç kiralamak artık çok kolay!</div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="plane6">
+        <div class="text8">ÖN ÖDEME FIRSATI İLE</div>
+        <div class="text9">araç kiralamak artık çok kolay!</div>
+        </div>
+      </div>
+    </div>
+    </div><!--Uçak kısmı bitiş-->
+  </div><!--center bitiş-->
+
   
   <FooterApp/>
  
@@ -117,8 +177,10 @@ export default {
       aramaBariController:false,
       checker:false,
       tarihController:false,
+
     }
   },
+
   methods: {
   
   },
@@ -334,6 +396,67 @@ export default {
   margin-top: 50px;
   border-radius: 8px;
 }
+.plane1{
+  background: url("@/images/AnaSayfa/plane1.png") ;
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 190px;
+  width: 606px;
+  float:left;
+  position: relative;
+
+}
+.plane2{
+  background: url("@/images/AnaSayfa/plane2.png") ;
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 190px;
+  width: 300px;
+  float:left;
+  position: relative;
+
+}
+.plane3{
+  background: url("@/images/AnaSayfa/plane3.png") ;
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 190px;
+  width: 300px;
+  float:left;
+  position: relative;
+
+
+}
+.plane4{
+  background: url("@/images/AnaSayfa/plane4.png") ;
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 190px;
+  width: 300px;
+  float:left;
+  position: relative;
+  margin-top:8px;
+}
+.plane5{
+  background: url("@/images/AnaSayfa/plane5.png") ;
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 190px;
+  width: 300px;
+  float:left;
+  position: relative;
+  margin-top:8px;
+}
+.plane6{
+  background: url("@/images/AnaSayfa/plane6.png") ;
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 190px;
+  width: 606px;
+  float:left;
+  position: relative;
+  margin-top:8px;
+}
 .icon{
   margin-left: 72px;
   position: relative; 
@@ -346,6 +469,12 @@ export default {
 	left: 380px;
   position: absolute;
   z-index: 2;
+}
+.icon3{
+  margin-left: 200px;
+  position: relative; 
+  float:left;
+  margin-top: 60px;
 }
 .carousel__item {
   min-height: 200px;
