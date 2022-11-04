@@ -40,11 +40,108 @@
         <button class="button2"><b>Kurumsal Üye Hesabı Oluştur</b></button></div>
     </div>
    </div>
+
    <div class="footer3">
     <div class="center">
-
-    </div>
-  </div>
+      <div class="container">
+        <div class="row g-1">
+        <div class="col-10">
+        <div class="row g-1">
+        <div class="col-4">
+          <div class="text5"><b>Kiracalar</b></div>
+          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Müşteri Hizmetleri</div>
+          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Kiracalar Blog</div>
+          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Bize Ulaşın</div>
+          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">İnsan Kaynakları</div>
+          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Hakkımızda</div>
+          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Sıkça Sorulan Sorular</div>
+          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Kampanyalar</div>       
+        </div>
+        <div class="col-4">
+          <div class="text5"><b>Popüler Havalimanları</b></div>
+          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">İstanbul Havalimanı</div>
+          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Sabiha Gökçen Havalimanı</div>
+          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Esenboğa Havalimanı</div>
+          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Antalya Havalimanı</div>
+          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Adnan Menderes Havalimanı</div>
+          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Adana Havalimanı</div>
+          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Tüm Havalimanları</div>   
+        </div>
+        <div class="col-4">
+          <div class="text5"><b>Popüler Rent A Car Firmaları</b></div>
+          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Garenta</div>
+          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Rentgo</div>
+          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Green Motion</div>
+          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Asist Car Rental</div>
+          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Central</div>
+          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Novacar</div>
+          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Tüm Firmalar</div>   
+        </div>
+        </div></div>
+        <div class="col-2">
+          <div style="padding-top: 4rem;"></div>
+          <button class="button3">
+            <div class="row">
+              <div class="col-2">
+                <img src="@/images/Footer/apple.png" alt="..." style="margin:0 auto">
+              </div>
+              <div class="col-10">
+                <div class="text6"><b>App Store'dan İndirin</b></div>
+                <div class="text6" style="line-height:0.5rem">Download App Store</div>
+              </div>
+            </div>
+          </button>
+          <button class="button3">
+            <div class="row">
+              <div class="col-2">
+                <img src="@/images/Footer/play.png" alt="..." style="margin:0 auto">
+              </div>
+              <div class="col-10">
+                <div class="text6"><b>Google Play'den İndirin</b></div>
+                <div class="text6" style="line-height:0.5rem">Download Google Play</div>
+              </div>
+            </div>
+          </button>
+          <button class="button3">
+            <div class="row">
+              <div class="col-2">
+                <img src="@/images/Footer/huawei.png" alt="..." style="margin:0 auto">
+              </div>
+              <div class="col-10">
+                <div class="text6"><b>App Galery'den İndirin</b></div>
+                <div class="text6" style="line-height:0.5rem">Download App Galery</div>
+              </div>
+            </div>
+          </button>
+          <div class="row" style="margin-top:1rem;float:left;">
+            <div class="col">
+              <a href="#"><img src="@/images/Footer/facebook.png" alt="..." style="margin:0 auto"></a>
+            </div>
+            <div class="col">
+              <a href="#"><img src="@/images/Footer/instagram.png" alt="..." style="margin:0 auto"></a>
+            </div>
+            <div class="col">
+              <a href="#"><img src="@/images/Footer/youtube.png" alt="..." style="margin:0 auto"></a>
+            </div>
+            <div class="col">
+              <a href="#"><img src="@/images/Footer/twitter.png" alt="..." style="margin:0 auto"></a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="text7"><a href="#">Gizlilik Politikası </a> | <a href="#"> Açık Rıza Beyanı </a> | 
+            <a href="#"> Aydınlatma Metni </a> | <a href="#"> Veri İşleme Politikası </a></div>
+      </div>
+      <div style="margin-top:1rem">
+        <img src="@/images/Footer/cart1.png" alt="..." >
+        <img src="@/images/Footer/cart2.png" alt="..." style="margin-left:0.25rem">
+        <img src="@/images/Footer/cart3.png" alt="..." style="margin-left:0.25rem">
+        <img src="@/images/Footer/cart4.png" alt="..." style="margin-left:0.25rem">
+        <img src="@/images/Footer/cart5.png" alt="..." style="margin-left:0.25rem">
+      </div>
+      <div class="text7"><a href="#">Kiralacar.com </a> | <a href="#"> Kiralacar Teknoloji Turizm Yatırım A.Ş. </a></div>
+      </div>
   </footer>
 </template>
 <script>
@@ -113,6 +210,29 @@ export default {
   text-align: left;
   padding-top:2.5rem;
 }
+.text5{
+  position: relative;
+  font-family: "Quicksand" ;
+  font-size: 1vw;/*20pt*/
+  color: #2a2a2a;
+  text-align: left;
+  padding-top:0.75rem;
+}
+.text6{
+  position: relative;
+  font-family: "Quicksand" ;
+  font-size: 0.75vw;/*20pt*/
+  color: #2a2a2a;
+  text-align: left;
+}
+.text7{
+  position: relative;
+  font-family: "Quicksand" ;
+  font-size: 1vw;/*20pt*/
+  color: #2a2a2a;
+  text-align: center;
+  margin-top:2.75rem;
+}
 .button1 {
   height: 2.45em; /*40px*/
   width : 10.125em;/*162px*/
@@ -131,5 +251,18 @@ export default {
   font-family: "Quicksand" ;
   font-size: 0.8rem;/*11pt*/
   margin-left: 1rem;
+}
+.button3 {
+  height: 3.375rem;/*34px*/
+  width : 13.8125rem;/*126px*/
+  background-color: transparent;
+  color: #2a2a2a;
+  border: 1px solid #2a2a2a;
+  font-family: "Quicksand" ;
+  font-size: 0,6669rem;
+  float: right;
+  margin-right: 0.8em;
+  margin-top: 1em;
+  border-radius: 3px;
 }
 </style>

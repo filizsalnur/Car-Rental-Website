@@ -30,6 +30,13 @@
         <div class="nav-left">
         <button class="button3" @click="aramaBariController=!aramaBariController"><div class="text4"> <img src="@/images/AnaSayfa/BlueIcon.png" alt="icon"> Nereden Alacaksınız?</div></button>
         </div>
+        <div class="nav-left">
+        <button class="button3" v-if="checker==true"><div class="text4"> <img src="@/images/AnaSayfa/RedIcon.png" alt="icon"> Nerede Bırakacaksınız?</div></button>
+        </div>
+        <div class="text6">
+          <input type="checkbox" id="checkbox" v-model="checked" @click="checker=!checker" />
+          <label for="checkbox" style="margin-left:5px"> Farklı bir yerde teslim etmek istiyorum</label>
+        </div>
       </div>
       <div class="col">
         <div class="nav-left">
@@ -37,28 +44,10 @@
           <img src="@/images/AnaSayfa/tarihIcon.png" alt="icon"> Bırakış Tarihi</div></button>
           <button class="button5">Uygun Araçları Bul <img src="@/images/AnaSayfa/searchIcon.png" alt="icon"></button>
         </div>
-        <div v-if="tarihController==true">
-          
-        </div>
+    
       </div>
     </div>
-    <div class="row g-1">
-      <div class="col">
-        <div class="nav-left">
-        <button class="button3" v-if="checker==true"><div class="text4"> <img src="@/images/AnaSayfa/RedIcon.png" alt="icon"> Nerede Bırakacaksınız?</div></button>
-        </div>
-      </div>
-      <div class="col"></div>
-    </div>
-    <div class="row g-1">
-      <div class="col">
-        <div class="text6">
-          <input type="checkbox" id="checkbox" v-model="checked" @click="checker=!checker" />
-          <label for="checkbox" style="margin-left:5px"> Farklı bir yerde teslim etmek istiyorum</label>
-        </div>
-      </div>
-      <div class="col"></div>
-    </div>    
+   
   </div>
 <!--Uygun araç bul bitiş-->
 
@@ -90,6 +79,7 @@
     </div>
   </div><!--Mavi kısım bitiş-->
 
+
   <!--Kampanyalar-->
   <Carousel :autoplay="2000" :wrap-around="true">
       <Slide v-for="slide in 7" :key="slide">
@@ -102,6 +92,7 @@
     <button class="button6">Tüm Kampanyaları Gör <img src="@/images/AnaSayfa/KampanyaIcon.png" alt="icon" ></button>
   <!--Kampanyalar bitiş-->
 </div> <!--div class="center" kapanış-->
+
 
   <div class="space3"><!--İş ortaklarımız-->
     <div class="center">
@@ -121,21 +112,21 @@
       <div class="row g-1">
       <div class="col-6">
         <div class="card " style="border:0; margin:0;padding: 0;">
-        <img src="@/images/AnaSayfa/plane1.png" class="card-img" alt="icon">
+        <img src="@/images/AnaSayfa/plane1.png" class="card-img" alt="icon" >
         <div class="card-img-overlay">
           <div class="text11" >İstanbul - Avrupa</div>
-          <div class="text10" >Istanbul Havalimanı [IST]<img src="@/images/AnaSayfa/planeIcon.png" alt="icon" style="margin-left:0.5em"></div>
+          <div class="text10" >Istanbul Havalimanı [IST]<img src="@/images/AnaSayfa/planeIcon.png" alt="icon"  style="margin-left:0.5em;height: 1rem;width: 1rem"></div>
           <div class="text12" >240 TL'den Başlayan Fiyatlarla</div>
           <button class="button7">Hemen Kirala</button>
         </div>
         </div>
       </div>
       <div class="col-3">
-        <div class="card ">
+        <div class="card "  style="border:0; margin:0;padding: 0;">
         <img src="@/images/AnaSayfa/plane2.png" class="card-img" alt="icon">
         <div class="card-img-overlay">
           <div class="text11">Ankara</div>
-          <div class="text10">Esenboğa Havalimanı [ESB]<img src="@/images/AnaSayfa/planeIcon.png" alt="icon" style="margin-left:0.5em"></div>
+          <div class="text10">Esenboğa Havalimanı [ESB]<img src="@/images/AnaSayfa/planeIcon.png" alt="icon"  style="margin-left:0.5em;height: 1rem;width: 1rem"></div>
           <div class="text12">240 TL'den Başlayan Fiyatlarla</div>
           <button class="button7" >Hemen Kirala</button>
         </div>
@@ -146,7 +137,7 @@
         <img src="@/images/AnaSayfa/plane3.png" class="card-img" alt="icon">
         <div class="card-img-overlay">
           <div class="text11">İzmir</div>
-          <div class="text10">Adnan Menderes H.L [ADB]<img src="@/images/AnaSayfa/planeIcon.png" alt="icon" style="margin-left:0.5em"></div>
+          <div class="text10">Adnan Menderes H.L [ADB]<img src="@/images/AnaSayfa/planeIcon.png" alt="icon" style="margin-left:0.5em;height: 1rem;width: 1rem"></div>
           <div class="text12">240 TL'den Başlayan Fiyatlarla</div>
           <button class="button7" >Hemen Kirala</button>
         </div>
@@ -159,7 +150,7 @@
         <img src="@/images/AnaSayfa/plane4.png" class="card-img" alt="icon">
         <div class="card-img-overlay">
           <div class="text11">Antalya</div>
-          <div class="text10">Antalya Havalimanı [AYT]<img src="@/images/AnaSayfa/planeIcon.png" alt="icon" style="margin-left:0.5em"></div>
+          <div class="text10">Antalya Havalimanı [AYT]<img src="@/images/AnaSayfa/planeIcon.png" alt="icon"  style="margin-left:0.5em;height: 1rem;width: 1rem"></div>
           <div class="text12">240 TL'den Başlayan Fiyatlarla</div>
           <button class="button7" >Hemen Kirala</button>
         </div>
@@ -177,7 +168,7 @@
         <img src="@/images/AnaSayfa/plane6.png" class="card-img" alt="icon">
         <div class="card-img-overlay">
           <div class="text11">İstanbul - Asya</div>
-          <div class="text10">Sabiha Gökçen Havalimanı [SAW]<img src="@/images/AnaSayfa/planeIcon.png" alt="icon" style="margin-left:0.5em"></div>
+          <div class="text10">Sabiha Gökçen Havalimanı [SAW]<img src="@/images/AnaSayfa/planeIcon.png" alt="icon"  style="margin-left:0.5em;height: 1rem;width: 1rem"></div>
           <div class="text12">240 TL'den Başlayan Fiyatlarla</div>
           <button class="button7" >Hemen Kirala</button>
         </div>
@@ -187,25 +178,24 @@
     </div><!--cards bitiş-->
 
 
-    <div class="container" style="margin-top:3em"><!--lokasyonlar kısmı-->
+<!--lokasyonlar kısmı-->
+    <div class="container" style="margin-top:3em">
       <div class="row">
       <div class="col-12">
         <div class="text7">Popüler Lokasyonlar</div>
       </div>
       </div>
-      <div class="row g-1" style="margin-top: 0.2rem;">
+      <div class="row g-0">
       <div class="col-6">
         <div class="card">
           <div class="row ">
-            <div class="col-md-2">
-              <img src="@/images/AnaSayfa/konumIcon.png" alt="...">
+            <div class="col-2">
+              <img src="@/images/AnaSayfa/konumIcon.png" alt="..." style="margin:0 auto">
             </div>
-            <div class="col-md-10">
-              <div class="card-body">
-                <div class="text13">İzmir Şehir Merkezi Araç Kirala</div>
+            <div class="col-10">
+                <div class="text13" >İzmir Şehir Merkezi Araç Kirala</div>
                     <div class="text14">240 TL'den Başlayan Fiyatlarla</div>
-                    <div class="text15">En Uygun Araçları Bul</div>
-              </div>
+                    <div class="text15">En Uygun Araçları Bul<img src="@/images/AnaSayfa/ok.png" alt="..." style="margin-left:0.5rem;margin-right:0.5rem"></div>
             </div>
           </div>
         </div>
@@ -217,11 +207,9 @@
               <img src="@/images/AnaSayfa/konumIcon.png" alt="...">
             </div>
             <div class="col-md-10">
-              <div class="card-body">
                 <div class="text13">İzmir Şehir Merkezi Araç Kirala</div>
                     <div class="text14">240 TL'den Başlayan Fiyatlarla</div>
-                    <div class="text15">En Uygun Araçları Bul</div>
-              </div>
+                    <div class="text15">En Uygun Araçları Bul<img src="@/images/AnaSayfa/ok.png" alt="..." style="margin-left:0.5rem;margin-right:0.5rem"></div>
             </div>
           </div>
         </div>
@@ -235,12 +223,9 @@
               <img src="@/images/AnaSayfa/konumIcon.png" alt="...">
             </div>
             <div class="col-md-10">
-              <div class="card-body">
                 <div class="text13">İzmir Şehir Merkezi Araç Kirala</div>
                     <div class="text14">240 TL'den Başlayan Fiyatlarla</div>
-                    <div class="text15">En Uygun Araçları Bul</div>
-              </div>
-            </div>
+                    <div class="text15">En Uygun Araçları Bul<img src="@/images/AnaSayfa/ok.png" alt="..." style="margin-left:0.5rem;margin-right:0.5rem"></div>            </div>
           </div>
         </div>
       </div>
@@ -251,11 +236,10 @@
               <img src="@/images/AnaSayfa/konumIcon.png" alt="...">
             </div>
             <div class="col-md-10">
-              <div class="card-body">
+
                 <div class="text13">İzmir Şehir Merkezi Araç Kirala</div>
                     <div class="text14">240 TL'den Başlayan Fiyatlarla</div>
-                    <div class="text15">En Uygun Araçları Bul</div>
-              </div>
+                    <div class="text15">En Uygun Araçları Bul<img src="@/images/AnaSayfa/ok.png" alt="..." style="margin-left:0.5rem;margin-right:0.5rem"></div>
             </div>
           </div>
         </div>
@@ -269,11 +253,10 @@
               <img src="@/images/AnaSayfa/konumIcon.png" alt="...">
             </div>
             <div class="col-md-10">
-              <div class="card-body">
+
                 <div class="text13">İzmir Şehir Merkezi Araç Kirala</div>
                     <div class="text14">240 TL'den Başlayan Fiyatlarla</div>
-                    <div class="text15">En Uygun Araçları Bul</div>
-              </div>
+                    <div class="text15">En Uygun Araçları Bul<img src="@/images/AnaSayfa/ok.png" alt="..." style="margin-left:0.5rem;margin-right:0.5rem"></div>
             </div>
           </div>
         </div>
@@ -285,11 +268,10 @@
               <img src="@/images/AnaSayfa/konumIcon.png" alt="...">
             </div>
             <div class="col-md-10">
-              <div class="card-body">
+
                 <div class="text13">İzmir Şehir Merkezi Araç Kirala</div>
                     <div class="text14">240 TL'den Başlayan Fiyatlarla</div>
-                    <div class="text15">En Uygun Araçları Bul</div>
-              </div>
+                    <div class="text15">En Uygun Araçları Bul<img src="@/images/AnaSayfa/ok.png" alt="..." style="margin-left:0.5rem;margin-right:0.5rem"></div>
             </div>
           </div>
         </div>
@@ -299,13 +281,82 @@
 
 
 
+  <div class="container"><!--Araba oklar Büyük Ekranlar-->
+    <div class="row g-0" style="margin-top:4rem"> 
+      <div class="col-4">
+        <div class="row">
+          <div class="col">
+            <div class="text17"><b>Ön Ödeme İmkanı</b></div>
+            <img src="@/images/AnaSayfa/line1.png" alt="..." style="width:100%">
+            <div class="text16">Rezervasyon işlemlerinde ücretin ufak bir kısmını ödeyebilir, kalan ücreti aracınızı teslim alırken ödeyebilirsiniz.</div>
+          </div>
+        </div>
+        <div class="row" style="margin-top:6rem">
+          <div class="col">
+            <div class="text17"><b>Ücretsiz İptal Garantisi</b></div>
+            <img src="@/images/AnaSayfa/line1.png" alt="..." style="width:100%">
+            <div class="text16">Rezervasyon işlemlerinde ücretin ufak bir kısmını ödeyebilir, kalan ücreti aracınızı teslim alırken ödeyebilirsiniz.</div>
+          </div>
+        </div>
+        <div class="row" style="margin-top:6rem">
+          <div class="col">
+            <div class="text17"><b>7/24 Misafir Hizmetleri</b></div>
+            <img src="@/images/AnaSayfa/line1.png" alt="..." style="width:100%">
+            <div class="text16">Tüm rezervasyon işlemlerinizde misafir hizmetleri ekibimiz 7/24 hizmetinizde.</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <img src="@/images/AnaSayfa/car2.png" alt="...">
+      </div>
+      <div class="col-4">
+        <div class="row">
+          <div class="col">
+            <div class="text19"><b>En Uygun Fiyatlar</b></div>
+            <img src="@/images/AnaSayfa/line2.png" alt="..." style="width:100%">
+            <div class="text18">İhtiyacınız olan her yerde, istediğiniz tarih aralığında bütçenize en uygun araçları karşılaştırma imkanı.</div>
+          </div>
+        </div>
+        <div class="row" style="margin-top:6rem">
+          <div class="col">
+            <div class="text19"><b>Kolay ve Güvenli Kiralama</b></div>
+            <img src="@/images/AnaSayfa/line2.png" alt="..." style="width:100%">
+            <div class="text18">Kurumsal ve bireysel müşteri memnuniyetine önem veren firmalardan güvenli araç kiralama imkanı.</div>
+          </div>
+        </div>
+        <div class="row" style="margin-top:6rem">
+          <div class="col">
+            <div class="text19"><b>Yüzlerce Marka ve Model</b></div>
+            <img src="@/images/AnaSayfa/line2.png" alt="..." style="width:100%">
+            <div class="text18">Kurumsal firmalardan, farklı marka ve model araçları listeleme ve kiralama imkanı.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!--Araba oklar bitiş-->
+
+
+
+  <!--Açıklama-->
+  <div>
+  <div class="text21"><b>Araç Kiralama</b> - Rent A Car</div>
+  <div class="text21">Günümüzde arac satin almanin zorlugu geek bireysel gerekse de kurumsal firmalari arac kiralama hizmetine yonlendirdi. Dünya capinda da oldukça yaygin olarak kullanilan arac kiralama global ismi ile "rent a car" artik bircok kisinin maddi oldugu kadar zamandan da tasarruf etmesini sagliyor. Gelisen turizm ise araç kiralama hizmetinin en büyük destekci. Dün-yanin neresinde olursa olsun toplu tasima araclarina binmek yerine kendine zel bir arabaya binmek isteyenlerin tercihi olan kiralk araclar, seyahat boyunca ozgür olma imkàni da veriyor.
+Arac kiralama sadece seyahat ederken degil günlik hayatta da oldukça tercih edilen bir hizmet haline geldi. Arac satin almak, vergi ve kasko odemek, arac bakimina zaman ayirmak gibi bircok bashiktan kullaniciyr kurtaran arac kiralama hizmeti ani zamanda istenilen arabaya binme sansi da taniyor. Ister her daim sizinle olan bir araba olsun isterseniz de sadece ozel günlerinizde araba ihtiyaciniz olsun Kiralacar.com, binlerce araci hizmetinize sunuyor. Bu araclar icinden kolayca seciminizi yapip rezervasyonunuzu olusturabilir ve istediginiz arac
+<a v-if="metinController==false" @click="metinController=true" class="text22"> Devamı...</a></div>
+<div class="text21" v-if="metinController==true">Günümüzde arac satin almanin zorlugu geek bireysel gerekse de kurumsal firmalari arac kiralama hizmetine yonlendirdi. Dünya capinda da oldukça yaygin olarak kullanilan arac kiralama global ismi ile "rent a car" artik bircok kisinin maddi oldugu kadar zamandan da tasarruf etmesini sagliyor. Gelisen turizm ise araç kiralama hizmetinin en büyük destekci. Dün-yanin neresinde olursa olsun toplu tasima araclarina binmek yerine kendine zel bir arabaya binmek isteyenlerin tercihi olan kiralk araclar, seyahat boyunca ozgür olma imkàni da veriyor.
+Arac kiralama sadece seyahat ederken degil günlik hayatta da oldukça tercih edilen bir hizmet haline geldi. Arac satin almak, vergi ve kasko odemek, arac bakimina zaman ayirmak gibi bircok bashiktan kullaniciyr kurtaran arac kiralama hizmeti ani zamanda istenilen arabaya binme sansi da taniyor. Ister her daim sizinle olan bir araba olsun isterseniz de sadece ozel günlerinizde araba ihtiyaciniz olsun Kiralacar.com, binlerce araci hizmetinize sunuyor. Bu araclar icinden kolayca seciminizi yapip rezervasyonunuzu olusturabilir ve istediginiz arac
+<a v-if="metinController==true" @click="metinController=false" class="text22"> Gizle...</a></div>
+  </div><!--Açıklama bitiş-->
   
+
+
   </div><!--center bitiş-->
   <FooterApp/>
 
 </template>
 
 <script >
+
 
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination} from 'vue3-carousel'
@@ -318,13 +369,14 @@ export default {
     Carousel,
     Slide,
     Pagination,
+
   },
   data() {
     return {
       aramaBariController:false,
       checker:false,
       tarihController:false,
-
+      metinController:false,
     }
   },
 
@@ -435,61 +487,119 @@ export default {
 .text10{
   position: relative;
   font-family: "Quicksand" ;
-  font-size: 0.8rem;/*15pt*/
+  font-size: 0.6vw;/*15pt*/
   color: #2a2a2a;
   text-align: right;
   margin-right: 0.8em;
-  margin-top:0px;
+  line-height: 1rem;
 
 }
 .text11{
   position: relative;
   font-family: "Quicksand" ;
-  font-size: 1.25rem;/*15pt*/
+  font-size: 1.25vw;/*15pt*/
   color: #ffffff;
   text-align: right;
   margin-right: 0.8em;
-  margin-top:0px;
-
+  line-height: 1rem;
 }
 .text12{
   position: relative;
   font-family: "Quicksand" ;
-  font-size: 0.8rem;/*15pt*/
+  font-size: 0.6vw;/*15pt*/
   color: #ffffff;
   text-align: right;
   margin-right: 0.8em;
-  margin-top:1em;
 }
 .text13{
-  position: relative;
   font-family: "Quicksand" ;
-  font-size: 1rem;/*15pt*/
+  font-size: 1vw;/*15pt*/
   color: #7a7a7a;
   text-align: left;
-  margin-left: 1rem;
-  margin-top: 0;
-  padding-top: 0;
-  line-height: 0.2rem;
+  margin-left: 3rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  line-height: 0.1vw;
+  top:0;
 }
 .text14{
   position: relative;
   font-family: "PoppinsBold" ;
-  font-size: 0.75rem;/*15pt*/
+  font-size: 0.75vw;/*15pt*/
   color: #2a2a2a;
   text-align: left;
-  margin-left: 1rem;
+  margin-left: 3rem;
   margin-top:0.25rem ;
+  
 }
 .text15{
   position: relative;
   font-family: "PoppinsBold" ;
-  font-size: 0.75rem;/*15pt*/
+  font-size: 0.75vw;/*15pt*/
   color: #2a2a2a;
   text-align: right;
-  margin-right: 1rem;
+  margin-right: 0.2rem;
   margin-top:0.25rem ;
   line-height: 0.50rem;
+}
+.text16{
+  position: relative;
+  font-family: "Quicksand" ;
+  font-size: 0.65vw;/*15pt*/
+  color: #2a2a2a;
+  text-align: left;
+  margin-right: 0.8em;
+
+}
+.text17{
+  position: relative;
+  font-family: "Quicksand" ;
+  font-size: 1.25vw;/*15pt*/
+  color: #4e5e7c;
+  text-align: left;
+  margin-right: 0.8em;
+
+}
+.text18{
+  position: relative;
+  font-family: "Quicksand" ;
+  font-size: 0.65vw;/*15pt*/
+  color: #2a2a2a;
+  text-align: right;
+  margin-right: 0.8em;
+
+}
+.text19{
+  position: relative;
+  font-family: "Quicksand" ;
+  font-size: 1.25vw;/*15pt*/
+  color: #4e5e7c;
+  text-align: right;
+  margin-right: 0.8em;
+
+}
+.text20{
+  position: relative;
+  font-family: "Quicksand" ;
+  font-size: 1.25vw;/*15pt*/
+  color: #4e5e7c;
+  text-align: right;
+  margin-right: 0.8em;
+
+}
+.text21{
+  position: relative;
+  font-family: "Quicksand" ;
+  font-size: 1vw;/*15pt*/
+  color: #2a2a2a;
+  text-align: center;
+}
+.text22{
+  position: relative;
+  font-family: "Quicksand" ;
+  font-size: 0.9vw;/*15pt*/
+  color: #0e3784;
+  text-decoration: underline;
 }
 .button1 {
   height: 2.5em; /*40px*/
@@ -518,7 +628,7 @@ export default {
 }
 .button3 {
   height: 59px;/*59px*/
-  width : 550px;/*594px*/
+  width : 25.75rem;/*594px*/
   background-color: #ffffff;
   color: #2a2a2a;
   border: none;
@@ -530,7 +640,7 @@ export default {
 }
 .button4 {
   height: 59px;/*59px*/
-  width : 346px;/*349px*/
+  width : 15rem;/*349px*/
   background-color: #ffffff;
   color: #2a2a2a;
   border: none;
@@ -575,7 +685,7 @@ export default {
   color: #ffffff;
   border: 2px solid #ffffff;
   font-family: "Quicksand" ;
-  font-size: 0,6669rem;
+  font-size: 0,6669vw;
   float: right;
   margin-right: 0.8em;
   margin-top: 1em;

@@ -5,9 +5,12 @@ import App from './App.vue'
 
 import 'mdb-vue-ui-kit/css/mdb.min.css';
 
+
+
 const app = createApp(App)
 import router from "./routers/routers";
 app.use(router);
 app.mount('#app');
+
 
 import "bootstrap/dist/js/bootstrap.js"
