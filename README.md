@@ -24,7 +24,7 @@ npm run lint
 npm install vue bootstrap bootstrap-vue
 npm install vue-router@4
 npm install vue3-carousel
-npm i mdb-vue-ui-kit
+npm install v-calendar
 ```
 
 ### Customize configuration
