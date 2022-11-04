@@ -1,5 +1,7 @@
-<template>
-  <HeaderApp/>
+<template> 
+  <div class="show-on-desktop"><HeaderApp/></div>
+  <div class="show-on-mobile">hgfdfghjk</div> 
+  
   <router-view></router-view>
 
   
@@ -25,14 +27,13 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #000000;
-  background-image: url("./images/AnaSayfa/background.png");
   background-repeat: no-repeat;
   background-size:cover;
-  height: 739px;
-  width: 1920px;
+
   background-color: #ffff;
   margin-top: 0px;
   padding: 0;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
 }
 
 @font-face {
@@ -49,5 +50,14 @@ export default {
   font-family: "Poppins";
   src: local("Poppins"),
    url(./fonts/poppins/Poppins-Medium.ttf) format("truetype");
+}
+@media (min-width: 761px) {
+  .show-on-mobile { display: none !important; }
+}
+@media (max-width: 760px) and (min-width:991px) {
+  .show-on-tablet { display: none !important; }
+}
+@media (max-width: 992px) {
+  .show-on-desktop { display: none !important; }
 }
 </style>

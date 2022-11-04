@@ -1,11 +1,14 @@
 <template>
+  <div class="background"></div>
   <div class="center"> <!--Ana Sayfanın kenar kısıtlamlarını belirler-->
+
     <div class="text1">SENİN İÇİN EN UYGUN ARACI</div>
     <div class="text2">ara, bul ve kirala</div>
     <div class="text3">En uygun fiyat garantisi ile ister online öde, ister aracı teslim alırken öde!</div>
-    
-    <div class="container"> <!--Uygun araç bul-->
-      <div class="row">
+
+ <!--Uygun araç bul-->
+    <div class="container" style="border:0px;margin:0px">
+      <div class="row g-1">
       <div class="col">
         <div class="nav-left">
         <button class="button1">Günlük Kiralama</button>
@@ -15,14 +18,14 @@
       <div class="col">
       </div>
     </div>
-    <div class="row">
+    <div class="row g-1">
       <div class="col">
         <img src="@/images/AnaSayfa/Icon.png" alt="icon" class="icon"> 
       </div>
       <div class="col">
       </div>
     </div>
-    <div class="row">
+    <div class="row g-1">
       <div class="col">
         <div class="nav-left">
         <button class="button3" @click="aramaBariController=!aramaBariController"><div class="text4"> <img src="@/images/AnaSayfa/BlueIcon.png" alt="icon"> Nereden Alacaksınız?</div></button>
@@ -39,7 +42,7 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row g-1">
       <div class="col">
         <div class="nav-left">
         <button class="button3" v-if="checker==true"><div class="text4"> <img src="@/images/AnaSayfa/RedIcon.png" alt="icon"> Nerede Bırakacaksınız?</div></button>
@@ -47,7 +50,7 @@
       </div>
       <div class="col"></div>
     </div>
-    <div class="row">
+    <div class="row g-1">
       <div class="col">
         <div class="text6">
           <input type="checkbox" id="checkbox" v-model="checked" @click="checker=!checker" />
@@ -56,7 +59,8 @@
       </div>
       <div class="col"></div>
     </div>    
-  </div><!--Uygun araç bul bitiş-->
+  </div>
+<!--Uygun araç bul bitiş-->
 
 
 
@@ -74,10 +78,14 @@
         <img src="@/images/AnaSayfa/plus2.png" alt="icon" class="icon3" >
       </div></div>
       <div class="row">
-      <div class="col">
+      <div class="col-4">
         <div class="text9" style="margin-top:45px">Kiralama ücretinin ufak bir kısmını ödeyin</div>
         <div class="text9">ve aracınızı rezerve edin...</div>
-      </div></div>
+      </div>
+      <div class="col-8">
+        <img src="@/images/AnaSayfa/car.png" alt="icon" class="icon4" >
+      </div>
+      </div>
       </div>
     </div>
   </div><!--Mavi kısım bitiş-->
@@ -91,7 +99,7 @@
         <Pagination />
       </template>
     </Carousel>
-    <div class="button6">Tüm Kampanyaları Gör <img src="@/images/AnaSayfa/KampanyaIcon.png" alt="icon" ></div>
+    <button class="button6">Tüm Kampanyaları Gör <img src="@/images/AnaSayfa/KampanyaIcon.png" alt="icon" ></button>
   <!--Kampanyalar bitiş-->
 </div> <!--div class="center" kapanış-->
 
@@ -104,58 +112,197 @@
 
   <div class="center">
 
-    <div class="container"><!--Uçak kısmı-->
-      <div class="row">
+    <div class="container" style="margin-top:3em;"><!--Cards kısmı-->
+      <div class="row g-0">
       <div class="col-12">
         <div class="text7">Popüler Havalimanları</div>
       </div>
       </div>
+      <div class="row g-1">
+      <div class="col-6">
+        <div class="card " style="border:0; margin:0;padding: 0;">
+        <img src="@/images/AnaSayfa/plane1.png" class="card-img" alt="icon">
+        <div class="card-img-overlay">
+          <div class="text11" >İstanbul - Avrupa</div>
+          <div class="text10" >Istanbul Havalimanı [IST]<img src="@/images/AnaSayfa/planeIcon.png" alt="icon" style="margin-left:0.5em"></div>
+          <div class="text12" >240 TL'den Başlayan Fiyatlarla</div>
+          <button class="button7">Hemen Kirala</button>
+        </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card ">
+        <img src="@/images/AnaSayfa/plane2.png" class="card-img" alt="icon">
+        <div class="card-img-overlay">
+          <div class="text11">Ankara</div>
+          <div class="text10">Esenboğa Havalimanı [ESB]<img src="@/images/AnaSayfa/planeIcon.png" alt="icon" style="margin-left:0.5em"></div>
+          <div class="text12">240 TL'den Başlayan Fiyatlarla</div>
+          <button class="button7" >Hemen Kirala</button>
+        </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card ">
+        <img src="@/images/AnaSayfa/plane3.png" class="card-img" alt="icon">
+        <div class="card-img-overlay">
+          <div class="text11">İzmir</div>
+          <div class="text10">Adnan Menderes H.L [ADB]<img src="@/images/AnaSayfa/planeIcon.png" alt="icon" style="margin-left:0.5em"></div>
+          <div class="text12">240 TL'den Başlayan Fiyatlarla</div>
+          <button class="button7" >Hemen Kirala</button>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="row g-1" style="margin-top: 0.2rem;">
+      <div class="col-3">
+        <div class="card ">
+        <img src="@/images/AnaSayfa/plane4.png" class="card-img" alt="icon">
+        <div class="card-img-overlay">
+          <div class="text11">Antalya</div>
+          <div class="text10">Antalya Havalimanı [AYT]<img src="@/images/AnaSayfa/planeIcon.png" alt="icon" style="margin-left:0.5em"></div>
+          <div class="text12">240 TL'den Başlayan Fiyatlarla</div>
+          <button class="button7" >Hemen Kirala</button>
+        </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card ">
+        <img src="@/images/AnaSayfa/plane5.png" class="card-img" alt="icon">
+        <div class="card-img-overlay">
+        </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="card ">
+        <img src="@/images/AnaSayfa/plane6.png" class="card-img" alt="icon">
+        <div class="card-img-overlay">
+          <div class="text11">İstanbul - Asya</div>
+          <div class="text10">Sabiha Gökçen Havalimanı [SAW]<img src="@/images/AnaSayfa/planeIcon.png" alt="icon" style="margin-left:0.5em"></div>
+          <div class="text12">240 TL'den Başlayan Fiyatlarla</div>
+          <button class="button7" >Hemen Kirala</button>
+        </div>
+        </div>
+      </div>
+    </div>
+    </div><!--cards bitiş-->
+
+
+    <div class="container" style="margin-top:3em"><!--lokasyonlar kısmı-->
       <div class="row">
+      <div class="col-12">
+        <div class="text7">Popüler Lokasyonlar</div>
+      </div>
+      </div>
+      <div class="row g-1" style="margin-top: 0.2rem;">
       <div class="col-6">
-        <div class="plane1">
-        <div class="text8">ÖN ÖDEME FIRSATI İLE</div>
-        <div class="text9">araç kiralamak artık çok kolay!</div>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="plane2">
-        <div class="text8">ÖN ÖDEME FIRSATI İLE</div>
-        <div class="text9">araç kiralamak artık çok kolay!</div>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="plane3">
-        <div class="text8">ÖN ÖDEME FIRSATI İLE</div>
-        <div class="text9">araç kiralamak artık çok kolay!</div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-3">
-        <div class="plane4">
-        <div class="text8">ÖN ÖDEME FIRSATI İLE</div>
-        <div class="text9">araç kiralamak artık çok kolay!</div>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="plane5">
-        <div class="text8">ÖN ÖDEME FIRSATI İLE</div>
-        <div class="text9">araç kiralamak artık çok kolay!</div>
+        <div class="card">
+          <div class="row ">
+            <div class="col-md-2">
+              <img src="@/images/AnaSayfa/konumIcon.png" alt="...">
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <div class="text13">İzmir Şehir Merkezi Araç Kirala</div>
+                    <div class="text14">240 TL'den Başlayan Fiyatlarla</div>
+                    <div class="text15">En Uygun Araçları Bul</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col-6">
-        <div class="plane6">
-        <div class="text8">ÖN ÖDEME FIRSATI İLE</div>
-        <div class="text9">araç kiralamak artık çok kolay!</div>
+        <div class="card">
+          <div class="row ">
+            <div class="col-md-2">
+              <img src="@/images/AnaSayfa/konumIcon.png" alt="...">
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <div class="text13">İzmir Şehir Merkezi Araç Kirala</div>
+                    <div class="text14">240 TL'den Başlayan Fiyatlarla</div>
+                    <div class="text15">En Uygun Araçları Bul</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    </div><!--Uçak kısmı bitiş-->
-  </div><!--center bitiş-->
+      </div>
+      <div class="row g-1" style="margin-top: 0.2rem;">
+      <div class="col-6">
+        <div class="card">
+          <div class="row ">
+            <div class="col-md-2">
+              <img src="@/images/AnaSayfa/konumIcon.png" alt="...">
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <div class="text13">İzmir Şehir Merkezi Araç Kirala</div>
+                    <div class="text14">240 TL'den Başlayan Fiyatlarla</div>
+                    <div class="text15">En Uygun Araçları Bul</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="card">
+          <div class="row ">
+            <div class="col-md-2">
+              <img src="@/images/AnaSayfa/konumIcon.png" alt="...">
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <div class="text13">İzmir Şehir Merkezi Araç Kirala</div>
+                    <div class="text14">240 TL'den Başlayan Fiyatlarla</div>
+                    <div class="text15">En Uygun Araçları Bul</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="row g-1" style="margin-top: 0.2rem;">
+      <div class="col-6">
+        <div class="card">
+          <div class="row ">
+            <div class="col-md-2">
+              <img src="@/images/AnaSayfa/konumIcon.png" alt="...">
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <div class="text13">İzmir Şehir Merkezi Araç Kirala</div>
+                    <div class="text14">240 TL'den Başlayan Fiyatlarla</div>
+                    <div class="text15">En Uygun Araçları Bul</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="card">
+          <div class="row ">
+            <div class="col-md-2">
+              <img src="@/images/AnaSayfa/konumIcon.png" alt="...">
+            </div>
+            <div class="col-md-10">
+              <div class="card-body">
+                <div class="text13">İzmir Şehir Merkezi Araç Kirala</div>
+                    <div class="text14">240 TL'den Başlayan Fiyatlarla</div>
+                    <div class="text15">En Uygun Araçları Bul</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div><!--lokasyonlar bitiş-->
+
+
 
   
+  </div><!--center bitiş-->
   <FooterApp/>
- 
+
 </template>
 
 <script >
@@ -189,15 +336,20 @@ export default {
 
 <style scoped>
 .background{
-  background-image: url("@/images/AnaSayfa/background.png");
+  background: url("@/images/AnaSayfa/background.png") ;
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 739px;/*739px*/
+  width: 1920px;/*1920px*/
+  z-index: 1;
+  position:absolute;
 }
 .center{
   margin:0 auto;
-  width: 1220px;
-}
-.center2{
-  margin:0 auto;
-  width: 1226px;
+  width: 60%;/*1220px*/
+  z-index: 2;
+  position: relative;
+  align-items: center;
 }
 .nav-left{
   margin-left: 0;
@@ -209,34 +361,39 @@ export default {
 .text1{
   position: relative;
   font-family: "Quicksand" ;
-  font-size: 18pt;
+  font-size: 1.5vw;/*60pt*/
   color: #ffffff;
   text-align: left;
   padding-top: 100px;
+
 }
 .text2{
   position: relative;
   font-family: "Quicksand" ;
-  font-size: 60pt;
+  font-size: 5vw; /*60pt*/
   color: #ffffff;
   text-align: left;
-  line-height: 60pt;
+  line-height: 4vw;
+
 }
 .text3{
   position: relative;
   font-family: "PoppinsBold" ;
-  font-size: 13pt;
+  font-size: 1.3vw;
   color: #ffffff;
   text-align: left;
   padding-top: 35px;
+
 }
 .text4{
   padding-left: 28px;
   text-align: left;
   position: relative; 
+
 }
 .text5{
   padding-left: 28px;
+
 }
 .text6{
   margin-top:20px;
@@ -244,107 +401,190 @@ export default {
   color: #ffffff;
   position: relative; 
   float: left;
+
 }
 .text7{
   position: relative;
   font-family: "Quicksand" ;
-  font-size: 13pt;
+  font-size: 19pt;
   color: #2a2a2a;
   margin-top: 30px;
   float: left;
+
 }
 .text8{
   position: relative;
   font-family: "Quicksand" ;
-  font-size: 20pt;
+  font-size: 1.7vw;/*20pt*/
   color: #ffffff;
   text-align: left;
-  margin-left: 75px;
+  margin-left: 3vw;/*75pt*/
   margin-top:70px;
+
 }
 .text9{
   position: relative;
   font-family: "Quicksand" ;
-  font-size: 15pt;
+  font-size: 0.8vw;/*15pt*/
   color: #ffffff;
   text-align: left;
-  margin-left: 75px;
+  margin-left: 3vw;/*75pt*/
   margin-top:0px;
+
+}
+.text10{
+  position: relative;
+  font-family: "Quicksand" ;
+  font-size: 0.8rem;/*15pt*/
+  color: #2a2a2a;
+  text-align: right;
+  margin-right: 0.8em;
+  margin-top:0px;
+
+}
+.text11{
+  position: relative;
+  font-family: "Quicksand" ;
+  font-size: 1.25rem;/*15pt*/
+  color: #ffffff;
+  text-align: right;
+  margin-right: 0.8em;
+  margin-top:0px;
+
+}
+.text12{
+  position: relative;
+  font-family: "Quicksand" ;
+  font-size: 0.8rem;/*15pt*/
+  color: #ffffff;
+  text-align: right;
+  margin-right: 0.8em;
+  margin-top:1em;
+}
+.text13{
+  position: relative;
+  font-family: "Quicksand" ;
+  font-size: 1rem;/*15pt*/
+  color: #7a7a7a;
+  text-align: left;
+  margin-left: 1rem;
+  margin-top: 0;
+  padding-top: 0;
+  line-height: 0.2rem;
+}
+.text14{
+  position: relative;
+  font-family: "PoppinsBold" ;
+  font-size: 0.75rem;/*15pt*/
+  color: #2a2a2a;
+  text-align: left;
+  margin-left: 1rem;
+  margin-top:0.25rem ;
+}
+.text15{
+  position: relative;
+  font-family: "PoppinsBold" ;
+  font-size: 0.75rem;/*15pt*/
+  color: #2a2a2a;
+  text-align: right;
+  margin-right: 1rem;
+  margin-top:0.25rem ;
+  line-height: 0.50rem;
 }
 .button1 {
-  height: 40px;
-  width : 162px;
+  height: 2.5em; /*40px*/
+  width : 10.125em;/*162px*/
   background-color: #ffffff;
   color: #2a2a2a;
   border: none;
   font-family: "Quicksand" ;
-  font-size: 11pt;
-  margin-right: 6px;
-  margin-top: 18px;
+  font-size: 0.9rem;/*11pt*/
+  margin-right: 6px;/*6px*/
+  margin-top: 18px;/*18px*/
   border-radius: 8px;
+
 }
 .button2 {
-  height: 40px;
-  width : 162px;
+  height: 2.5em; /*40px*/
+  width : 10.125em;/*162px*/
   background-color: #25459a;
   color: #ffffff;
   border: none;
   font-family: "Quicksand" ;
-  font-size: 11pt;
-  margin-top: 18px;
+  font-size: 0.9rem;/*11pt*/
+  margin-top: 18px;/*18px*/
   border-radius: 8px;
+
 }
 .button3 {
-  height: 59px;
-  width : 594px;
+  height: 59px;/*59px*/
+  width : 550px;/*594px*/
   background-color: #ffffff;
   color: #2a2a2a;
   border: none;
   font-family: "Quicksand" ;
   font-size: 14pt;
-  margin-top: 6px;
+  margin-top: 6px;/*6px*/
   border-radius: 8px;
+
 }
 .button4 {
-  height: 59px;
-  width : 349px;
+  height: 59px;/*59px*/
+  width : 346px;/*349px*/
   background-color: #ffffff;
   color: #2a2a2a;
   border: none;
   font-family: "Quicksand" ;
   font-size: 12pt;
-  margin-top: 6px;
+  margin-top: 6px;/*6px*/
   border-radius: 8px;
+  float:left;
+
 }
 .button5 {
-  height: 59px;
-  width : 200px;
+  height: 59px;/*59px*/
+  width : 180px;/*200px*/
   float:right;
   background-color: #e51c3d;
   color: #ffffff;
   border: none;
   font-family: "Quicksand" ;
   font-size: 12pt;
-  margin-top: 6px;
-  margin-left:15px;
+  margin-top: 6px;/*6px*/
+  margin-left:15px;/*15px*/
   border-radius: 8px;
+
 }
 .button6 {
-  height: 18px;
-  width : 174px;
+  height: 18px;/*18px*/
+  width : 190px;/*174px*/
   background-color: #ffffff;
   color: #2a2a2a;
   border: none;
   margin: 0 auto;
   font-family: "Quicksand" ;
-  font-size: 11pt;
-  margin-top: 6px;
+  font-size: 0.9em;/*11pt*/
+  margin-top: 6px;/*6px*/
   border-radius: 8px;
+
+}
+.button7 {
+  height: 2.125em;/*34px*/
+  width : 7.875em;/*126px*/
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  font-family: "Quicksand" ;
+  font-size: 0,6669rem;
+  float: right;
+  margin-right: 0.8em;
+  margin-top: 1em;
+  border-radius: 3px;
 }
 
 .space1 {
-  height: 306px;
-  width : 1220px;
+  height: 306px;/*306px*/
+  width : 100%;/*1220px*/
   background-color: #25459a;
   color: #ffffff;
   border: none;
@@ -353,27 +593,27 @@ export default {
   border-radius: 8px;
   bottom: unset;
   position: absolute;
-  top: 45px;
+  top: 45px;/*45px*/
   z-index: 1;
 }
 .space2 {
-  height: 200px;
-  width : 1220px;
+  height: 200px;/*200px*/
+  width : 100%;/*1220px*/
 
   color: #ffffff;
   border: none;
   font-family: "Quicksand" ;
   font-size: 12pt;
-  margin-top: 30px;
-  margin-bottom: 100px;
+  margin-top: 30px;/*30px*/
+  margin-bottom: 100px;/*100px*/
   border-radius: 8px;
   background-repeat: no-repeat;
   background-size:cover;
   position: relative;
 }
 .space3 {
-  height: 200px;
-  width : 1928px;
+  height: 200px;/*200px*/
+  width : 100%;/*1928px*/
   background-color: #e6ecf8;
   color: #2a2a2a;
   border: none;
@@ -381,84 +621,23 @@ export default {
   font-size: 12pt;
   border-radius: 8px;
   position: relative;
-  top: 45px;
+  top: 45px;/*45px*/
 
 }
 .image{
   background: url("@/images/AnaSayfa/background.png") ;
   background-repeat: no-repeat;
   background-size:cover;
-  height: 739px;
-  width: 1920px
+  height: 739px;/*739px*/
+  width: 1920px;/*1920px*/
   
 }
 .image2 {
-  margin-top: 50px;
-  border-radius: 8px;
-}
-.plane1{
-  background: url("@/images/AnaSayfa/plane1.png") ;
-  background-repeat: no-repeat;
-  background-size:cover;
-  height: 190px;
-  width: 606px;
-  float:left;
-  position: relative;
+  margin-top: 4em;/*50px*/
 
-}
-.plane2{
-  background: url("@/images/AnaSayfa/plane2.png") ;
-  background-repeat: no-repeat;
-  background-size:cover;
-  height: 190px;
-  width: 300px;
-  float:left;
-  position: relative;
-
-}
-.plane3{
-  background: url("@/images/AnaSayfa/plane3.png") ;
-  background-repeat: no-repeat;
-  background-size:cover;
-  height: 190px;
-  width: 300px;
-  float:left;
-  position: relative;
-
-
-}
-.plane4{
-  background: url("@/images/AnaSayfa/plane4.png") ;
-  background-repeat: no-repeat;
-  background-size:cover;
-  height: 190px;
-  width: 300px;
-  float:left;
-  position: relative;
-  margin-top:8px;
-}
-.plane5{
-  background: url("@/images/AnaSayfa/plane5.png") ;
-  background-repeat: no-repeat;
-  background-size:cover;
-  height: 190px;
-  width: 300px;
-  float:left;
-  position: relative;
-  margin-top:8px;
-}
-.plane6{
-  background: url("@/images/AnaSayfa/plane6.png") ;
-  background-repeat: no-repeat;
-  background-size:cover;
-  height: 190px;
-  width: 606px;
-  float:left;
-  position: relative;
-  margin-top:8px;
 }
 .icon{
-  margin-left: 72px;
+  margin-left: 72px;/*72px*/
   position: relative; 
   float: left;
   margin-top: 0;
@@ -466,35 +645,34 @@ export default {
   line-height: 0;
 }
 .icon2{
-	left: 380px;
+	left: 380px;/*380px*/
   position: absolute;
   z-index: 2;
 }
 .icon3{
-  margin-left: 200px;
+  margin-left: 16vw;/*200px*/
   position: relative; 
   float:left;
-  margin-top: 60px;
+  margin-top: 4vw;/*60px*/
 }
-.carousel__item {
-  min-height: 200px;
-  width: 100%;
-  background-color: var(--vc-clr-primary);
-  color: var(--vc-clr-white);
-  font-size: 20px;
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.icon4{
+  margin-left: 4;/*200px*/
+  position: relative; 
+  float:left;
+  width: 60%;
+  margin-top: 4px;/*60px*/
 }
 
-.carousel__slide {
-  padding: 10px;
-}
+@media (min-width: 761px) {
+  .show-on-mobile { display: none !important; }
 
-.carousel__prev,
-.carousel__next {
-  box-sizing: content-box;
-  border: 5px solid white;
+}
+@media (max-width: 760px) and (min-width:991px) {
+  .show-on-tablet { display: none !important; }
+
+}
+@media (max-width: 992px) {
+  .show-on-desktop { display: none !important; }
+ 
 }
 </style>
