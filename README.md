@@ -24,7 +24,9 @@ npm run lint
 npm install vue bootstrap bootstrap-vue
 npm install vue-router@4
 npm install vue3-carousel
-npm install v-calendar
+npm install @vuepic/vue-datepicker
+npm install vue-material --save
+
 ```
 
 ### Customize configuration
