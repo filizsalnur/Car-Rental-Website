@@ -25,7 +25,7 @@ npm install vue bootstrap bootstrap-vue
 npm install vue-router@4
 npm install vue3-carousel
 npm install @vuepic/vue-datepicker
-npm install vue-simple-search-dropdown
+
 ```
 
 ### Customize configuration
