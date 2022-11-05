@@ -48,12 +48,10 @@ export default ({
   padding-top: 12px;
   display: block;
   
-
 }
 .center{
-
   margin:0 auto;
-  width: 1220px;
+  width: 60%;
 }
 .logo{
   position: relative;
@@ -69,8 +67,6 @@ export default ({
   height: 36px;
   margin-right: 10px;
 }
-
-
 .text1{
   font-family: "Quicksand" ;
   font-size: 11pt;
