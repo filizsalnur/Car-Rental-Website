@@ -146,7 +146,7 @@ font-family: "Quicksand" ;
 font-size: 0,6669vw;
 float: right;
 margin-right: 0.8em;
-margin-top: 1em;
+margin-top: 0vh;
 border-radius: 3px;
 }
 </style>

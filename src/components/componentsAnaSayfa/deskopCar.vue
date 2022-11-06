@@ -1,5 +1,5 @@
 <template>
-    <div >
+    <div class="center">
     <div class="container"><!--Araba oklar Büyük Ekranlar-->
       <div class="row g-0" style="margin-top:4rem"> 
         <div class="col-4">
@@ -90,12 +90,12 @@
     overflow: hidden;
   }
   .center{
-    margin:0 auto;
-    width: 60%;/*1220px*/
-    z-index: 2;
-    position: relative;
-    align-items: center;
-  }
+  margin:0 auto;
+  width: 60%;/*1220px*/
+  z-index: 2;
+  position: relative;
+  align-items: center;
+}
   .nav-left{
     margin-left: 0;
     left:0 ;

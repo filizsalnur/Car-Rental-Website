@@ -1,5 +1,5 @@
 <template>
- 
+ <div class="center">
       <div class="container" style="margin-top:3em">
         <div class="row">
         <div class="col-12">
@@ -95,7 +95,7 @@
               </div>
             </div>
           </div>
-
+</div>
         </div>
       </div><!--lokasyonlar bitiş-->
   
@@ -123,7 +123,13 @@
   </script>
   
   <style scoped>
-
+.center{
+  margin:0 auto;
+  width: 60%;/*1220px*/
+  z-index: 2;
+  position: relative;
+  align-items: center;
+}
   .text7{
     position: relative;
     font-family: "Quicksand" ;

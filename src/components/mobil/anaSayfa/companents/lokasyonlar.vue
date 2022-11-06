@@ -96,6 +96,7 @@
             </div>
           </div>
         </div>
+        <a class="text7" href="#">Tüm Lokasyonları Gör</a>
         </div>
       </div><!--lokasyonlar bitiş-->
   

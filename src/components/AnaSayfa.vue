@@ -1,137 +1,29 @@
 <template>
 
-  <div class="background"></div>
-  <div class="center"> <!--Ana Sayfanın kenar kısıtlamlarını belirler-->
 
-    <div class="text1">SENİN İÇİN EN UYGUN ARACI</div>
-    <div class="text2">ara, bul ve kirala</div>
-    <div class="text3">En uygun fiyat garantisi ile ister online öde, ister aracı teslim alırken öde!</div>
+  <deskopAracBul/>
 
- <!--Uygun araç bul-->
-    <div class="container" style="border:0px;margin:0px">
-      <div class="row g-1">
-      <div class="col">
-        <div class="nav-left">
-        <button class="button1">Günlük Kiralama</button>
-        <button class="button2">Aylık Kiralama</button>
-      </div>
-      </div>
-      <div class="col">
-      </div>
-    </div>
-    <div class="row g-1">
-      <div class="col">
-        <img src="@/images/AnaSayfa/Icon.png" alt="icon" class="icon"> 
-      </div>
-      <div class="col">
-      </div>
-    </div>
-    <div class="row g-1">
-      <div class="col">
-        <div class="nav-left">
-        <button class="button3" @click="aramaBariController=!aramaBariController"><div class="text4"> <img src="@/images/AnaSayfa/BlueIcon.png" alt="icon"> Nereden Alacaksınız?</div></button>
-        </div>
-        <div class="nav-left">
-        <div v-if="checkerForm==true">
-        <button class="button3"><div class="text4"> <img src="@/images/AnaSayfa/RedIcon.png" alt="icon"> Nerede Bırakacaksınız?</div></button>
-        </div>
-      </div>
-        <div class="text6">
-          <input type="checkbox" id="input1" v-model="checkerForm" @click="check()"/>
-          <label for="input1" style="margin-left:5px"> Farklı bir yerde teslim etmek istiyorum</label>
-        </div>
-      </div>
-      <div class="col">
-        <div class="nav-left">
-        <button class="button4" > <Datepicker v-model="date" range :partialRange="false" /></button>
-          <button class="button5">Uygun Araçları Bul <img src="@/images/AnaSayfa/searchIcon.png" alt="icon"></button>
-        </div>
-    
-      </div>
-    </div>
-   
-  </div>
-<!--Uygun araç bul bitiş-->
-
-
-
-<div class="space2"><!--Mavi kısım-->  
-  <div class="icon2"><img src="@/images/AnaSayfa/plus.png" alt="icon" ></div>
-
-  <div class="space1">
-    <div class="container">
-      <div class="row">
-      <div class="col">
-        <div class="text8">ÖN ÖDEME FIRSATI İLE</div>
-        <div class="text9">araç kiralamak artık çok kolay!</div>
-      </div>
-        <div class="col">
-        <img src="@/images/AnaSayfa/plus2.png" alt="icon" class="icon3" >
-      </div></div>
-      <div class="row">
-      <div class="col-4">
-        <div class="text9" style="margin-top:45px">Kiralama ücretinin ufak bir kısmını ödeyin</div>
-        <div class="text9">ve aracınızı rezerve edin...</div>
-      </div>
-      <div class="col-8">
-        <img src="@/images/AnaSayfa/car.png" alt="icon" class="icon4" >
-      </div>
-      </div>
-      </div>
-    </div>
-  </div><!--Mavi kısım bitiş-->
-
-
-  <!--Kampanyalar-->
-  <Carousel :autoplay="2000" :wrap-around="true">
-      <Slide v-for="slide in 7" :key="slide">
-        <div class="image2"><img src="@/images/AnaSayfa/background2.png" alt="icon" ></div>
-      </Slide>
-      <template #addons>
-        <Pagination />
-      </template>
-    </Carousel>
-    <a href="#">Tüm Kampanyaları Gör <img src="@/images/AnaSayfa/KampanyaIcon.png" alt="icon" ></a>
-  <!--Kampanyalar bitiş-->
-</div> <!--div class="center" kapanış-->
-
-
-  <div class="space3"><!--İş ortaklarımız-->
-    <div class="center">
-    <div class="text7">İş Ortaklarımız</div>
-    
-    </div>
-  </div><!--İş ortaklarımız bitiş-->
-
-  <div class="center">
+  <div class="show-on-mobile"> <mobileAracBul/></div>
 
     <div class="show-on-deskop"> <deskopCards/></div>
     <div class="show-on-tablet"> <deskopCards/></div>
+    <div class="show-on-mobile"> <mobileCards/></div>
 
     <div class="show-on-deskop"> <deskopLokasyonlar/></div>
     <div class="show-on-tablet"> <tabletLokasyonlar/></div>
-
+    <div class="show-on-mobile"><mobileLokasyonlar/></div>
 
     <div class="show-on-deskop"> <deskopCar/></div>
     <div class="show-on-tablet"> <tabletCar/></div>
-   
+    <div class="show-on-mobile"> <mobileCar/></div>
 
-  <!--Açıklama-->
-  <div>
-  <div class="text21"><b>Araç Kiralama</b> - Rent A Car</div>
-  <div class="text21">Günümüzde arac satin almanin zorlugu geek bireysel gerekse de kurumsal firmalari arac kiralama hizmetine yonlendirdi. Dünya capinda da oldukça yaygin olarak kullanilan arac kiralama global ismi ile "rent a car" artik bircok kisinin maddi oldugu kadar zamandan da tasarruf etmesini sagliyor. Gelisen turizm ise araç kiralama hizmetinin en büyük destekci. Dün-yanin neresinde olursa olsun toplu tasima araclarina binmek yerine kendine zel bir arabaya binmek isteyenlerin tercihi olan kiralk araclar, seyahat boyunca ozgür olma imkàni da veriyor.
-Arac kiralama sadece seyahat ederken degil günlik hayatta da oldukça tercih edilen bir hizmet haline geldi. Arac satin almak, vergi ve kasko odemek, arac bakimina zaman ayirmak gibi bircok bashiktan kullaniciyr kurtaran arac kiralama hizmeti ani zamanda istenilen arabaya binme sansi da taniyor. Ister her daim sizinle olan bir araba olsun isterseniz de sadece ozel günlerinizde araba ihtiyaciniz olsun Kiralacar.com, binlerce araci hizmetinize sunuyor. Bu araclar icinden kolayca seciminizi yapip rezervasyonunuzu olusturabilir ve istediginiz arac
-<a v-if="metinController==false" @click="metinController=true" class="text22"> Devamı...</a></div>
-<div class="text21" v-if="metinController==true">Günümüzde arac satin almanin zorlugu geek bireysel gerekse de kurumsal firmalari arac kiralama hizmetine yonlendirdi. Dünya capinda da oldukça yaygin olarak kullanilan arac kiralama global ismi ile "rent a car" artik bircok kisinin maddi oldugu kadar zamandan da tasarruf etmesini sagliyor. Gelisen turizm ise araç kiralama hizmetinin en büyük destekci. Dün-yanin neresinde olursa olsun toplu tasima araclarina binmek yerine kendine zel bir arabaya binmek isteyenlerin tercihi olan kiralk araclar, seyahat boyunca ozgür olma imkàni da veriyor.
-Arac kiralama sadece seyahat ederken degil günlik hayatta da oldukça tercih edilen bir hizmet haline geldi. Arac satin almak, vergi ve kasko odemek, arac bakimina zaman ayirmak gibi bircok bashiktan kullaniciyr kurtaran arac kiralama hizmeti ani zamanda istenilen arabaya binme sansi da taniyor. Ister her daim sizinle olan bir araba olsun isterseniz de sadece ozel günlerinizde araba ihtiyaciniz olsun Kiralacar.com, binlerce araci hizmetinize sunuyor. Bu araclar icinden kolayca seciminizi yapip rezervasyonunuzu olusturabilir ve istediginiz arac
-<a v-if="metinController==true" @click="metinController=false" class="text22"> Gizle...</a></div>
-  </div><!--Açıklama bitiş-->
+    <div class="show-on-deskop"> <Aciklama/></div>
+    <div class="show-on-tablet"> <Aciklama/></div>
+    <div class="show-on-mobile"> <mobileAciklama/></div>
 
-
-
-  </div><!--center bitiş-->
-
-  <FooterApp/>
+    <div class="show-on-deskop"> <FooterApp/></div>
+    <div class="show-on-tablet"> <tabletFooter/></div>
+  
 
 </template>
 
@@ -142,13 +34,27 @@ import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination} from 'vue3-carousel'
 
 
+import deskopAracBul from './componentsAnaSayfa/aracBul.vue';
+import mobileAracBul from './mobil/anaSayfa/companents/aracBul.vue';
+
 import deskopCar from './componentsAnaSayfa/deskopCar.vue';
 import tabletCar from './componentsAnaSayfa/tabletCar.vue';
+import mobileCar from './mobil/anaSayfa/companents/car.vue';
+
 import deskopCards from './componentsAnaSayfa/deskopCards.vue';
+import mobileCards from './mobil/anaSayfa/companents/havalimanları.vue';
+
+
 import deskopLokasyonlar from './componentsAnaSayfa/deskopLokasyonlar.vue';
 import tabletLokasyonlar from './componentsAnaSayfa/tabletLokasyonlar.vue';
+import mobileLokasyonlar from './mobil/anaSayfa/companents/lokasyonlar.vue';
+
+
+import Aciklama from './componentsAnaSayfa/aciklama.vue';
+import mobileAciklama from './mobil/anaSayfa/companents/aciklama.vue';
 
 import FooterApp from './FooterApp.vue';
+import tabletFooter from './componentsAnaSayfa/tabletFooter.vue';
 export default {
   name: "AnaSayfa",
   components: {
@@ -160,7 +66,15 @@ export default {
     deskopLokasyonlar,
     deskopCards,
     tabletCar,
+    mobileCar,
     deskopCar,
+    mobileLokasyonlar,
+    mobileCards,
+    deskopAracBul,
+    Aciklama,
+    mobileAciklama,
+    mobileAracBul,
+    tabletFooter,
   },
   data() {
     return {

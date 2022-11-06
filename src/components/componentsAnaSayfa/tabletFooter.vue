@@ -44,8 +44,7 @@
    <div class="footer3">
     <div class="center">
       <div class="container">
-        <div class="row g-1">
-        <div class="col-10">
+      
         <div class="row g-1">
         <div class="col-4">
           <div class="text5"><b>Kiracalar</b></div>
@@ -77,15 +76,19 @@
           <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Novacar</div>
           <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Tüm Firmalar</div>   
         </div>
-        </div></div>
-        <div class="col-2">
+        </div>
+        </div>
+      </div>
+        <div class=container>
           <div style="padding-top: 4rem;"></div>
+          <div class="row">
+            <div class="col">
           <button class="button3">
             <div class="row">
-              <div class="col-2">
+              <div class="col-3">
                 <img src="@/images/Footer/apple.png" alt="..." style="margin:0 auto">
               </div>
-              <div class="col-10">
+              <div class="col-9">
                 <div class="text6"><b>App Store'dan İndirin</b></div>
                 <div class="text6" style="line-height:0.5rem">Download App Store</div>
               </div>
@@ -93,10 +96,10 @@
           </button>
           <button class="button3">
             <div class="row">
-              <div class="col-2">
+              <div class="col-3">
                 <img src="@/images/Footer/play.png" alt="..." style="margin:0 auto">
               </div>
-              <div class="col-10">
+              <div class="col-9">
                 <div class="text6"><b>Google Play'den İndirin</b></div>
                 <div class="text6" style="line-height:0.5rem">Download Google Play</div>
               </div>
@@ -104,35 +107,36 @@
           </button>
           <button class="button3">
             <div class="row">
-              <div class="col-2">
+              <div class="col-3">
                 <img src="@/images/Footer/huawei.png" alt="..." style="margin:0 auto">
               </div>
-              <div class="col-10">
+              <div class="col-9">
                 <div class="text6"><b>App Galery'den İndirin</b></div>
                 <div class="text6" style="line-height:0.5rem">Download App Galery</div>
               </div>
             </div>
           </button>
-          <div class="row">
-            <div class="col">
+        </div>
+          </div>
+          <div class="row" style="margin-top:2vh">
+            <div class="col-4"></div>
+            <div class="col-4">
           <div class="logo" >
             <div>
-              <a href="#"><img src="@/images/Footer/facebook.png" alt="..." style="margin:0 auto"></a>
+              <a href="#"><img src="@/images/Footer/facebook.png" alt="..."></a>
             </div>
             <div>
-              <a href="#"><img src="@/images/Footer/instagram.png" alt="..." style="margin:0 auto"></a>
+              <a href="#"><img src="@/images/Footer/instagram.png" alt="..." ></a>
             </div>
             <div>
-              <a href="#"><img src="@/images/Footer/youtube.png" alt="..." style="margin:0 auto"></a>
+              <a href="#"><img src="@/images/Footer/youtube.png" alt="..." ></a>
             </div>
             <div >
-              <a href="#"><img src="@/images/Footer/twitter.png" alt="..." style="margin:0 auto"></a>
+              <a href="#"><img src="@/images/Footer/twitter.png" alt="..." ></a>
             </div>
-          </div>
         </div>
         </div>
-        </div>
-        </div>
+        <div class="col-4"></div>
       </div>
       <div class="text7"><a href="#">Gizlilik Politikası </a> | <a href="#"> Açık Rıza Beyanı </a> | 
             <a href="#"> Aydınlatma Metni </a> | <a href="#"> Veri İşleme Politikası </a></div>
@@ -181,10 +185,12 @@ export default {
   height: 35.25rem;
 }
 .logo{
-
+width: 20vw;
+text-align: center;
 display:flex;
 justify-content: space-between;
 align-items: center;
+
 }
 .text1{
   position: relative;
@@ -232,7 +238,7 @@ align-items: center;
 .text6{
   position: relative;
   font-family: "Quicksand" ;
-  font-size: 0.75vw;/*20pt*/
+  font-size: 1vw;/*20pt*/
   color: #2a2a2a;
   text-align: left;
 }
@@ -264,14 +270,14 @@ align-items: center;
   margin-left: 1rem;
 }
 .button3 {
-  height: 3.375rem;/*34px*/
-  width : 13.8125rem;/*126px*/
+  height: 4vw;/*34px*/
+  width : 18vw;/*126px*/
   background-color: transparent;
   color: #2a2a2a;
   border: 1px solid #2a2a2a;
   font-family: "Quicksand" ;
   font-size: 0,6669rem;
-  float: right;
+
   margin-right: 0.8em;
   margin-top: 1em;
   border-radius: 3px;

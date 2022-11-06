@@ -1,4 +1,5 @@
 <template>
+  <div class="center">
     <div class="container" style="margin-top:3em;"><!--Cards kısmı-->
     <div class="row g-0">
     <div class="col-12">
@@ -71,6 +72,7 @@
       </div>
     </div>
   </div>
+</div>
   </div><!--cards bitiş-->
 </template>
 
@@ -94,7 +96,13 @@ methods: {
 </script>
 
 <style scoped>
-
+.center{
+  margin:0 auto;
+  width: 60%;/*1220px*/
+  z-index: 2;
+  position: relative;
+  align-items: center;
+}
 .text7{
 position: relative;
 font-family: "Quicksand" ;
