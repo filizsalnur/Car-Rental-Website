@@ -1,4 +1,5 @@
 <template>
+
   <div class="background"></div>
   <div class="center"> <!--Ana Sayfanın kenar kısıtlamlarını belirler-->
 
@@ -129,6 +130,7 @@ Arac kiralama sadece seyahat ederken degil günlik hayatta da oldukça tercih ed
 
 
   </div><!--center bitiş-->
+
   <FooterApp/>
 
 </template>
@@ -494,7 +496,7 @@ export default {
   color: #ffffff;
   border: 2px solid #ffffff;
   font-family: "Quicksand" ;
-  font-size: 0,6669vw;
+  font-size: 0.6669vw;
   float: right;
   margin-right: 0.8em;
   margin-top: 1em;
