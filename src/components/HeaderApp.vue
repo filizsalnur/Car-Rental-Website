@@ -1,27 +1,33 @@
 <template>
+
   <div class="navbar">
     <div class="center">
-    
-      <img alt="Logo" src="@/images/Header/Logo.png" class="logo">
-
-        <div style="float:right">
-        <div style="overflow:hidden">
-        <div class="nav-right">
-        <button class="button1" v-if="logController==false">Giriş Yap | Üye Ol</button>
+        <div>
+        <img alt="Logo" src="@/images/Header/Logo.png"  class="logo">
+  
+      </div>
+      <div>
+      <button class="button1" v-if="logController==false">Giriş Yap | Üye Ol</button>
         <button class="button1" v-if="logController==true" @click="clickController=!clickController"><img alt="Turkey" src="@/images/Header/LogIcon.png" style="margin-top:0px"> Enver Yıldırım
         </button>
         <button class="button2">Rezervasyon Sorgula</button>
         <button class="button3">Türkçe <img alt="Turkey" src="@/images/Header/Turkey.png"> TRY <img alt="icon" src="@/images/Header/IconOk.png"></button>
-            <img  src="@/images/Header/Icon.png" alt="icon" class="icon">
-          <div style="float:right">
-            <div class="text1">7/24 Müşteri Destek</div>
-            <div class="text2">0850 888 1 864</div>
+      </div>
+          <div>
+        
+         
+  <img  src="@/images/Header/Icon.png" alt="icon" class="icon">
+            <div style="float:right">
+              <div class="text1">7/24 Müşteri Destek</div>
+              <div class="text2">0850 888 1 864</div>
+            </div>
           </div>
-      </div>
-        </div>
-      </div>
-    </div>
+          
+          </div>
+  
+        
   </div>
+
 </template>
 
 <script>
@@ -43,6 +49,7 @@ export default ({
 .navbar{
   height: 80px;
   background: #ffffff;
+  width: 100vw;
 }
 .nav-right{
   padding-top: 12px;
@@ -52,14 +59,16 @@ export default ({
 .center{
   margin:0 auto;
   width: 60%;
+  display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .logo{
   position: relative;
   width: 169px;
   height: 23px;
   left: 0px;
-  float:left;
-  margin-top: 16px;
+
 }
 .icon{
   position: relative;
@@ -69,19 +78,19 @@ export default ({
 }
 .text1{
   font-family: "Quicksand" ;
-  font-size: 11pt;
+  font-size: 10pt;
   color: #25459a;
   margin-bottom: 0;
   padding-bottom: 0;
-  line-height: 17pt;
+  line-height: 16pt;
 }
 .text2{
   font-family: "Poppins" ;
-  font-size: 13pt;
+  font-size: 12pt;
   color: #373737;
   margin-top: 0;
   padding-top: 0;
-  line-height: 10pt;
+  line-height: 9pt;
 }
 .button1 {
   height: 37px;
@@ -90,7 +99,7 @@ export default ({
   color: #ffffff;
   border: 1px solid #25459a;
   font-family: "Quicksand" ;
-  font-size: 11pt;
+  font-size: 10pt;
   margin-right: 8px;
   border-radius: 8px;
 }
@@ -102,7 +111,7 @@ export default ({
   border: 1px solid #98a7cf;
   font-family: "Quicksand" ;
   font-size: 11pt;
-  margin-right: 8px;
+  margin-right: 4px;
   cursor: pointer;
   border-radius: 8px;
 }
@@ -114,7 +123,7 @@ export default ({
   border: 1px solid #25459a;
   font-family: "Quicksand" ;
   font-size: 11pt;
-  margin-right: 30px;
+  margin-right: 10px;
   border-radius: 8px;
 }
 .button1:hover {

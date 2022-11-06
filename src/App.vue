@@ -1,7 +1,7 @@
 <template> 
-<HeaderApp/>
-
-  
+<div class="show-on-deskop"><HeaderApp/></div>
+<div class="show-on-tablet"><HeaderApp/></div>
+<div class="show-on-mobile"><mobileHeader/></div>
   <router-view></router-view>
 
   
@@ -9,12 +9,13 @@
 
 <script>
 import HeaderApp from './components/HeaderApp.vue'
-
+import mobileHeader from './components/mobil/header.vue'
 
 export default {
   name: 'App',
   components: {
     HeaderApp,
+    mobileHeader,
 }
 }
 </script>

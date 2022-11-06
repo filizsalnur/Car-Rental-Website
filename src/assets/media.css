@@ -11,10 +11,22 @@
     .show-on-mobile{
       display:flex;
     }
+    .show-on-tablet{
+      display:none;
+    }
+    .show-on-deskop{
+      display:none;
+    }
   }
   @media screen and (min-width:768px) and (max-width:1200px){
     .show-on-tablet{
       display:flex;
+    }
+    .show-on-mobile{
+      display:none;
+    }
+    .show-on-deskop{
+      display:none;
     }
   }
   @media screen and (min-width:1201px){
@@ -23,5 +35,8 @@
     }
     .show-on-deskop{
       display:flex;
+    }
+    .show-on-mobile{
+      display:none;
     }
   }
