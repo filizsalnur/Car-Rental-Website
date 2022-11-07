@@ -105,25 +105,25 @@
 }
 .icon{
   position: relative;
-  width: 36px;
-  height: 36px;
-  margin-right: 10px;
+  height: 25px;
+
+  margin-right: 2px;
 }
 .text1{
   font-family: "Quicksand" ;
-  font-size: 8pt;
+  font-size: 7pt;
   color: #25459a;
   margin-bottom: 0;
   padding-bottom: 0;
-  line-height: 14pt;
+  line-height: 13pt;
 }
 .text2{
   font-family: "Poppins" ;
-  font-size: 10pt;
+  font-size: 9pt;
   color: #373737;
   margin-top: 0;
   padding-top: 0;
-  line-height: 9pt;
+  line-height: 8pt;
 }
 .text3{
   font-family: "Quicksand" ;

@@ -23,16 +23,19 @@
   <div class="row g-1" v-if="kiralaController==true">
     <div class="col">
       <div class="nav-left">
-      <button class="button1">Aylık Kiralama</button>
       <button class="button2" @click="kiralaController=false">Günlük Kiralama</button>
+      <button class="button1" >Aylık Kiralama</button>
     </div>
     </div>
     <div class="col">
     </div>
   </div>
   <div class="row g-1">
-    <div class="col">
+    <div class="col" v-if="kiralaController==false">
       <img src="@/images/AnaSayfa/Icon.png" alt="icon" class="icon"> 
+    </div>
+    <div class="col" v-if="kiralaController==true">
+      <img src="@/images/AnaSayfa/Icon.png" alt="icon" class="icon2"> 
     </div>
     <div class="col">
     </div>
@@ -53,7 +56,7 @@
     </div>
       <div class="text6">
         <input type="checkbox" id="input1" v-model="checkerForm" @click="check()"/>
-        <label for="input1" style="margin-left:5px"> Farklı bir yerde teslim etmek istiyorum</label>
+        <label for="input1" style="margin-left:0.5vw;"> Farklı bir yerde teslim etmek istiyorum</label>
       </div>
     </div>
     <div class="col-7">
@@ -70,7 +73,7 @@
 </div>
 <div classs="center">
 
-    <div class="space1"><img src="@/images/AnaSayfa/carDeskop.png" alt="icon" style="  width: 60vw;height: 40vh;"></div>
+    <div class="space1"><img src="@/images/AnaSayfa/carDeskop.png" alt="icon" style="  width: 60vw;"></div>
     
 <!--Kampanyalar-->
   <div id="demo" class="carousel slide" data-bs-ride="carousel">
@@ -266,7 +269,7 @@ export default {
   color: #ffffff;
   position: relative; 
   float: left;
-
+  font-size: 1vw;
 }
 .text7{
   position: relative;
@@ -280,7 +283,7 @@ export default {
 
 .button1 {
   height: 2.5em; /*40px*/
-  width : 10.125em;/*162px*/
+  width : 10em;/*162px*/
   background-color: #ffffff;
   color: #2a2a2a;
   border: none;
@@ -288,20 +291,20 @@ export default {
   font-size: 0.9rem;/*11pt*/
   margin-right: 6px;/*6px*/
   margin-top: 18px;/*18px*/
-  border-radius: 8px;
+  border-radius: 1px;
 
 }
 .button2 {
   height: 2.5em; /*40px*/
-  width : 10.125em;/*162px*/
+  width : 10em;/*162px*/
   background-color: #25459a;
   color: #ffffff;
   border: none;
   font-family: "Quicksand" ;
   font-size: 0.9rem;/*11pt*/
   margin-top: 18px;/*18px*/
-  border-radius: 8px;
-
+  border-radius: 1px;
+  margin-right: 6px;/*6px*/
 }
 .button3 {
     height: 6vh;/*59px*/
@@ -312,7 +315,7 @@ export default {
   font-family: "Quicksand" ;
   font-size: 12pt;
   margin-top: 6px;/*6px*/
-  border-radius: 8px;
+  border-radius: 1px;
 
 }
 .button4 {
@@ -324,7 +327,7 @@ export default {
   font-family: "Quicksand" ;
   font-size: 1vw;
   margin-top: 6px;/*6px*/
-  border-radius: 8px;
+  border-radius: 1px;
   margin-left:0.5vw;/*15px*/
   float:left;
 
@@ -340,7 +343,7 @@ height: 6vh;/*59px*/
   font-size: 0.8vw;
   margin-top: 6px;/*6px*/
   margin-left:0.5vw;/*15px*/
-  border-radius: 8px;
+  border-radius: 1px;
 
 }
 
@@ -377,5 +380,12 @@ z-index: 1;
   top: 0;
 
 }
+.icon2{
+  margin-left: 13em;/*72px*/
+  position: relative; 
+  float: left;
+  margin-top: -0.2vh;
+  top: 0;
 
+}
 </style>

@@ -11,7 +11,7 @@
         <button class="button1" v-if="clickController==true" @click="clickController=!clickController"><img alt="Turkey" src="@/images/Header/LogIcon.png" style="margin-top:0px"> Enver Yıldırım
         </button>
         <button class="button2">Rezervasyon Sorgula</button>
-        <button class="button3">Türkçe <img alt="Turkey" src="@/images/Header/Turkey.png"> TRY <img alt="icon" src="@/images/Header/IconOk.png"></button>
+        <button class="button3">Türkçe <img alt="Turkey" src="@/images/Header/Turkey.png" style="width:1vw"> TRY <img alt="icon" src="@/images/Header/IconOk.png"  style="width:1vw"></button>
       </div>
           <div>
         
@@ -65,43 +65,42 @@ export default ({
 }
 .center{
   margin:0 auto;
-  width: 60%;
+  width: 70%;
   display:flex;
     justify-content: space-between;
     align-items: center;
 }
 .logo{
   position: relative;
-  width: 169px;
-  height: 23px;
+  height: 20px;
   left: 0px;
 
 }
 .icon{
   position: relative;
-  width: 36px;
-  height: 36px;
-  margin-right: 10px;
+  width: 27px;
+
+  margin-right: 5px;
 }
 .text1{
   font-family: "Quicksand" ;
-  font-size: 10pt;
+  font-size: 8pt;
   color: #25459a;
   margin-bottom: 0;
   padding-bottom: 0;
-  line-height: 16pt;
+  line-height: 14pt;
 }
 .text2{
   font-family: "Poppins" ;
-  font-size: 12pt;
+  font-size: 10pt;
   color: #373737;
   margin-top: 0;
   padding-top: 0;
-  line-height: 9pt;
+  line-height: 7pt;
 }
 .button1 {
   height: 4vh;
-  width : 8vw;
+  width : 8.5vw;
   background-color: #25459a;
   color: #ffffff;
   border: 1px solid #25459a;
@@ -112,7 +111,7 @@ export default ({
 }
 .button2 {
   height: 4vh;
-  width : 12vw;
+  width : 10vw;
   background-color: #ffffff;
   color: #25459a;
   border: 1px solid #98a7cf;

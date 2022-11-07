@@ -7,7 +7,7 @@
     .show-on-deskop{
       display:none;
     }
-  @media screen and (max-width:768px){
+  @media screen and (max-width:700px){
     .show-on-mobile{
       display:contents;
     }
@@ -18,7 +18,7 @@
       display:none;
     }
   }
-  @media screen and (min-width:768px) and (max-width:1200px){
+  @media screen and (min-width:701px) and (max-width:1200px){
     .show-on-tablet{
       display:contents;
     }

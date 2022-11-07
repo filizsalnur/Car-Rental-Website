@@ -6,26 +6,30 @@
        <div class="text2">ara, bul ve kirala</div>
    
     <!--Uygun araç bul-->
+
        <div class="center2" v-if="kiralaController==false">
        
-           <div><button class="button1">Günlük Kiralama</button></div>
-           <div><button class="button2" @click="kiralaController=true">Aylık Kiralama</button></div>
+           <div style="margin-left:5vw"><button class="button1">Günlük Kiralama</button></div>
+           <div style="margin-right:5vw"><button class="button2" @click="kiralaController=true">Aylık Kiralama</button></div>
          
        </div>
        <div class="center2" v-if="kiralaController==true">
        
-       <div><button class="button1">Aylık Kiralama</button></div>
-       <div><button class="button2" @click="kiralaController=false">Günlük Kiralama</button></div>
+       <div style="margin-left:5vw"><button class="button2" @click="kiralaController=false" >Günlük Kiralama</button></div>
+       <div style="margin-right:5vw"><button class="button1" >Aylık Kiralama</button></div>
      
-   </div>
-    
-         <div >
+      </div>
+
+         <div v-if="kiralaController==false">
            <img src="@/images/AnaSayfa/Icon.png" alt="icon" class="icon"> 
          </div>
      
-   
+         <div v-if="kiralaController==true">
+           <img src="@/images/AnaSayfa/Icon.png" alt="icon" class="icon2"> 
+         </div>
            <div>
-   
+     
+
            <div class="nav-left">
            <button class="button3" @click="aramaBariController=!aramaBariController"><div class="text4"> <img src="@/images/AnaSayfa/BlueIcon.png" alt="icon"> Nereden Alacaksınız?</div></button>
            </div>
@@ -53,7 +57,7 @@
      </div>
    <!--Uygun araç bul bitiş-->
      
-   <div class="space1"><img src="@/images/mobil/AnaSayfa/payment.png" alt="icon" style="  width: 90vw;height: 30vh;"></div>
+   <div class="space1"><img src="@/images/mobil/AnaSayfa/payment.png" alt="icon" style="  width: 90vw;"></div>
 
 <div class="center"><!--Center -->
    <!--Kampanyalar-->
@@ -191,10 +195,11 @@
      align-items: center;
    }
    .center2{
-   
-       display:flex;
+    display:flex;
      justify-content: space-between;
      align-items: center;
+ 
+
    }
    
    .nav-left{
@@ -210,7 +215,7 @@
      font-size: 4vw;/*60pt*/
      color: #ffffff;
      text-align: center;
-     padding-top: 5vh;
+     padding-top: 3vh;
    
    }
    .text2{
@@ -220,9 +225,8 @@
      color: #ffffff;
      text-align: center;
      line-height: 7vw;
-   
+    margin-bottom:2vh;
    }
-   
    .text4{
      padding-left: 28px;
      text-align: left;
@@ -254,9 +258,8 @@
        border: none;
        font-family: "Quicksand" ;
        font-size: 0.9rem;/*11pt*/
-   
        margin-top: 18px;/*18px*/
-       border-radius: 8px;
+       border-radius: 1px;
    
    }
    .button2 {
@@ -268,7 +271,7 @@
      font-family: "Quicksand" ;
      font-size: 0.9rem;/*11pt*/
      margin-top: 18px;/*18px*/
-     border-radius: 8px;
+     border-radius: 1px;
    
    }
    .button3 {
@@ -280,7 +283,7 @@
      font-family: "Quicksand" ;
      font-size: 14pt;
      margin-top: 6px;/*6px*/
-     border-radius: 8px;
+     border-radius: 1px;
    
    }
    .button4 {
@@ -292,7 +295,7 @@
      font-family: "Quicksand" ;
      font-size: 12pt;
      margin-top: 6px;/*6px*/
-     border-radius: 8px;
+     border-radius: 1px;
    
    
    }
@@ -307,7 +310,7 @@
      font-size: 12pt;
      margin-top: 6px;/*6px*/
    
-     border-radius: 8px;
+     border-radius:1px;
    
    }
   
@@ -351,13 +354,19 @@
     z-index:1;
 }
    .icon{
-     margin-left: 17vw;/*72px*/
+     margin-left: 22vw;/*72px*/
      position: relative; 
      float: left;
      margin-top: -0.2vh;
      top: 0;
    }
-
+   .icon2{
+     margin-left: 62.5vw;/*72px*/
+     position: relative; 
+     float: left;
+     margin-top: -0.2vh;
+     top: 0;
+   }
 
    
      </style>

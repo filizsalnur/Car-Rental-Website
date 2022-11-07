@@ -3,7 +3,7 @@
 
   
   <div class="show-on-deskop"> <deskopAracBul/></div>
-    <div class="show-on-tablet"> <deskopAracBul/></div>
+    <div class="show-on-tablet"> <tabletAracBul/></div>
   <div class="show-on-mobile"> <mobileAracBul/></div>
 
     <div class="show-on-deskop"> <deskopCards/></div>
@@ -35,8 +35,6 @@
 <script >
 import { ref, onMounted } from 'vue';
 
-import 'vue3-carousel/dist/carousel.css'
-import { Carousel, Slide, Pagination} from 'vue3-carousel'
 
 
 import deskopAracBul from './componentsAnaSayfa/aracBul.vue';
@@ -70,9 +68,7 @@ export default {
   name: "AnaSayfa",
   components: {
     FooterApp,
-    Carousel,
-    Slide,
-    Pagination,
+
     tabletLokasyonlar ,
     deskopLokasyonlar,
     deskopCards,

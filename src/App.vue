@@ -1,6 +1,6 @@
 <template> 
 <div class="show-on-deskop"><HeaderApp/></div>
-<div class="show-on-tablet"><mobileHeader/></div>
+<div class="show-on-tablet"><tabletHeader/></div>
 <div class="show-on-mobile"><mobileHeader/></div>
   <router-view></router-view>
 
@@ -9,6 +9,7 @@
 
 <script>
 import HeaderApp from './components/HeaderApp.vue'
+import tabletHeader from './components/tabletHeader.vue'
 import mobileHeader from './components/mobil/header.vue'
 
 export default {
@@ -16,6 +17,7 @@ export default {
   components: {
     HeaderApp,
     mobileHeader,
+    tabletHeader,
 }
 }
 </script>
