@@ -6,13 +6,18 @@
        <div class="text2">ara, bul ve kirala</div>
    
     <!--Uygun araç bul-->
-       <div class="center2">
+       <div class="center2" v-if="kiralaController==false">
        
            <div><button class="button1">Günlük Kiralama</button></div>
-           <div><button class="button2">Aylık Kiralama</button></div>
+           <div><button class="button2" @click="kiralaController=true">Aylık Kiralama</button></div>
          
        </div>
-   
+       <div class="center2" v-if="kiralaController==true">
+       
+       <div><button class="button1">Aylık Kiralama</button></div>
+       <div><button class="button2" @click="kiralaController=false">Günlük Kiralama</button></div>
+     
+   </div>
     
          <div >
            <img src="@/images/AnaSayfa/Icon.png" alt="icon" class="icon"> 
@@ -24,9 +29,11 @@
            <div class="nav-left">
            <button class="button3" @click="aramaBariController=!aramaBariController"><div class="text4"> <img src="@/images/AnaSayfa/BlueIcon.png" alt="icon"> Nereden Alacaksınız?</div></button>
            </div>
+           <div v-if="aramaBariController==true"><aramaBari/></div>
            <div class="nav-left">
            <div v-if="checkerForm==true">
-           <button class="button3"><div class="text4"> <img src="@/images/AnaSayfa/RedIcon.png" alt="icon"> Nerede Bırakacaksınız?</div></button>
+            <div v-if="aramaBari2Controller==true"><aramaBari/></div>
+           <button class="button3"  @click="aramaBari2Controller=!aramaBari2Controller"><div class="text4"> <img src="@/images/AnaSayfa/RedIcon.png" alt="icon"> Nerede Bırakacaksınız?</div></button>
            </div>
     
            <div class="text6">
@@ -50,7 +57,9 @@
 
 <div class="center"><!--Center -->
    <!--Kampanyalar-->
-  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+   <div v-if="aramaBariController==false">
+    <div v-if="aramaBari2Controller==false">
+  <div id="demo" class="carousel slide" data-bs-ride="carousel" >
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
       <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
@@ -83,6 +92,8 @@
   </div>
  
     <a href="#">Tüm Kampanyaları Gör <img src="@/images/AnaSayfa/KampanyaIcon.png" alt="icon" ></a>
+  </div>
+</div>
 <!--Kampanyalar bitiş-->
 </div> <!--Center bitiş-->
 <div class="space3"><!--İş ortaklarımız-->
@@ -125,18 +136,21 @@
      </template>
      
      <script >
-
+    import aramaBari from './aramaBari.vue';
      import { ref } from 'vue';
    
      export default {
        name: "AnaSayfa",
        components: {
-       
+        aramaBari,
        },
        data() {
          return {
+          aramaBariController:false,
+          aramaBari2Controller:false,
            checkerForm:false,
            metinController:false,
+           kiralaController:false,
          }
        },
        setup() {
@@ -334,15 +348,14 @@
   border-radius: 8px;
   position: relative;
   top: 5vh;/*45px*/
-
+    z-index:1;
 }
    .icon{
-     margin-left: 72px;/*72px*/
+     margin-left: 17vw;/*72px*/
      position: relative; 
      float: left;
-     margin-top: 0;
+     margin-top: -0.2vh;
      top: 0;
-     line-height: 0;
    }
 
 

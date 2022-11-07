@@ -3,7 +3,7 @@
 
   
   <div class="show-on-deskop"> <deskopAracBul/></div>
-    <div class="show-on-tablet"> <tabletAracBul/></div>
+    <div class="show-on-tablet"> <deskopAracBul/></div>
   <div class="show-on-mobile"> <mobileAracBul/></div>
 
     <div class="show-on-deskop"> <deskopCards/></div>

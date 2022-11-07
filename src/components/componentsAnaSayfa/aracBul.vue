@@ -8,12 +8,23 @@
   <div class="text3">En uygun fiyat garantisi ile ister online öde, ister aracı teslim alırken öde!</div>
 
 <!--Uygun araç bul-->
-  <div class="container" style="border:0px;margin:0px">
-    <div class="row g-1">
+
+  <div class="container" style="border:0px;margin:0px;">
+    <div class="row g-1" v-if="kiralaController==false">
     <div class="col">
       <div class="nav-left">
       <button class="button1">Günlük Kiralama</button>
-      <button class="button2">Aylık Kiralama</button>
+      <button class="button2" @click="kiralaController=true">Aylık Kiralama</button>
+    </div>
+    </div>
+    <div class="col">
+    </div>
+  </div>
+  <div class="row g-1" v-if="kiralaController==true">
+    <div class="col">
+      <div class="nav-left">
+      <button class="button1">Aylık Kiralama</button>
+      <button class="button2" @click="kiralaController=false">Günlük Kiralama</button>
     </div>
     </div>
     <div class="col">
@@ -27,23 +38,27 @@
     </div>
   </div>
   <div class="row g-1">
-    <div class="col">
+    <div class="col-5">
       <div class="nav-left">
       <button class="button3" @click="aramaBariController=!aramaBariController"><div class="text4"> <img src="@/images/AnaSayfa/BlueIcon.png" alt="icon"> Nereden Alacaksınız?</div></button>
       </div>
+      <div v-if="aramaBariController==true"><aramaBari/></div>
       <div class="nav-left">
       <div v-if="checkerForm==true">
-      <button class="button3"><div class="text4"> <img src="@/images/AnaSayfa/RedIcon.png" alt="icon"> Nerede Bırakacaksınız?</div></button>
-      </div>
+        <div v-if="aramaBari2Controller==true" style="margin-top:1vh"><aramaBari/></div>  
+      <button class="button3" @click="aramaBari2Controller=!aramaBari2Controller"><div class="text4"> <img src="@/images/AnaSayfa/RedIcon.png" alt="icon"> Nerede Bırakacaksınız?</div></button>
+
+    </div>
+      
     </div>
       <div class="text6">
         <input type="checkbox" id="input1" v-model="checkerForm" @click="check()"/>
         <label for="input1" style="margin-left:5px"> Farklı bir yerde teslim etmek istiyorum</label>
       </div>
     </div>
-    <div class="col">
+    <div class="col-7">
       <div class="nav-left">
-      <button class="button4" > <Datepicker v-model="date" range :partialRange="false" /></button>
+      <button class="button4" > <Datepicker v-model="date"  range :partialRange="false"   minutesIncrement="30" /></button>
         <button class="button5">Uygun Araçları Bul <img src="@/images/AnaSayfa/searchIcon.png" alt="icon"></button>
       </div>
   
@@ -132,24 +147,26 @@
 
 <script >
 import { ref, onMounted } from 'vue';
-
+import aramaBari from './aramaBari.vue';
 export default {
   name: "AnaSayfa",
   components: {
- 
+    aramaBari,
 
   },
   data() {
     return {
       aramaBariController:false,
+      aramaBari2Controller:false,
       checkerForm:false,
       tarihController:false,
       metinController:false,
+      kiralaController:false,
     }
   },
   setup() {
         const date = ref();
-
+ 
         // For demo purposes assign range from the current date
         onMounted(() => {
             const startDate = new Date();
@@ -288,7 +305,7 @@ export default {
 }
 .button3 {
     height: 6vh;/*59px*/
-  width : 29vw;/*349px*/
+  width : 24vw;/*349px*/
   background-color: #ffffff;
   color: #2a2a2a;
   border: none;
@@ -300,7 +317,7 @@ export default {
 }
 .button4 {
   height: 6vh;/*59px*/
-  width : 18vw;/*349px*/
+  width : 22.5vw;/*349px*/
   background-color: #ffffff;
   color: #2a2a2a;
   border: none;
@@ -308,6 +325,7 @@ export default {
   font-size: 1vw;
   margin-top: 6px;/*6px*/
   border-radius: 8px;
+  margin-left:0.5vw;/*15px*/
   float:left;
 
 }
@@ -321,7 +339,7 @@ height: 6vh;/*59px*/
   font-family: "Quicksand" ;
   font-size: 0.8vw;
   margin-top: 6px;/*6px*/
-  margin-left:15px;/*15px*/
+  margin-left:0.5vw;/*15px*/
   border-radius: 8px;
 
 }
@@ -329,7 +347,7 @@ height: 6vh;/*59px*/
 .space1 {
 position: relative;
 top: 5vh;/*45px*/
-z-index: 3;
+z-index: 1;
 
 }
 
@@ -352,12 +370,12 @@ z-index: 3;
   width:60%;
 }
 .icon{
-  margin-left: 72px;/*72px*/
+  margin-left: 3.8em;/*72px*/
   position: relative; 
   float: left;
-  margin-top: 0;
+  margin-top: -0.2vh;
   top: 0;
-  line-height: 0;
+
 }
 
 </style>

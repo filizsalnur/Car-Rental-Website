@@ -22,7 +22,7 @@
       <div><b>Menu</b></div>
       <div>Kapat<img  src="@/images/mobil/header/close.png" alt="icon" @click="menuController=false"></div>
     </div>
-    <div class="text3"><img  src="@/images/mobil/header/profil.png" alt="icon" style="margin-right:3vw;">Giriş Yap | Üye Ol</div>
+    <div class="text3" @click="login()"><img  src="@/images/mobil/header/profil.png" alt="icon" style="margin-right:3vw;" >Giriş Yap | Üye Ol</div>
     <div class="text3"><img  src="@/images/mobil/header/rezervasyon.png" alt="icon" style="margin-right:3vw;">Rezervasyon Sorgula</div>
     <div class="text3"><img  src="@/images/mobil/header/para.png" alt="icon" style="margin-right:3vw;">Türkçe / TRY<img  src="@/images/mobil/header/turkey.png" alt="icon" style="margin-left:2vw"></div>
     <div ><img  src="@/images/mobil/header/line.png" alt="icon"></div>
@@ -31,18 +31,31 @@
     <div class="text3" style="margin-top:2vh"><img  src="@/images/mobil/header/indir.png" alt="icon" style="margin-right:3vw;">Uygulamamızı İndirin</div>
   </div>
 </div>
+<div v-if="logController==true">
+
+      <div style="background-color:#25459a;"><img  src="@/images/mobil/header/close.png" alt="icon" @click="logController=false"></div>
+
+<mobileLogin/></div>
 </template>
   
   <script>
+  import mobileLogin from './login.vue'
   export default ({
     name:'HeaderApp',
+    components: {
+        mobileLogin,
+    },
     data() {
       return {
         menuController:false,
+        logController:false,
       }
     },
     methods: {
-      
+      login(){
+        this.logController=true;
+        this.menuController=false;
+      }
     }
   })
   </script>
