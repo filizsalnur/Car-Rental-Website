@@ -1,6 +1,6 @@
 <template> 
 <div class="show-on-deskop"><HeaderApp/></div>
-<div class="show-on-tablet"><HeaderApp/></div>
+<div class="show-on-tablet"><mobileHeader/></div>
 <div class="show-on-mobile"><mobileHeader/></div>
   <router-view></router-view>
 

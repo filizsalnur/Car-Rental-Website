@@ -20,8 +20,15 @@
   <div class="center2">
     <div class="space2">
       <div><b>Menu</b></div>
-      <div>Kapat<img  src="@/images/mobil/header/close.png" alt="icon" ></div>
+      <div>Kapat<img  src="@/images/mobil/header/close.png" alt="icon" @click="menuController=false"></div>
     </div>
+    <div class="text3"><img  src="@/images/mobil/header/profil.png" alt="icon" style="margin-right:3vw;">Giriş Yap | Üye Ol</div>
+    <div class="text3"><img  src="@/images/mobil/header/rezervasyon.png" alt="icon" style="margin-right:3vw;">Rezervasyon Sorgula</div>
+    <div class="text3"><img  src="@/images/mobil/header/para.png" alt="icon" style="margin-right:3vw;">Türkçe / TRY<img  src="@/images/mobil/header/turkey.png" alt="icon" style="margin-left:2vw"></div>
+    <div ><img  src="@/images/mobil/header/line.png" alt="icon"></div>
+    <div class="text3" style="margin-top:2vh"><img  src="@/images/mobil/header/ara.png" alt="icon" style="margin-right:3vw;">Bize Ulaşın</div>
+    <div ><img  src="@/images/mobil/header/line.png" alt="icon"></div>
+    <div class="text3" style="margin-top:2vh"><img  src="@/images/mobil/header/indir.png" alt="icon" style="margin-right:3vw;">Uygulamamızı İndirin</div>
   </div>
 </div>
 </template>
@@ -55,24 +62,26 @@
   align-items: center;
 }
 .center2{
-
   width: 80%;
-
+  margin:0 auto;
 }
 .space1{
   height: 150vh;
   width:100vw;
-  color: #1f1f67;
+  background-color: #1f1f67;
+  color:#ffffff;
   border: none;
   font-family: "Quicksand" ;
-  font-size: 8pt;
+  font-size: 4vw;
 
 }
 .space2{
   display:flex;
   justify-content: space-between;
   align-items: center;
-
+  padding-top:2vh;
+  padding-bottom:5vh;
+  margin-bottom:5vh;
 }
 .logo{
   position: relative;
@@ -103,5 +112,14 @@
   padding-top: 0;
   line-height: 9pt;
 }
+.text3{
+  font-family: "Quicksand" ;
+  font-size: 4vw;
+  color: #ffffff;
+  margin-right:3vw;
+  padding-bottom: 3vh;
+  float:left;
 
+  
+}
   </style>

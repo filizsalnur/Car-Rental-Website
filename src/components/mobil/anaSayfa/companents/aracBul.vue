@@ -47,8 +47,81 @@
    <!--Uygun araç bul bitiş-->
      
    <div class="space1"><img src="@/images/mobil/AnaSayfa/payment.png" alt="icon" style="  width: 90vw;height: 30vh;"></div>
-     
 
+<div class="center"><!--Center -->
+   <!--Kampanyalar-->
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="3" ></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+    </div>
+
+    <div class="carousel-inner" >
+      <div class="carousel-item active">
+        <img src="@/images/AnaSayfa/background2.png" alt="..." class="image2">
+      </div>
+      <div class="carousel-item">
+        <img src="@/images/AnaSayfa/background2.png" alt="..." class="image2">
+      </div>
+      <div class="carousel-item">
+        <img src="@/images/AnaSayfa/background2.png" alt="..." class="image2">
+      </div>
+      <div class="carousel-item active">
+        <img src="@/images/AnaSayfa/background2.png" alt="..." class="image2">
+      </div>
+      <div class="carousel-item">
+        <img src="@/images/AnaSayfa/background2.png" alt="..." class="image2">
+      </div>
+      <div class="carousel-item">
+        <img src="@/images/AnaSayfa/background2.png" alt="..." class="image2">
+      </div>
+      </div>
+  </div>
+ 
+    <a href="#">Tüm Kampanyaları Gör <img src="@/images/AnaSayfa/KampanyaIcon.png" alt="icon" ></a>
+<!--Kampanyalar bitiş-->
+</div> <!--Center bitiş-->
+<div class="space3"><!--İş ortaklarımız-->
+    <div class="center">
+    <div class="text7">İş Ortaklarımız</div>
+    
+    <div id="demo2" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo2" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo2" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo2" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#demo2" data-bs-slide-to="3"></button>
+
+    </div>
+
+    <div class="carousel-inner" >
+      <div class="carousel-item active">
+        <img src="@/images/AnaSayfa/logo/logo1.png" alt="..." style="margin-right:2vw">
+
+        <img src="@/images/AnaSayfa/logo/logo2.png" alt="...">
+      </div>
+      <div class="carousel-item ">
+        <img src="@/images/AnaSayfa/logo/logo3.png" alt="..."  style="margin-right:2vw">
+
+        <img src="@/images/AnaSayfa/logo/logo4.png" alt="..." >
+      </div>
+      <div class="carousel-item">
+        <img src="@/images/AnaSayfa/logo/logo5.png" alt="..." style="margin-right:2vw">
+
+        <img src="@/images/AnaSayfa/logo/logo6.png" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="@/images/AnaSayfa/logo/logo7.png" alt="..." >
+      </div>
+      </div>
+  </div>
+
+    </div>
+  </div><!--İş ortaklarımız bitiş-->
      </template>
      
      <script >
@@ -151,7 +224,14 @@
      float: left;
    
    }
-   
+   .text7{
+  position: relative;
+  font-family: "Quicksand" ;
+  font-size: 12pt;
+  color: #2a2a2a;
+  margin-bottom: 2.5vh;
+
+}
    .button1 {
        height: 5vh; /*40px*/
        width : 40vw;/*162px*/
@@ -217,7 +297,11 @@
    
    }
   
-   
+  .image2 {
+  margin-top: 4vh;/*50px*/
+  width:90vw;
+  height: 100%;
+  }
    .space1 {
    
      position: relative;
@@ -239,7 +323,19 @@
      background-size:cover;
      position: relative;
    }
-  
+   .space3 {
+  height: 20vh;/*200px*/
+  width : 100vw;/*1928px*/
+  background-color: #e6ecf8;
+  color: #2a2a2a;
+  border: none;
+  font-family: "Quicksand" ;
+  font-size: 12pt;
+  border-radius: 8px;
+  position: relative;
+  top: 5vh;/*45px*/
+
+}
    .icon{
      margin-left: 72px;/*72px*/
      position: relative; 

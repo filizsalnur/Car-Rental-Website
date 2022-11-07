@@ -114,23 +114,21 @@
             </div>
           </button>
           <div class="row">
-            <div class="col">
-          <div class="logo" >
-            <div>
-              <a href="#"><img src="@/images/Footer/facebook.png" alt="..." style="margin:0 auto"></a>
+
+            <div class="col-2">
+              <a href="#"><img src="@/images/Footer/facebook.png" alt="..."></a>
             </div>
-            <div>
-              <a href="#"><img src="@/images/Footer/instagram.png" alt="..." style="margin:0 auto"></a>
+            <div class="col-2">
+              <a href="#"><img src="@/images/Footer/instagram.png" alt="..." ></a>
             </div>
-            <div>
-              <a href="#"><img src="@/images/Footer/youtube.png" alt="..." style="margin:0 auto"></a>
+            <div class="col-2">
+              <a href="#"><img src="@/images/Footer/youtube.png" alt="..." ></a>
             </div>
-            <div >
-              <a href="#"><img src="@/images/Footer/twitter.png" alt="..." style="margin:0 auto"></a>
+            <div class="col-2">
+              <a href="#"><img src="@/images/Footer/twitter.png" alt="..." ></a>
             </div>
-          </div>
-        </div>
-        </div>
+            <div class="col-4"></div>
+       </div>
         </div>
         </div>
       </div>
@@ -264,8 +262,8 @@ align-items: center;
   margin-left: 1rem;
 }
 .button3 {
-  height: 3.375rem;/*34px*/
-  width : 13.8125rem;/*126px*/
+  height: 5vh;/*34px*/
+  width : 13vw;/*126px*/
   background-color: transparent;
   color: #2a2a2a;
   border: 1px solid #2a2a2a;

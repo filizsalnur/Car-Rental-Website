@@ -1,14 +1,14 @@
 <template>
 
-  <div class="navbar">
+  <div class="navbar1">
     <div class="center">
         <div>
         <img alt="Logo" src="@/images/Header/Logo.png"  class="logo">
   
       </div>
       <div>
-      <button class="button1" v-if="logController==false">Giriş Yap | Üye Ol</button>
-        <button class="button1" v-if="logController==true" @click="clickController=!clickController"><img alt="Turkey" src="@/images/Header/LogIcon.png" style="margin-top:0px"> Enver Yıldırım
+      <button class="button1" v-if="clickController==false" @click="logController=!logController">Giriş Yap | Üye Ol</button>
+        <button class="button1" v-if="clickController==true" @click="clickController=!clickController"><img alt="Turkey" src="@/images/Header/LogIcon.png" style="margin-top:0px"> Enver Yıldırım
         </button>
         <button class="button2">Rezervasyon Sorgula</button>
         <button class="button3">Türkçe <img alt="Turkey" src="@/images/Header/Turkey.png"> TRY <img alt="icon" src="@/images/Header/IconOk.png"></button>
@@ -27,12 +27,18 @@
   
         
   </div>
+  
+  <div v-if="logController==true"><deskopLogin/></div>
 
 </template>
 
 <script>
+import deskopLogin from './login.vue';
 export default ({
   name:'HeaderApp',
+  components: {
+        deskopLogin,
+    },
   data() {
     return {
       logController:false,
@@ -46,10 +52,11 @@ export default ({
 </script>
 
 <style scoped>
-.navbar{
+.navbar1{
   height: 80px;
   background: #ffffff;
-  width: 100vw;
+  width: 100%;
+  display:flex;
 }
 .nav-right{
   padding-top: 12px;
@@ -93,46 +100,50 @@ export default ({
   line-height: 9pt;
 }
 .button1 {
-  height: 37px;
-  width : 153px;
+  height: 4vh;
+  width : 8vw;
   background-color: #25459a;
   color: #ffffff;
   border: 1px solid #25459a;
   font-family: "Quicksand" ;
-  font-size: 10pt;
+  font-size: 0.8vw;
   margin-right: 8px;
   border-radius: 8px;
 }
 .button2 {
-  height: 37px;
-  width : 181px;
+  height: 4vh;
+  width : 12vw;
   background-color: #ffffff;
   color: #25459a;
   border: 1px solid #98a7cf;
   font-family: "Quicksand" ;
-  font-size: 11pt;
+  font-size: 0.8vw;
   margin-right: 4px;
   cursor: pointer;
   border-radius: 8px;
 }
 .button3 {
-  height: 37px;
-  width : 164px;
+  height: 4vh;
+  width : 9vw;
   background-color: #ffffff;
   color: #2a2a2a;
   border: 1px solid #25459a;
   font-family: "Quicksand" ;
-  font-size: 11pt;
+  font-size: 0.8vw;
   margin-right: 10px;
   border-radius: 8px;
 }
 .button1:hover {
-  border: 3px solid #98a7cf;
+  background-color: #ffffff;
+  color: #2a2a2a;
 }
 .button2:hover {
-  border: 3px solid #98a7cf;
+  background-color: #25459a;
+  color: #ffffff;
 }
 .button3:hover {
-  border: 3px solid #25459a;
+  background-color: #25459a;
+  color: #ffffff;
 }
+
 </style>

@@ -192,13 +192,6 @@ export default {
   position:absolute;
   overflow: hidden;
 }
-.center{
-  margin:0 auto;
-  width: 60%;/*1220px*/
-  z-index: 2;
-  position: relative;
-  align-items: center;
-}
 .nav-left{
   margin-left: 0;
   left:0 ;

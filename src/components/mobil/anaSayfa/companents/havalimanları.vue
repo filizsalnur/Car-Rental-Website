@@ -149,4 +149,12 @@ margin-right: 0.8em;
 margin-top: 0vh;
 border-radius: 3px;
 }
+
+.center{
+  margin:0 auto;
+  width: 90%;/*1220px*/
+  z-index: 4;
+  position: relative;
+  align-items: center;
+}
 </style>
