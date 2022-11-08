@@ -62,7 +62,7 @@
     <div class="col-7">
       <div class="nav-left">
       <button class="button4" > <Datepicker v-model="date"  range :partialRange="false"   minutesIncrement="30" /></button>
-        <button class="button5">Uygun Araçları Bul <img src="@/images/AnaSayfa/searchIcon.png" alt="icon"></button>
+      <router-link to="/kiralama"><button class="button5">Araçları Bul <img src="@/images/AnaSayfa/searchIcon.png" alt="icon"></button></router-link>
       </div>
   
     </div>
@@ -212,13 +212,7 @@ export default {
   position:absolute;
   overflow: hidden;
 }
-.center{
-  margin:0 auto;
-  width: 60%;/*1220px*/
-  z-index: 2;
-  position: relative;
-  align-items: center;
-}
+
 .nav-left{
   margin-left: 0;
   left:0 ;
