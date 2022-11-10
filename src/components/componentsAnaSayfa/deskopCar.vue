@@ -1,9 +1,9 @@
 <template>
-    <div class="center">
+    <div class="center" style="margin-bottom:5vh">
     <div class="container"><!--Araba oklar Büyük Ekranlar-->
       <div class="row g-0" style="margin-top:4rem"> 
         <div class="col-4">
-          <div class="row">
+          <div class="row" style="margin-top:15px">
             <div class="col">
               <div class="text17"><b>Ön Ödeme İmkanı</b></div>
               <img src="@/images/AnaSayfa/line1.png" alt="..." style="width:100%">
@@ -29,7 +29,7 @@
           <img src="@/images/AnaSayfa/car2.png" alt="...">
         </div>
         <div class="col-4">
-          <div class="row">
+          <div class="row" style="margin-top:15px">
             <div class="col">
               <div class="text19"><b>En Uygun Fiyatlar</b></div>
               <img src="@/images/AnaSayfa/line2.png" alt="..." style="width:100%">

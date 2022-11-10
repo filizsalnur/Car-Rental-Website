@@ -115,22 +115,22 @@
 
     <div class="carousel-inner" >
       <div class="carousel-item active">
-        <img src="@/images/AnaSayfa/logo/logo1.png" alt="..." style="margin-right:2vw">
+        <img src="@/images/AnaSayfa/logo/logo1.png" alt="..." style="margin-right:2vw" class="logo">
 
-        <img src="@/images/AnaSayfa/logo/logo2.png" alt="...">
+        <img src="@/images/AnaSayfa/logo/logo2.png" alt="..." class="logo">
       </div>
       <div class="carousel-item ">
-        <img src="@/images/AnaSayfa/logo/logo3.png" alt="..."  style="margin-right:2vw">
+        <img src="@/images/AnaSayfa/logo/logo3.png" alt="..."  style="margin-right:2vw" class="logo">
 
         <img src="@/images/AnaSayfa/logo/logo4.png" alt="..." >
       </div>
       <div class="carousel-item">
-        <img src="@/images/AnaSayfa/logo/logo5.png" alt="..." style="margin-right:2vw">
+        <img src="@/images/AnaSayfa/logo/logo5.png" alt="..." style="margin-right:2vw" class="logo">
 
-        <img src="@/images/AnaSayfa/logo/logo6.png" alt="...">
+        <img src="@/images/AnaSayfa/logo/logo6.png" alt="..." class="logo">
       </div>
       <div class="carousel-item">
-        <img src="@/images/AnaSayfa/logo/logo7.png" alt="..." >
+        <img src="@/images/AnaSayfa/logo/logo7.png" alt="..." class="logo">
       </div>
       </div>
   </div>
@@ -313,7 +313,12 @@
      border-radius:1px;
    
    }
-  
+   .logo{
+  filter:grayscale(1);
+}
+.logo:hover{
+  filter:grayscale(0);
+}
   .image2 {
   margin-top: 4vh;/*50px*/
   width:90vw;

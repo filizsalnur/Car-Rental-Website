@@ -120,7 +120,7 @@ font-size: 0.6vw;/*15pt*/
 color: #2a2a2a;
 text-align: right;
 margin-right: 0.8em;
-line-height: 1rem;
+
 
 }
 .text11{
@@ -130,7 +130,7 @@ font-size: 1.25vw;/*15pt*/
 color: #ffffff;
 text-align: right;
 margin-right: 0.8em;
-line-height: 1rem;
+margin-top: -1vh;
 }
 .text12{
 position: relative;
@@ -151,7 +151,7 @@ font-family: "Quicksand" ;
 font-size: 0,6669vw;
 float: right;
 margin-right: 0.8em;
-margin-top: 1em;
+margin-top: 0.5vh;
 border-radius: 3px;
 }
 </style>

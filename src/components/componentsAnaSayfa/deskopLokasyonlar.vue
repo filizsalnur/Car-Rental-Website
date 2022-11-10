@@ -15,9 +15,10 @@
               </div>
               <div class="col-10">
                   <div class="text13" >İzmir Şehir Merkezi Araç Kirala</div>
+                  <div class="space">
                       <div class="text14">240 TL'den Başlayan Fiyatlarla</div>
                       <div class="text15">En Uygun Araçları Bul<img src="@/images/AnaSayfa/ok.png" alt="..." style="margin-left:0.5rem;margin-right:0.5rem"></div>
-              </div>
+              </div></div>
             </div>
           </div>
         </div>
@@ -29,9 +30,10 @@
               </div>
               <div class="col-10">
                   <div class="text13">İzmir Şehir Merkezi Araç Kirala</div>
+                  <div class="space">
                       <div class="text14">240 TL'den Başlayan Fiyatlarla</div>
                       <div class="text15">En Uygun Araçları Bul<img src="@/images/AnaSayfa/ok.png" alt="..." style="margin-left:0.5rem;margin-right:0.5rem"></div>
-              </div>
+              </div></div>
             </div>
           </div>
         </div>
@@ -45,9 +47,11 @@
               </div>
               <div class="col-10">
                   <div class="text13">İzmir Şehir Merkezi Araç Kirala</div>
+                  <div class="space">
                       <div class="text14">240 TL'den Başlayan Fiyatlarla</div>
                       <div class="text15">En Uygun Araçları Bul<img src="@/images/AnaSayfa/ok.png" alt="..." style="margin-left:0.5rem;margin-right:0.5rem"></div>            </div>
-            </div>
+                    </div>
+                    </div>
           </div>
         </div>
         <div class="col-6">
@@ -59,9 +63,11 @@
               <div class="col-10">
   
                   <div class="text13">İzmir Şehir Merkezi Araç Kirala</div>
+                  <div class="space">
                       <div class="text14">240 TL'den Başlayan Fiyatlarla</div>
                       <div class="text15">En Uygun Araçları Bul<img src="@/images/AnaSayfa/ok.png" alt="..." style="margin-left:0.5rem;margin-right:0.5rem"></div>
-              </div>
+                    </div>
+                    </div>
             </div>
           </div>
         </div>
@@ -76,9 +82,10 @@
               <div class="col-10">
   
                   <div class="text13">İzmir Şehir Merkezi Araç Kirala</div>
+                  <div class="space">
                       <div class="text14">240 TL'den Başlayan Fiyatlarla</div>
                       <div class="text15">En Uygun Araçları Bul<img src="@/images/AnaSayfa/ok.png" alt="..." style="margin-left:0.5rem;margin-right:0.5rem"></div>
-              </div>
+              </div></div>
             </div>
           </div>
         </div>
@@ -91,9 +98,10 @@
               <div class="col-10">
   
                   <div class="text13">İzmir Şehir Merkezi Araç Kirala</div>
+                  <div class="space">
                       <div class="text14">240 TL'den Başlayan Fiyatlarla</div>
                       <div class="text15">En Uygun Araçları Bul<img src="@/images/AnaSayfa/ok.png" alt="..." style="margin-left:0.5rem;margin-right:0.5rem"></div>
-              </div>
+              </div></div>
             </div>
           </div>
         </div>
@@ -132,6 +140,11 @@
   position: relative;
   align-items: center;
 }
+.space{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
   .text7{
     position: relative;
     font-family: "Quicksand" ;
@@ -160,17 +173,17 @@
     color: #2a2a2a;
     text-align: left;
     margin-left: 3rem;
-    margin-top:0.25rem ;
+    margin-top:2vh ;
     
   }
   .text15{
     position: relative;
     font-family: "PoppinsBold" ;
-    font-size: 0.75vw;/*15pt*/
+    font-size: 0.6vw;/*15pt*/
     color: #2a2a2a;
     text-align: right;
-    margin-right: 0.2rem;
-    margin-top:0.25rem ;
+
+    margin-top:2vh ;
     line-height: 0.50rem;
   }
   

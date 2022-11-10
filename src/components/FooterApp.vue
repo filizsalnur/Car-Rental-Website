@@ -113,7 +113,7 @@
               </div>
             </div>
           </button>
-          <div class="row">
+          <div class="row" style="padding-top:1.5vh;padding-right: 4vw;">
 
             <div class="col-2">
               <a href="#"><img src="@/images/Footer/facebook.png" alt="..."></a>

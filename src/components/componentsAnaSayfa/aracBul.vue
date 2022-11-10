@@ -126,20 +126,20 @@
 
     <div class="carousel-inner" >
       <div class="carousel-item active">
-        <img src="@/images/AnaSayfa/logo/logo1.png" alt="..." style="margin-right:2vw">
+        <img src="@/images/AnaSayfa/logo/logo1.png" alt="..." style="margin-right:2vw" class="logo">
 
-        <img src="@/images/AnaSayfa/logo/logo2.png" alt="..." style="margin-right:2vw">
+        <img src="@/images/AnaSayfa/logo/logo2.png" alt="..." style="margin-right:2vw" class="logo">
 
-        <img src="@/images/AnaSayfa/logo/logo3.png" alt="..."  style="margin-right:2vw">
+        <img src="@/images/AnaSayfa/logo/logo3.png" alt="..."  style="margin-right:2vw" class="logo">
 
-        <img src="@/images/AnaSayfa/logo/logo4.png" alt="..." >
+        <img src="@/images/AnaSayfa/logo/logo4.png" alt="..."  class="logo">
       </div>
       <div class="carousel-item">
-        <img src="@/images/AnaSayfa/logo/logo5.png" alt="..." style="margin-right:2vw">
+        <img src="@/images/AnaSayfa/logo/logo5.png" alt="..." style="margin-right:2vw" class="logo">
 
-        <img src="@/images/AnaSayfa/logo/logo6.png" alt="..." style="margin-right:2vw">
+        <img src="@/images/AnaSayfa/logo/logo6.png" alt="..." style="margin-right:2vw" class="logo">
 
-        <img src="@/images/AnaSayfa/logo/logo7.png" alt="..." style="margin-right:2vw">
+        <img src="@/images/AnaSayfa/logo/logo7.png" alt="..." style="margin-right:2vw" class="logo">
       </div>
       </div>
   </div>
@@ -340,7 +340,12 @@ height: 6vh;/*59px*/
   border-radius: 1px;
 
 }
-
+.logo{
+  filter:grayscale(1);
+}
+.logo:hover{
+  filter:grayscale(0);
+}
 .space1 {
 position: relative;
 top: 5vh;/*45px*/

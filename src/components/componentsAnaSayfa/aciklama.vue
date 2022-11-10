@@ -46,7 +46,7 @@ export default {
     font-family: "Quicksand" ;
     font-size: 1vw;/*15pt*/
     color: #2a2a2a;
-    text-align: center;
+    text-align: left;
   }
   .text22{
     position: relative;
