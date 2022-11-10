@@ -41,8 +41,8 @@
            </div>
     
            <div class="text6">
-             <input type="checkbox" id="input1" v-model="checkerForm" @click="check()"/>
-             <label for="input1" style="margin-left:5px"> Farklı bir yerde teslim etmek istiyorum</label>
+            <div v-if="checkerForm==false" @click="check()"><font-awesome-icon icon="fa-solid fa-square" /> Farklı bir yerde teslim etmek istiyorum</div>
+        <div v-if="checkerForm==true" @click="check()"><font-awesome-icon icon="fa-solid fa-square-check" /> Farklı bir yerde teslim etmek istiyorum</div>
            </div>
          </div>
          <div >
@@ -63,14 +63,14 @@
    <!--Kampanyalar-->
    <div v-if="aramaBariController==false">
     <div v-if="aramaBari2Controller==false">
-  <div id="demo" class="carousel slide" data-bs-ride="carousel" >
+  <div id="demo7" class="carousel slide" data-bs-ride="carousel" >
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="3" ></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+      <button type="button" data-bs-target="#demo7" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo7" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo7" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#demo7" data-bs-slide-to="3" ></button>
+      <button type="button" data-bs-target="#demo7" data-bs-slide-to="4"></button>
+      <button type="button" data-bs-target="#demo7" data-bs-slide-to="5"></button>
     </div>
 
     <div class="carousel-inner" >
@@ -104,12 +104,12 @@
     <div class="center">
     <div class="text7">İş Ortaklarımız</div>
     
-    <div id="demo2" class="carousel slide" data-bs-ride="carousel">
+    <div id="demo3" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#demo2" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#demo2" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#demo2" data-bs-slide-to="2"></button>
-      <button type="button" data-bs-target="#demo2" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#demo3" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo3" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo3" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#demo3" data-bs-slide-to="3"></button>
 
     </div>
 
@@ -236,7 +236,7 @@
 
    .text6{
      margin-top:20px;
-     padding-left: 10px;
+
      color: #ffffff;
      position: relative; 
      float: left;
@@ -248,7 +248,7 @@
   font-size: 12pt;
   color: #2a2a2a;
   margin-bottom: 2.5vh;
-
+  padding-top: 2vh;
 }
    .button1 {
        height: 5vh; /*40px*/
@@ -346,7 +346,7 @@
      position: relative;
    }
    .space3 {
-  height: 20vh;/*200px*/
+  height: 16vh;/*200px*/
   width : 100vw;/*1928px*/
   background-color: #e6ecf8;
   color: #2a2a2a;

@@ -9,7 +9,7 @@
 
 <!--Uygun araç bul-->
 
-  <div class="container" style="border:0px;margin:0px;">
+ 
     <div class="row g-1" v-if="kiralaController==false">
     <div class="col">
       <div class="nav-left">
@@ -55,20 +55,20 @@
       
     </div>
       <div class="text6">
-        <input type="checkbox" id="input1" v-model="checkerForm" @click="check()"/>
-        <label for="input1" style="margin-left:0.5vw;"> Farklı bir yerde teslim etmek istiyorum</label>
+        <div v-if="checkerForm==false" @click="check()"><font-awesome-icon icon="fa-solid fa-square" /> Farklı bir yerde teslim etmek istiyorum</div>
+        <div v-if="checkerForm==true" @click="check()"><font-awesome-icon icon="fa-solid fa-square-check" /> Farklı bir yerde teslim etmek istiyorum</div>
+
       </div>
     </div>
     <div class="col-7">
-      <div class="nav-left">
-      <button class="button4" > <Datepicker v-model="date"  range :partialRange="false"   minutesIncrement="30" /></button>
-      <router-link to="/kiralama"><button class="button5">Araçları Bul <img src="@/images/AnaSayfa/searchIcon.png" alt="icon"></button></router-link>
+      <div class="space4">
+      <div><button class="button4" > <Datepicker v-model="date"  range :partialRange="false"   minutesIncrement="30" /></button></div>
+      <div><router-link to="/kiralama"><button class="button5">Uygun Araçları Bul <img src="@/images/AnaSayfa/searchIcon.png" alt="icon"></button></router-link></div>
       </div>
   
     </div>
   </div>
- 
-</div>
+
 <!--Uygun araç bul bitiş-->
 </div>
 <div classs="center">
@@ -76,6 +76,7 @@
     <div class="space1"><img src="@/images/AnaSayfa/carDeskop.png" alt="icon" style="  width: 60vw;"></div>
     
 <!--Kampanyalar-->
+<div class="space5">
   <div id="demo" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
@@ -107,7 +108,7 @@
       </div>
       </div>
   </div>
- 
+</div>
     <a href="#">Tüm Kampanyaları Gör <img src="@/images/AnaSayfa/KampanyaIcon.png" alt="icon" ></a>
 <!--Kampanyalar bitiş-->
 </div> <!--div class="center" kapanış-->
@@ -119,7 +120,7 @@
     
     <div id="demo2" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#demo2" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo2" data-bs-slide-to="0" class="active" ></button>
       <button type="button" data-bs-target="#demo2" data-bs-slide-to="1"></button>
 
     </div>
@@ -259,7 +260,6 @@ export default {
 }
 .text6{
   margin-top:20px;
-  padding-left: 10px;
   color: #ffffff;
   position: relative; 
   float: left;
@@ -270,7 +270,7 @@ export default {
   font-family: "Quicksand" ;
   font-size: 19pt;
   color: #2a2a2a;
-  margin-top: 30px;
+  margin-top: 10px;
   float: left;
 
 }
@@ -301,19 +301,19 @@ export default {
   margin-right: 6px;/*6px*/
 }
 .button3 {
-    height: 6vh;/*59px*/
-  width : 24vw;/*349px*/
+    height:60px;/*59px*/
+  width : 24.5vw;/*349px*/
   background-color: #ffffff;
   color: #2a2a2a;
   border: none;
   font-family: "Quicksand" ;
-  font-size: 12pt;
+  font-size: 1vw;
   margin-top: 6px;/*6px*/
   border-radius: 1px;
 
 }
 .button4 {
-  height: 6vh;/*59px*/
+  height: 60px;/*59px*/
   width : 22.5vw;/*349px*/
   background-color: #ffffff;
   color: #2a2a2a;
@@ -327,8 +327,8 @@ export default {
 
 }
 .button5 {
-height: 6vh;/*59px*/
-  width : 10vw;/*349px*/
+height: 60px;/*59px*/
+  width : 11vw;/*349px*/
   float:right;
   background-color: #e51c3d;
   color: #ffffff;
@@ -340,7 +340,26 @@ height: 6vh;/*59px*/
   border-radius: 1px;
 
 }
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 3px;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: none; 
+    opacity: 0.5;
+    transition: opacity 0.6s ease;
+}
 .logo{
+  height: 3vh;
   filter:grayscale(1);
 }
 .logo:hover{
@@ -354,7 +373,7 @@ z-index: 1;
 }
 
 .space3 {
-  height: 200px;/*200px*/
+  height: 100px;/*200px*/
   width : 100%;/*1928px*/
   background-color: #e6ecf8;
   color: #2a2a2a;
@@ -366,10 +385,21 @@ z-index: 1;
   top: 45px;/*45px*/
 
 }
-
+.space4{
+  display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.space5{
+  position: relative;
+  z-index: 7;
+  width: 100%;
+}
 .image2 {
   margin-top: 4em;/*50px*/
   width:60%;
+  z-index: 7;
+
 }
 .icon{
   margin-left: 3.8em;/*72px*/

@@ -8,20 +8,35 @@ import 'mdb-vue-ui-kit/css/mdb.min.css';
 import Datepicker from '@vuepic/vue-datepicker';
 import '@vuepic/vue-datepicker/dist/main.css';
 
-import SimpleTypeahead from 'vue3-simple-typeahead';
-import 'vue3-simple-typeahead/dist/vue3-simple-typeahead.css'; //Optional default CSS
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+
+/* import font awesome icon component */
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+/* import specific icons */
+import { faUserSecret,faHeadset,faChevronDown,faSquare,faSquareCheck, faUserPlus } from '@fortawesome/free-solid-svg-icons'
+
+
+/* add icons to the library */
+library.add(faUserSecret,faHeadset,faChevronDown,faSquare,faSquareCheck,faUserPlus,faTwitter,faFacebook,faInstagram,faYoutube)
+
+
 
 const app = createApp(App)
 
 app.component('Datepicker', Datepicker);
 
+
+
 import router from "./routers/routers";
 app.use(router);
 
-app.use(SimpleTypeahead);
+app.component('font-awesome-icon', FontAwesomeIcon);
 
 app.mount('#app');
 
 
 import "bootstrap/dist/js/bootstrap.js"
+import { faFacebook, faInstagram, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 

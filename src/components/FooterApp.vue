@@ -3,7 +3,7 @@
    <div class="footer1">
     <div class="center">
       <div class="container">
-        <div class="text1"><img src="@/images/Footer/logo.png" alt="..." style="margin-right:1rem">Şimdi Üye Olun!</div>
+        <div class="text1"><font-awesome-icon icon="fa-solid fa-user-plus" /> Şimdi Üye Olun!</div>
         <div class="text2">Şize özel kampanyalardan ve indirimlerden faydalanın. Rezervasyonlarınızı kolayca yönetin.</div>
         <div class="row g-1">
         <div class="col-10">
@@ -23,14 +23,15 @@
         </div>
         </div>
         <div class="col-2">
-          <button type="submit" class="button1 ">Üye Ol</button>
+          <button type="submit" class="button1 "><b>Üye Ol</b></button>
         </div>
         </div>
       </div>
       <div class="text3">
-          <input type="checkbox" id="checkbox" v-model="checked" @click="checker=!checker" />
-          <label for="checkbox" style="margin-left:5px"><a href="#">Gizlilik Politikası</a>, <a href="#"> Açık Rıza Beyanı </a> ve 
-            <a href="#"> Aydınlatma Metnini</a> okuduğumu ve onayladığımı kabul ediyorum.</label>
+        <div v-if="checkerForm==false" @click="check()"><font-awesome-icon icon="fa-solid fa-square" /> <a href="#" class="a"> Gizlilik Politikası</a>, <a href="#" class="a"> Açık Rıza Beyanı </a> ve 
+            <a href="#" class="a"> Aydınlatma Metnini</a> okuduğumu ve onayladığımı kabul ediyorum.</div>
+        <div v-if="checkerForm==true" @click="check()"><font-awesome-icon icon="fa-solid fa-square-check" /><a href="#" class="a"> Gizlilik Politikası</a>, <a href="#" class="a"> Açık Rıza Beyanı </a> ve 
+            <a href="#" class="a"> Aydınlatma Metnini</a> okuduğumu ve onayladığımı kabul ediyorum.</div>
         </div>
     </div>
    </div>
@@ -113,21 +114,22 @@
               </div>
             </div>
           </button>
-          <div class="row" style="padding-top:1.5vh;padding-right: 4vw;">
+          <div>
+          <div class="logo" style="padding-top:1.5vh;">
 
-            <div class="col-2">
-              <a href="#"><img src="@/images/Footer/facebook.png" alt="..."></a>
+            <div class="row">
+              <a href="#" class="a2"><font-awesome-icon icon="fa-brands fa-facebook" /></a>
             </div>
-            <div class="col-2">
-              <a href="#"><img src="@/images/Footer/instagram.png" alt="..." ></a>
+            <div >
+              <a href="#" class="a2"><font-awesome-icon icon="fa-brands fa-instagram" /></a>
             </div>
-            <div class="col-2">
-              <a href="#"><img src="@/images/Footer/youtube.png" alt="..." ></a>
+            <div>
+              <a href="#" class="a2"><font-awesome-icon icon="fa-brands fa-youtube" /></a>
             </div>
-            <div class="col-2">
-              <a href="#"><img src="@/images/Footer/twitter.png" alt="..." ></a>
+            <div >
+              <a href="#" class="a2"><font-awesome-icon icon="fa-brands fa-twitter" /></a>
             </div>
-            <div class="col-4"></div>
+          </div>
        </div>
         </div>
         </div>
@@ -152,7 +154,14 @@ export default {
   data() {
     return {
       checker:false,
+      checkerForm:false,
     }
+  },
+  methods: {
+    check() {
+      this.checkerForm=!this.checkerForm;
+    },
+
   },
 };
 </script>
@@ -168,7 +177,7 @@ export default {
   background-color: #25459a;
   height: 13.25rem;
   margin-top:4rem;
-  width: 100vw;
+  width: 100%;
 }
 .footer2{
   background-color: #1d95b3;
@@ -179,10 +188,17 @@ export default {
   height: 35.25rem;
 }
 .logo{
-
 display:flex;
 justify-content: space-between;
 align-items: center;
+}
+.a{
+  color:#ffffff;
+  text-decoration: underline;
+}
+.a2{
+  color:#2a2a2a;
+
 }
 .text1{
   position: relative;
@@ -198,9 +214,10 @@ align-items: center;
   font-size: 0.75vw;/*20pt*/
   color: #ffffff;
   text-align: left;
-  margin-left: 2.4rem;
+
   line-height: 0.5rem;
-  margin: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .text3{
   position: relative;

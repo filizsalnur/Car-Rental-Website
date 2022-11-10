@@ -1,48 +1,48 @@
 <template>
 
-    <div class="space" v-if="logController==false">
-
- <div style="margin-top:2vh"><button class="button1">Giriş Yap</button><button class="button2" @click="logController=true">Üye Ol</button></div>
-<div class="text1">Hoşgeldiniz</div>  
-<div class="text2">Giriş Yapın</div>  
-<div class="space2">
-				<form>
-					<input type="email" name="email" placeholder="E-Posta" required="" style="width:70vw;margin-top:2.5vh">
-					<input type="password" name="pswd" placeholder="Parola" required="" style="width:70vw;margin-top:0.5vh;margin-bottom:2vh">
-                    <div style="float:left;margin-left:1vw">
-          <input type="checkbox" id="checkbox" v-model="checked" @click="checker=!checker" />
-          <label for="checkbox" style="margin-left:0.3vw">Beni Hatırla</label>
-        </div>
-					<div><button class="button3"><b>Giriş Yap</b></button></div>
-				</form>
-			</div>
-</div>
-
-
-  <div class="space" v-if="logController==true">
- <div style="margin-top:2vh"><button class="button2" @click="logController=false">Giriş Yap</button><button class="button1">Üye Ol</button></div>
- <div class="space3">
-				<form>
-                    <input type="text" name="name" placeholder="Ad/Soyad" required="" style="width:70vw;margin-top:2.5vh">
-					<input type="email" name="email" placeholder="E-posta" required="" style="width:70vw;margin-top:0.5vh">
-					<input type="password" name="pswd" placeholder="Parola" required="" style="width:70vw;margin-top:0.5vh">
-                    <input type="password" name="pswd1" placeholder="Parola(Tekrar)" required="" style="width:70vw;margin-top:0.5vh;margin-bottom:2vh">
-                    <div style="float:left;margin-left:1vw">
-                        <div class="checkLine">
-          <div style="padding-top:0;top:0"><input type="checkbox" id="checkbox" v-model="checked" @click="checker=!checker" /></div>
-          <div style="font-size:3.5vw"><a href="#">Gizlilik Politikası</a>, <a href="#"> Açık Rıza Beyanı </a> ve 
-            <a href="#"> Aydınlatma Metnini</a> okuduğumu ve onayladığımı kabul ediyorum.</div>
-        
-        </div>
-
-        </div>
-					<div><button class="button3"><b>Giriş Yap</b></button></div>
-				</form>
-			</div>
-
-</div>
-  </template>
-  
+<div class="space" v-if="logController==false">
+  <div  style="margin-top:2vh;"><button class="button1">Giriş Yap</button><button class="button2" @click="logController=true">Üye Ol </button></div>
+ <div class="text1">Hoşgeldiniz</div>  
+ <div class="text2">Giriş Yapın</div>  
+ <div class="space2">
+         <form id="login">
+           <input class="box" type="email" name="email" v-model="email" placeholder="E-Posta" required="" style="width:13vw;margin-top:2.5vh">
+           
+           <input class="box" type="password" v-model="parola" name="pswd" placeholder="Parola" required="" style="width:13vw;margin-top:0.5vh;margin-bottom:2vh">
+                     <div style="float:left;margin-left:1vw">
+           <input type="checkbox" id="checkbox" v-model="checked"/>
+           <label for="checkbox" style="margin-left:0.3vw">Beni Hatırla</label>
+         </div>
+           <div><button class="button3"><b>Giriş Yap</b></button></div>
+         </form>
+       </div>
+       <div class="text3"><img alt="Logo" src="@/images/login/kilit.png"> Parolamı Unuttum</div>
+ </div>
+ 
+ 
+   <div class="space" v-if="logController==true">
+  <div style="margin-top:2vh"><button class="button5" @click="logController=false">Giriş Yap</button><button class="button4">Üye Ol</button></div>
+  <div class="space3">
+         <form id="register">
+           <input class="box" type="text" name="name" placeholder="Ad/Soyad" required="" style="width:13vw;margin-top:2.5vh">
+           <input class="box" type="email" name="email" placeholder="E-posta" required="" style="width:13vw;margin-top:0.5vh">
+           <input class="box" type="password" name="pswd" placeholder="Parola" required="" style="width:13vw;margin-top:0.5vh">
+                     <input class="box" type="password" name="pswd1" placeholder="Parola(Tekrar)" required="" style="width:13vw;margin-top:0.5vh;margin-bottom:2vh">
+                     <div style="float:left;margin-left:1vw">
+                         <div class="checkLine">
+           <div style="padding-top:0;top:0"><input type="checkbox" id="checkbox" v-model="checked" @click="checker=!checker" /></div>
+           <div  style="font-size:0.5vw"><a href="#">Gizlilik Politikası</a>, <a href="#"> Açık Rıza Beyanı </a> ve 
+             <a href="#"> Aydınlatma Metnini</a> okuduğumu ve onayladığımı kabul ediyorum.</div>
+         
+         </div>
+ 
+         </div>
+           <div><button class="button3"><b>Üye Ol</b></button></div>
+         </form>
+       </div>
+ </div>
+ 
+   </template>
   <script>
   export default ({
     name:'HeaderApp',
@@ -129,24 +129,61 @@ align-items: center;
   }
   .button1 {
     height: 6vh;
-    width : 30vw;
+    width : 40vw;
     background-color: #fcb101;
     color: #2a2a2a;
     border: none;
     font-family: "Quicksand" ;
-    font-size: 4vw;
-    border-radius: 8px;
+    font-size: 5vw;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 5;
+
   }
   .button2 {
     height: 6vh;
-    width : 30vw;
+    width : 70vw;
     background-color: #ffffff;
     color: #2a2a2a;
     border: 1px solid #98a7cf;
     font-family: "Quicksand" ;
-    font-size: 4vw;
+    font-size: 5vw;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 4;
+    text-align: right;
+    padding-right: 8vw;
+  }
+  .button4 {
+    height: 6vh;
+    width : 40vw;
+    background-color: #fcb101;
+    color: #2a2a2a;
+    border: none;
+    font-family: "Quicksand" ;
+    font-size: 5vw;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 5;
+    margin-left: -40vw;
+
+  }
+  .button5 {
+    height: 6vh;
+    width : 70vw;
+    background-color: #ffffff;
+    color: #2a2a2a;
+    border: 1px solid #98a7cf;
+    font-family: "Quicksand" ;
+    font-size: 5vw;
+    cursor: pointer;
+    border-radius: 20px;
+    position: relative;
+    z-index: 4;
+    text-align: left;
+    padding-left: 8vw;
+
   }
   .button3 {
     height: 6vh;
@@ -166,7 +203,10 @@ align-items: center;
     border:none;
   
   }
-  
-  
+  .box{
+  border:none;
+  border-bottom: 0.5px solid #d8d8d8;
+}
+
   
   </style>

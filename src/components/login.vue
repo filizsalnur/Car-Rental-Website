@@ -5,12 +5,12 @@
 <div class="text1">Hoşgeldiniz</div>  
 <div class="text2">Giriş Yapın</div>  
 <div class="space2">
-				<form>
-					<input class="box" type="email" name="email" placeholder="E-Posta" required="" style="width:13vw;margin-top:2.5vh">
+				<form id="login">
+					<input class="box" type="email" name="email" v-model="email" placeholder="E-Posta" required="" style="width:13vw;margin-top:2.5vh">
           
-					<input class="box" type="password" name="pswd" placeholder="Parola" required="" style="width:13vw;margin-top:0.5vh;margin-bottom:2vh">
+					<input class="box" type="password" v-model="parola" name="pswd" placeholder="Parola" required="" style="width:13vw;margin-top:0.5vh;margin-bottom:2vh">
                     <div style="float:left;margin-left:1vw">
-          <input type="checkbox" id="checkbox" v-model="checked" @click="checker=!checker" />
+          <input type="checkbox" id="checkbox" v-model="checked"/>
           <label for="checkbox" style="margin-left:0.3vw">Beni Hatırla</label>
         </div>
 					<div><button class="button3"><b>Giriş Yap</b></button></div>
@@ -23,7 +23,7 @@
   <div class="space" v-if="logController==true">
  <div style="margin-top:2vh"><button class="button5" @click="logController=false">Giriş Yap</button><button class="button4">Üye Ol</button></div>
  <div class="space3">
-				<form>
+				<form id="register">
           <input class="box" type="text" name="name" placeholder="Ad/Soyad" required="" style="width:13vw;margin-top:2.5vh">
 					<input class="box" type="email" name="email" placeholder="E-posta" required="" style="width:13vw;margin-top:0.5vh">
 					<input class="box" type="password" name="pswd" placeholder="Parola" required="" style="width:13vw;margin-top:0.5vh">
@@ -53,7 +53,6 @@
       }
     },
     methods: {
-      
     }
   })
   </script>

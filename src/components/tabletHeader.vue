@@ -6,17 +6,19 @@
           <router-link to="/"><img alt="Logo" src="@/images/Header/Logo.png"  class="logo"></router-link>
   
       </div>
-      <div>
+<div class="space"></div>
+
+      <div style="float:right">
       <button class="button1" v-if="clickController==false" @click="logController=!logController">Giriş Yap | Üye Ol</button>
         <button class="button1" v-if="clickController==true" @click="clickController=!clickController"><img alt="Turkey" src="@/images/Header/LogIcon.png" style="margin-top:0px"> Enver Yıldırım
         </button>
         <button class="button2">Rezervasyon Sorgula</button>
-        <button class="button3">Türkçe <img alt="Turkey" src="@/images/Header/Turkey.png" style="width:1vw"> TRY <img alt="icon" src="@/images/Header/IconOk.png"  style="width:1vw"></button>
+        <button class="button3">Türkçe <img alt="Turkey" src="@/images/Header/Turkey.png" style="width:1vw"> TRY <font-awesome-icon icon="fa-solid fa-chevron-down" style="width:1vw"/></button>
       </div>
           <div>
         
          
-  <img  src="@/images/Header/Icon.png" alt="icon" class="icon">
+            <font-awesome-icon icon="fa-solid fa-headset fa-xl"  style="color:#25459a;" class="icon"/>
             <div style="float:right">
               <div class="text1">7/24 Müşteri Destek</div>
               <div class="text2">0850 888 1 864</div>
@@ -65,11 +67,12 @@ export default ({
 }
 .center{
   margin:0 auto;
-  width: 70%;
+  width: 60%;
   display:flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .logo{
   position: relative;
   height: 20px;
@@ -78,13 +81,14 @@ export default ({
 }
 .icon{
   position: relative;
-  width: 27px;
-
-  margin-right: 5px;
+  width: 23px;
+  height: 23px;
+  margin-right: 10px;
+  margin-top: 0.5vh;
 }
 .text1{
   font-family: "Quicksand" ;
-  font-size: 8pt;
+  font-size: 0.8vh;
   color: #25459a;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -92,14 +96,14 @@ export default ({
 }
 .text2{
   font-family: "Poppins" ;
-  font-size: 10pt;
+  font-size: 1vh;
   color: #373737;
   margin-top: 0;
   padding-top: 0;
   line-height: 7pt;
 }
 .button1 {
-  height: 4vh;
+  height: 25px;
   width : 8.5vw;
   background-color: #25459a;
   color: #ffffff;
@@ -110,7 +114,7 @@ export default ({
   border-radius: 1px;
 }
 .button2 {
-  height: 4vh;
+  height: 25px;
   width : 10vw;
   background-color: #ffffff;
   color: #25459a;
@@ -122,7 +126,7 @@ export default ({
   border-radius: 1px;
 }
 .button3 {
-  height: 4vh;
+  height: 25px;
   width : 9vw;
   background-color: #ffffff;
   color: #2a2a2a;
@@ -144,5 +148,48 @@ export default ({
   background-color: #25459a;
   color: #ffffff;
 }
+@media screen and (min-width:700px) and (max-width:844px){
+  .space{
+    display:none;
+  }
+  .icon{
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-right: 2px;
+  margin-top: 0.5vh;
+}
+.logo{
+  position: relative;
+  height: 15px;
+  left: 0px;
 
+}
+
+  }
+@media screen and (min-width:845px) and (max-width:962px){
+  .space{
+    width:0%;
+  }
+  .icon{
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-right: 2px;
+  margin-top: 0.5vh;
+}
+.button3 {
+  margin-right: 1px;
+}
+  }
+  @media screen and (min-width:963px) and (max-width:1070px){
+  .space{
+    width:5%;
+  }
+  }
+  @media screen and (min-width:1071px){
+  .space{
+    width:10%;
+  }
+}
 </style>

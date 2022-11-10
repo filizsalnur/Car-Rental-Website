@@ -5,7 +5,7 @@
           <img alt="Logo" src="@/images/mobil/header/logo.png"  >
         </div>    
         <div> 
-          <img  src="@/images/mobil/header/logo2.png" alt="icon" class="icon" >
+          <font-awesome-icon icon="fa-solid fa-headset" class="icon" style="color:#25459a"/>
             <div style="float:right">
               <div class="text1">7/24 Müşteri Destek</div>
               <div class="text2">0850 888 1 864</div>
@@ -20,7 +20,7 @@
   <div class="center2">
     <div class="space2">
       <div><b>Menu</b></div>
-      <div>Kapat<img  src="@/images/mobil/header/close.png" alt="icon" @click="menuController=false"></div>
+      <div>Kapat <img  src="@/images/mobil/header/close.png" alt="icon" @click="menuController=false"></div>
     </div>
     <div class="text3" @click="login()"><img  src="@/images/mobil/header/profil.png" alt="icon" style="margin-right:3vw;" >Giriş Yap | Üye Ol</div>
     <div class="text3"><img  src="@/images/mobil/header/rezervasyon.png" alt="icon" style="margin-right:3vw;">Rezervasyon Sorgula</div>
@@ -33,7 +33,7 @@
 </div>
 <div v-if="logController==true">
 
-      <div style="background-color:#25459a;"><img  src="@/images/mobil/header/close.png" alt="icon" @click="logController=false"></div>
+      <div style="background-color:#25459a;"><img  src="@/images/mobil/header/close.png" alt="icon" @click="logController=false" style="float:right"></div>
 
 <mobileLogin/></div>
 </template>
@@ -98,16 +98,16 @@
 }
 .logo{
   position: relative;
-  width: 169px;
-  height: 23px;
+
+  height: 3vh;
   left: 0px;
 
 }
 .icon{
   position: relative;
-  height: 25px;
-
-  margin-right: 2px;
+  height: 23px;
+margin-top:1vh;
+  margin-right: 4px;
 }
 .text1{
   font-family: "Quicksand" ;
@@ -116,6 +116,7 @@
   margin-bottom: 0;
   padding-bottom: 0;
   line-height: 13pt;
+  margin-top:0.5vh;
 }
 .text2{
   font-family: "Poppins" ;

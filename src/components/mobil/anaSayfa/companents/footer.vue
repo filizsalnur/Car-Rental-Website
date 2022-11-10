@@ -1,6 +1,6 @@
 <template>
-  <footer class="footer">
-   <div class="footer1">
+  <footer class="footer" style="margin-top:4vh">
+   <!--<div class="footer1">
     <div class="center">
       <div class="container">
         <div class="text1"><img src="@/images/Footer/logo.png" alt="..." style="margin-right:1.5vw">Şimdi Üye Olun!</div>
@@ -32,18 +32,14 @@
         </div>
          
           <button type="submit" class="button1 ">Üye Ol</button>
-       
-        
-     
       </div>
-     
     </div>
-   </div>
+   </div>-->
    <div class="footer2">
-    <div class="center">
+    <!--<div class="center">
       <div class="text4"><b>Bize Katılın! </b>Markanız veya Firmanız adına <b>Kurumsal</b> Üyelik için
         <div><button class="button2"><b>Kurumsal Üye Hesabı Oluştur</b></button></div></div>
-    </div>
+    </div>-->
    </div>
 
    <div class="footer3">
@@ -180,7 +176,7 @@ export default {
 }
 .footer2{
   background-color: #1d95b3;
-  height: 10vh;
+  height: 5vh;
 }
 .footer3{
   background-color: #ffffff;

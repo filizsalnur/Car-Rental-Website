@@ -124,7 +124,7 @@ z-index: 1;
   color: #9e9fa1;
 }
 .button1 {
-    height: 6vh;/*59px*/
+    height: 45px;/*59px*/
   width : 17vw;/*349px*/
   background-color: #ffffff;
   color: #2a2a2a;
@@ -136,7 +136,7 @@ z-index: 1;
 
 }
 .button2 {
-  height: 6vh;/*59px*/
+  height: 45px;/*59px*/
   width : 14.5vw;/*349px*/
   background-color: #ffffff;
   color: #2a2a2a;
@@ -150,7 +150,7 @@ z-index: 1;
 
 }
 .button3 {
-height: 6vh;/*59px*/
+height: 45px;/*59px*/
   width : 9vw;/*349px*/
   float:right;
   background-color: #25459a;

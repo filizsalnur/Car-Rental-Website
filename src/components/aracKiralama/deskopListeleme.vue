@@ -521,9 +521,19 @@
       </div>
 
 </div>
+
     <div class="space3" >
-
-
+      <div class="space">
+        <div class="text1" style="padding-left:2vw;">Listelenen 344</div>
+       
+      <div> <div class="box"><div class="space">
+          <div class="text4"> Rezervasyolarınızda ücretsiz iptal ve anında ücret iadesi imkanı |</div>
+          <div class="text5"><b>Promosyon Kodu Kullan</b></div>
+      </div></div></div><button class="button3">Sıra : En Düşük Fiyat</button>
+      </div>
+      <div class="space">
+      <div class="text4" style="padding-left:2vw;margin-top: 2vh;"><b>Hızlı Filtrele</b></div>
+    </div>
     </div>
   </div>
   </div>
@@ -588,6 +598,7 @@ width:17vw;
 height: 100%;
 z-index: 1;
 border-right: 1px solid black;
+border-left: 1px solid black;
 }
 .space3 {
 position: relative;
@@ -611,6 +622,20 @@ z-index: 1;
   font-size: 8pt;
   float:left;
   color: #909090;
+}
+.text4{
+  font-family: "Quicksand" ;
+  font-size: 0.6vw;
+  color: #222323;
+  padding-top:0.4vh;
+  padding-left: 0.4vw;
+}
+.text5{
+  font-family: "Quicksand" ;
+  font-size: 0.6vw;
+  color: #86c6d6;
+  padding-top:0.4vh;
+  padding-right: 0.4vw;
 }
 .button1 {
     height: 6vh;/*59px*/
@@ -639,16 +664,13 @@ z-index: 1;
 
 }
 .button3 {
-height: 6vh;/*59px*/
-  width : 9vw;/*349px*/
-  float:right;
+  height: 3vh;/*59px*/
+  width : 8.5vw;/*349px*/
   background-color: #25459a;
   color: #ffffff;
   border: none;
   font-family: "Quicksand" ;
-  font-size: 1vw;
-  margin-top: 6px;/*6px*/
-  margin-left:0.5vw;/*15px*/
+  font-size: 0.7vw;
   border-radius: 1px;
 
 }
@@ -657,6 +679,12 @@ height: 6vh;/*59px*/
   height:3vh;
   font-size: 1vw;
   color:#909090;
+}
+.box{
+  width:26vw;
+  height:3vh;
+  border:0.5px solid #2a2a2a;
+  margin-left: 2vw;
 }
 .image{
   margin-top:26px;
