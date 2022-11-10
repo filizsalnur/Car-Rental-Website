@@ -63,7 +63,7 @@
     <div class="col-7">
       <div class="space4">
       <div><button class="button4" > <Datepicker v-model="date"  range :partialRange="false"   minutesIncrement="30" /></button></div>
-      <div><router-link to="/kiralama"><button class="button5">Uygun Araçları Bul <img src="@/images/AnaSayfa/searchIcon.png" alt="icon"></button></router-link></div>
+      <div><router-link to="/kiralama"><button class="button5">Uygun Araçları Bul <font-awesome-icon icon="fa-solid fa-magnifying-glass" /></button></router-link></div>
       </div>
   
     </div>

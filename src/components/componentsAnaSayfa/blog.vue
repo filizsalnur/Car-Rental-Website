@@ -14,14 +14,14 @@
     
         <img src="@/images/AnaSayfa/blog1.png" alt="..." class="image2">
           <img src="@/images/AnaSayfa/blog2.png" alt="..." class="image2">
-        <img src="@/images/AnaSayfa/blog1.png" alt="..." class="image2">
+        <img src="@/images/AnaSayfa/blog1.png" alt="..." class="image3">
     
       </div>
       <div class="carousel-item">
     
     <img src="@/images/AnaSayfa/blog2.png" alt="..." class="image2">
       <img src="@/images/AnaSayfa/blog1.png" alt="..." class="image2">
-    <img src="@/images/AnaSayfa/blog2.png" alt="..." class="image2">
+    <img src="@/images/AnaSayfa/blog2.png" alt="..." class="image3">
 
   </div>
       </div>
@@ -94,8 +94,13 @@ export default {
   }
 
 .image2 {
+  margin-right: 1vw;
+  width:19vw;
+  float:left;
+}
+.image3 {
 
-  width:19.5vw;
+width:19vw;
 }
 
 

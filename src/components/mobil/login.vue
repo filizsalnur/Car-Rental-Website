@@ -6,12 +6,12 @@
  <div class="text2">Giriş Yapın</div>  
  <div class="space2">
          <form id="login">
-           <input class="box" type="email" name="email" v-model="email" placeholder="E-Posta" required="" style="width:13vw;margin-top:2.5vh">
+           <input class="box" type="email" name="email" v-model="email" placeholder="E-Posta" required="" style="width:70vw;margin-top:2.5vh">
            
-           <input class="box" type="password" v-model="parola" name="pswd" placeholder="Parola" required="" style="width:13vw;margin-top:0.5vh;margin-bottom:2vh">
-                     <div style="float:left;margin-left:1vw">
-           <input type="checkbox" id="checkbox" v-model="checked"/>
-           <label for="checkbox" style="margin-left:0.3vw">Beni Hatırla</label>
+           <input class="box" type="password" v-model="parola" name="pswd" placeholder="Parola" required="" style="width:70vw;margin-top:0.5vh;margin-bottom:2vh">
+                     <div style="float:left;margin-left:2.5vw;margin-bottom:3vh">
+                      <div v-if="rememberMe==false" @click="remember()" class="text3"><font-awesome-icon icon="fa-solid fa-square" /> Beni Hatırla</div>
+        <div v-if="rememberMe==true" @click="remember()" class="text3"><font-awesome-icon icon="fa-solid fa-square-check" /> Beni Hatırla</div>
          </div>
            <div><button class="button3"><b>Giriş Yap</b></button></div>
          </form>
@@ -24,17 +24,17 @@
   <div style="margin-top:2vh"><button class="button5" @click="logController=false">Giriş Yap</button><button class="button4">Üye Ol</button></div>
   <div class="space3">
          <form id="register">
-           <input class="box" type="text" name="name" placeholder="Ad/Soyad" required="" style="width:13vw;margin-top:2.5vh">
-           <input class="box" type="email" name="email" placeholder="E-posta" required="" style="width:13vw;margin-top:0.5vh">
-           <input class="box" type="password" name="pswd" placeholder="Parola" required="" style="width:13vw;margin-top:0.5vh">
-                     <input class="box" type="password" name="pswd1" placeholder="Parola(Tekrar)" required="" style="width:13vw;margin-top:0.5vh;margin-bottom:2vh">
-                     <div style="float:left;margin-left:1vw">
-                         <div class="checkLine">
-           <div style="padding-top:0;top:0"><input type="checkbox" id="checkbox" v-model="checked" @click="checker=!checker" /></div>
-           <div  style="font-size:0.5vw"><a href="#">Gizlilik Politikası</a>, <a href="#"> Açık Rıza Beyanı </a> ve 
-             <a href="#"> Aydınlatma Metnini</a> okuduğumu ve onayladığımı kabul ediyorum.</div>
-         
-         </div>
+           <input class="box" type="text" name="name" placeholder="Ad/Soyad" required="" style="width:70vw;margin-top:2.5vh">
+           <input class="box" type="email" name="email" placeholder="E-posta" required="" style="width:70vw;margin-top:0.5vh">
+           <input class="box" type="password" name="pswd" placeholder="Parola" required="" style="width:70vw;margin-top:0.5vh">
+            <input class="box" type="password" name="pswd1" placeholder="Parola(Tekrar)" required="" style="width:70vw;margin-top:0.5vh;margin-bottom:2vh">
+            <div style="float:left;margin-left:1vw">
+   
+             <div v-if="checkerForm==false" @click="check()" class="text3"><font-awesome-icon icon="fa-solid fa-square" /><a href="#" class="a"> Gizlilik Politikası</a>, <a href="#"  class="a"> Açık Rıza Beyanı </a> ve 
+             <a href="#"  class="a"> Aydınlatma Metnini</a> okuduğumu ve onayladığımı kabul ediyorum.</div>
+        <div v-if="checkerForm==true" @click="check()" class="text3"><font-awesome-icon icon="fa-solid fa-square-check" /> <a href="#"  class="a"> Gizlilik Politikası</a>, <a href="#"  class="a"> Açık Rıza Beyanı </a> ve 
+             <a href="#"  class="a"> Aydınlatma Metnini</a> okuduğumu ve onayladığımı kabul ediyorum.</div>
+       
  
          </div>
            <div><button class="button3"><b>Üye Ol</b></button></div>
@@ -49,11 +49,19 @@
     data() {
       return {
         logController:false,
+        checkerForm:false,
+        rememberMe:false,
       }
     },
     methods: {
-      
-    }
+       check() {
+         this.checkerForm=!this.checkerForm;
+       },
+       remember() {
+         this.rememberMe=!this.rememberMe;
+       },
+   
+     },
   })
   </script>
   
@@ -110,7 +118,10 @@ align-items: center;
       justify-content: space-between;
       align-items: center;
   }
-
+  .a{
+  color:#98a7cf;
+  text-decoration: underline;
+}
   .text1{
     font-family: "Quicksand" ;
     font-size: 6vw;
@@ -126,6 +137,15 @@ align-items: center;
     margin-top: 0;
     padding-top: 0;
     line-height: 9pt;
+  }
+  .text3{
+    font-family: "Poppins" ;
+    font-size: 3vw;
+    color:#98a7cf;
+    margin-top: 1vh;
+    padding-top: 0;
+    line-height: 9pt;
+    margin-left:2.5vw;
   }
   .button1 {
     height: 6vh;

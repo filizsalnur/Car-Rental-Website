@@ -11,7 +11,7 @@
              
               <div class="col-7" style="padding-top:2vh">
                 <div class="text11" >İstanbul - Avrupa</div>
-        <div class="text10" >Istanbul Havalimanı [IST]<img src="@/images/AnaSayfa/planeIcon.png" alt="icon"  style="margin-left:0.5em;height: 1rem;width: 1rem"></div>
+        <div class="text10" >Istanbul Havalimanı [IST]<font-awesome-icon icon="fa-solid fa-plane-departure" style="margin-left:0.5em;"/></div>
         <div class="text12" >240 TL'den Başlayan Fiyatlarla</div>
         <button class="button7">Hemen Kirala</button>
               </div>
@@ -25,7 +25,7 @@
     <div class="row g-0">
       <div class="col-7" style="padding-top:2vh">
         <div class="text11">İzmir</div>
-        <div class="text10">Adnan Menderes H.L [ADB]<img src="@/images/AnaSayfa/planeIcon.png" alt="icon" style="margin-left:0.5em;height: 1rem;width: 1rem"></div>
+        <div class="text10">Adnan Menderes H.L [ADB]<font-awesome-icon icon="fa-solid fa-plane-departure" style="margin-left:0.5em;"/></div>
         <div class="text12">240 TL'den Başlayan Fiyatlarla</div>
         <button class="button7" >Hemen Kirala</button>
       </div>
@@ -38,7 +38,7 @@
     <div class="row g-0">
       <div class="col-7" style="padding-top:2vh">
         <div class="text11">Antalya</div>
-        <div class="text10">Antalya Havalimanı [AYT]<img src="@/images/AnaSayfa/planeIcon.png" alt="icon"  style="margin-left:0.5em;height: 1rem;width: 1rem"></div>
+        <div class="text10">Antalya Havalimanı [AYT]<font-awesome-icon icon="fa-solid fa-plane-departure" style="margin-left:0.5em;"/></div>
         <div class="text12">240 TL'den Başlayan Fiyatlarla</div>
         <button class="button7" >Hemen Kirala</button>
       </div>
@@ -51,7 +51,7 @@
     <div class="row g-0">
       <div class="col-7" style="padding-top:2vh">
         <div class="text11">İstanbul - Asya</div>
-        <div class="text10">Sabiha Gökçen H.L [SAW]<img src="@/images/AnaSayfa/planeIcon.png" alt="icon"  style="margin-left:0.5em;height: 1rem;width: 1rem"></div>
+        <div class="text10">Sabiha Gökçen H.L [SAW]<font-awesome-icon icon="fa-solid fa-plane-departure" style="margin-left:0.5em"/></div>
         <div class="text12">240 TL'den Başlayan Fiyatlarla</div>
         <button class="button7" >Hemen Kirala</button>
       </div>

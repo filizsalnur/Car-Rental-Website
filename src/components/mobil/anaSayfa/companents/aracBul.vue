@@ -48,7 +48,7 @@
          <div >
            <div class="nav-left">
            <button class="button4" > <Datepicker v-model="date" range :partialRange="false" /></button>
-             <button class="button5">Uygun Araçları Bul <img src="@/images/AnaSayfa/searchIcon.png" alt="icon"></button>
+             <button class="button5">Uygun Araçları Bul <font-awesome-icon icon="fa-solid fa-magnifying-glass" /></button>
            </div>
        
          </div>

@@ -50,33 +50,33 @@
         <div class="row g-1">
         <div class="col-4">
           <div class="text5"><b>Kiracalar</b></div>
-          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Müşteri Hizmetleri</div>
-          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Kiracalar Blog</div>
-          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Bize Ulaşın</div>
-          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">İnsan Kaynakları</div>
-          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Hakkımızda</div>
-          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Sıkça Sorulan Sorular</div>
-          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Kampanyalar</div>       
+          <div class="text5"><a class="text5" href="#"><font-awesome-icon icon="fa-solid fa-caret-right" /> Müşteri Hizmetleri</a></div>
+          <div class="text5"><a class="text5" href="#"><font-awesome-icon icon="fa-solid fa-caret-right" /> Kiracalar Blog</a></div>
+          <div class="text5"><a class="text5" href="#"><font-awesome-icon icon="fa-solid fa-caret-right" /> Bize Ulaşın</a></div>
+          <div class="text5"><a class="text5" href="#"><font-awesome-icon icon="fa-solid fa-caret-right" /> İnsan Kaynakları</a></div>
+          <div class="text5"><a class="text5" href="#"><font-awesome-icon icon="fa-solid fa-caret-right" /> Hakkımızda</a></div>
+          <div class="text5"><a class="text5" href="#"><font-awesome-icon icon="fa-solid fa-caret-right" /> Sıkça Sorulan Sorular</a></div>
+          <div class="text5"><a class="text5" href="#"><font-awesome-icon icon="fa-solid fa-caret-right" /> Kampanyalar</a></div>       
         </div>
         <div class="col-4">
           <div class="text5"><b>Popüler Havalimanları</b></div>
-          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">İstanbul Havalimanı</div>
-          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Sabiha Gökçen Havalimanı</div>
-          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Esenboğa Havalimanı</div>
-          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Antalya Havalimanı</div>
-          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Adnan Menderes Havalimanı</div>
-          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Adana Havalimanı</div>
-          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Tüm Havalimanları</div>   
+          <div class="text5"><a class="text5" href="#"><font-awesome-icon icon="fa-solid fa-caret-right" /> İstanbul Havalimanı</a></div>
+          <div class="text5"><a class="text5" href="#"><font-awesome-icon icon="fa-solid fa-caret-right" /> Sabiha Gökçen Havalimanı</a></div>
+          <div class="text5"><a class="text5" href="#"><font-awesome-icon icon="fa-solid fa-caret-right" /> Esenboğa Havalimanı</a></div>
+          <div class="text5"><a class="text5" href="#"><font-awesome-icon icon="fa-solid fa-caret-right" /> Antalya Havalimanı</a></div>
+          <div class="text5"><a class="text5" href="#"><font-awesome-icon icon="fa-solid fa-caret-right" /> Adnan Menderes Havalimanı</a></div>
+          <div class="text5"><a class="text5" href="#"><font-awesome-icon icon="fa-solid fa-caret-right" /> Adana Havalimanı</a></div>
+          <div class="text5"><a class="text5" href="#"><font-awesome-icon icon="fa-solid fa-caret-right" /> Tüm Havalimanları</a></div> 
         </div>
         <div class="col-4">
           <div class="text5"><b>Popüler Rent A Car Firmaları</b></div>
-          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Garenta</div>
-          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Rentgo</div>
-          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Green Motion</div>
-          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Asist Car Rental</div>
-          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Central</div>
-          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Novacar</div>
-          <div class="text5"><img src="@/images/Footer/logo2.png" alt="..." style="margin-right:1rem">Tüm Firmalar</div>   
+          <div class="text5"><a class="text5" href="#"><font-awesome-icon icon="fa-solid fa-caret-right" /> Garenta</a></div>
+          <div class="text5"><a class="text5" href="#"><font-awesome-icon icon="fa-solid fa-caret-right" /> Rentgo</a></div>
+          <div class="text5"><a class="text5" href="#"><font-awesome-icon icon="fa-solid fa-caret-right" /> Green Motion</a></div>
+          <div class="text5"><a class="text5" href="#"><font-awesome-icon icon="fa-solid fa-caret-right" /> Asist Car Rental</a></div>
+          <div class="text5"><a class="text5" href="#"><font-awesome-icon icon="fa-solid fa-caret-right" /> Central</a></div>
+          <div class="text5"><a class="text5" href="#"><font-awesome-icon icon="fa-solid fa-caret-right" /> Novacar</a></div>
+          <div class="text5"><a class="text5" href="#"><font-awesome-icon icon="fa-solid fa-caret-right" /> Tüm Firmalar</a></div>   
         </div>
         </div></div>
         <div class="col-2">
@@ -114,13 +114,14 @@
               </div>
             </div>
           </button>
-          <div>
+          <div class="row">
+            <div class="col">
           <div class="logo" style="padding-top:1.5vh;">
 
-            <div class="row">
+            <div >
               <a href="#" class="a2"><font-awesome-icon icon="fa-brands fa-facebook" /></a>
             </div>
-            <div >
+            <div>
               <a href="#" class="a2"><font-awesome-icon icon="fa-brands fa-instagram" /></a>
             </div>
             <div>
@@ -129,7 +130,9 @@
             <div >
               <a href="#" class="a2"><font-awesome-icon icon="fa-brands fa-twitter" /></a>
             </div>
+            <div class="col-4"></div>
           </div>
+        </div>
        </div>
         </div>
         </div>

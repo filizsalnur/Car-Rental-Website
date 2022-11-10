@@ -3,11 +3,11 @@
 
 <div class="center">
   <div class="text21"><b>Güncel</b> Blog</div>
-  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <div id="demo8" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#demo8" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo8" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo8" data-bs-slide-to="2"></button>
     </div>
 
     <div class="carousel-inner" >

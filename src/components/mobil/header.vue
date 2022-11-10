@@ -26,7 +26,7 @@
     <div class="text3"><img  src="@/images/mobil/header/rezervasyon.png" alt="icon" style="margin-right:3vw;">Rezervasyon Sorgula</div>
     <div class="text3"><img  src="@/images/mobil/header/para.png" alt="icon" style="margin-right:3vw;">Türkçe / TRY<img  src="@/images/mobil/header/turkey.png" alt="icon" style="margin-left:2vw"></div>
     <div ><img  src="@/images/mobil/header/line.png" alt="icon"></div>
-    <div class="text3" style="margin-top:2vh"><img  src="@/images/mobil/header/ara.png" alt="icon" style="margin-right:3vw;">Bize Ulaşın</div>
+    <div class="text3" style="margin-top:2vh"><font-awesome-icon icon="fa-solid fa-headset" style="margin-right:3vw;"/>Bize Ulaşın</div>
     <div ><img  src="@/images/mobil/header/line.png" alt="icon"></div>
     <div class="text3" style="margin-top:2vh"><img  src="@/images/mobil/header/indir.png" alt="icon" style="margin-right:3vw;">Uygulamamızı İndirin</div>
   </div>
