@@ -1,6 +1,7 @@
 <template>
+
     <div class="space" v-if="logController==false">
- <div style="margin-top:2vh"><button class="button1">Giriş Yap</button><button class="button2" @click="logController=true">Üye Ol</button></div>
+ <div  style="margin-top:2vh;"><button class="button1">Giriş Yap</button><button class="button2" @click="logController=true">Üye Ol </button></div>
 <div class="text1">Hoşgeldiniz</div>  
 <div class="text2">Giriş Yapın</div>  
 <div class="space2">
@@ -18,7 +19,7 @@
 
 
   <div class="space" v-if="logController==true">
- <div style="margin-top:2vh"><button class="button2" @click="logController=false">Giriş Yap</button><button class="button1">Üye Ol</button></div>
+ <div style="margin-top:2vh"><button class="button5" @click="logController=false">Giriş Yap</button><button class="button4">Üye Ol</button></div>
  <div class="space3">
 				<form>
                     <input type="text" name="name" placeholder="Ad/Soyad" required="" style="width:13vw;margin-top:2.5vh">
@@ -39,6 +40,7 @@
 			</div>
 
 </div>
+
   </template>
   
   <script>
@@ -62,8 +64,8 @@
     width:17vw;
     height:45vh;
     background-color: #25459a;
-    margin-left: 30vw;
-
+    margin-left: 41vw;
+    margin-top:10px;
   }
   .space2{
     position:relative;
@@ -88,6 +90,7 @@
     margin-top: 3vh;
 
   }
+
   .checkLine{
 
 text-align: center;
@@ -102,8 +105,6 @@ align-items: center;
     
   }
   .center{
-    margin:0 auto;
-    width: 60%;
     display:flex;
       justify-content: space-between;
       align-items: center;
@@ -145,19 +146,57 @@ align-items: center;
     border: none;
     font-family: "Quicksand" ;
     font-size: 0.8vw;
-    border-radius: 8px;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 5;
+
   }
   .button2 {
     height: 4vh;
-    width : 6vw;
+    width : 12vw;
     background-color: #ffffff;
     color: #2a2a2a;
     border: 1px solid #98a7cf;
     font-family: "Quicksand" ;
     font-size: 0.8vw;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 4;
+    text-align: right;
+    padding-right: 1.5vw;
   }
+  .button4 {
+    height: 4vh;
+    width : 6vw;
+    background-color: #fcb101;
+    color: #2a2a2a;
+    border: none;
+    font-family: "Quicksand" ;
+    font-size: 0.8vw;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 5;
+    margin-left: -6vw;
+
+  }
+  .button5 {
+    height: 4vh;
+    width : 12vw;
+    background-color: #ffffff;
+    color: #2a2a2a;
+    border: 1px solid #98a7cf;
+    font-family: "Quicksand" ;
+    font-size: 0.8vw;
+    cursor: pointer;
+    border-radius: 20px;
+    position: relative;
+    z-index: 4;
+    text-align: left;
+    padding-left: 1.5vw;
+
+  }
+  
   .button3 {
     height: 4vh;
     width : 13vw;
@@ -168,6 +207,7 @@ align-items: center;
     font-size: 0.8vw;
     border-radius: 8px;
     margin-top:1vh;
+
   }
   
   .card{

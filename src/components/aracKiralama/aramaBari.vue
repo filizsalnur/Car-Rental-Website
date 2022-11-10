@@ -165,7 +165,7 @@ height: 6vh;/*59px*/
 }
 .image{
   margin-top:26px;
-  width: 60vw;
+  width: 59vw;
   position: absolute;
   z-index: 1;
 }

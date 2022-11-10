@@ -3,7 +3,7 @@
   <div class="navbar1">
     <div class="center">
         <div>
-        <img alt="Logo" src="@/images/Header/Logo.png"  class="logo">
+          <router-link to="/"><img alt="Logo" src="@/images/Header/Logo.png"  class="logo"></router-link>
   
       </div>
       <div>
