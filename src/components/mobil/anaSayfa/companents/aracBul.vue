@@ -1,13 +1,13 @@
 <template>
-    <div class="background"></div>
+    <div class="background" @click="center()"></div>
      <div class="center"> <!--Ana Sayfanın kenar kısıtlamlarını belirler-->
    
-       <div class="text1">SENİN İÇİN EN UYGUN ARACI</div>
-       <div class="text2">ara, bul ve kirala</div>
+       <div class="text1"  @click="center()">SENİN İÇİN EN UYGUN ARACI</div>
+       <div class="text2" @click="center()">ara, bul ve kirala</div>
    
     <!--Uygun araç bul-->
 
-       <div class="center2" v-if="kiralaController==false">
+       <div class="center2" v-if="kiralaController==false" @click="center()">
        
            <div ><button class="button1">Günlük Kiralama</button></div>
            <div style="width:2vw"></div>
@@ -32,27 +32,47 @@
            <div>
      
 
-           <div class="nav-left">
-           <button class="button3" @click="aramaBariController=!aramaBariController"><div class="text4"> <font-awesome-icon icon="fa-solid fa-location-dot" style="color:#25459a"/> Nereden Alacaksınız?</div></button>
-           </div>
-           <div v-if="aramaBariController==true"><aramaBari/></div>
+            <div class="nav-left">
+          <div class="nav-left" v-if="aramaBariController==false">
+        <button class="button3" @click="aramaBariController=!aramaBariController"><div class="text4"> <font-awesome-icon icon="fa-solid fa-location-dot" style="color:#25459a"/> Nereden Alacaksınız?</div></button>
+        </div></div>
+        <div v-if="aramaBariController==true">
+        <input v-model="filter" placeholder=" Nereden Alacaksınız?" class="button3" />
+        <div class="dropdown" v-if="aramaBariController==true && filter!='' ">
+        <div v-for="item in filteredItems" :key="item.id" @click="onClickItem(item)" class="text5">
+          {{ item.name }}
+        </div>
+      </div>
+      <div v-if="aramaBariController==true && filter=='' " style="margin-top:-10vh"><aramaBari/></div> 
+      </div>
+
+
            <div class="nav-left">
            <div v-if="checkerForm==true">
-            <div v-if="aramaBari2Controller==true"><aramaBari/></div>
-           <button class="button3"  @click="aramaBari2Controller=!aramaBari2Controller"><div class="text4"> <font-awesome-icon icon="fa-solid fa-location-dot" style="color:#ea002a"/> Nerede Bırakacaksınız?</div></button>
-           </div>
+            <div v-if="checkerForm==true" style="margin-top:1vh">
+          <div  v-if="aramaBari2Controller==true && filter2=='' " ><aramaBari/></div>  
+        <button class="button3" v-if="aramaBari2Controller==false" @click="aramaBari2Controller=!aramaBari2Controller"><div class="text4"> <font-awesome-icon icon="fa-solid fa-location-dot" style="color:#ea002a"/> Nerede Bırakacaksınız?</div></button>
+        <div v-if="aramaBari2Controller==true">
+        <input v-model="filter2" placeholder=" Nereye Bırakacaksınız?" class="button3" />
+        <div class="dropdown" v-if="aramaBari2Controller==true && filter2!='' ">
+        <div v-for="item in filteredItems2" :key="item.id" @click="onClickItem2(item)" class="text5">
+          <div style="left:2vw">{{ item.name }}</div>
+        </div>
+      </div>
+      </div>
+      </div>           </div>
     
-           <div class="text6">
+           <div class="text6" v-if="aramaBariController==false && aramaBari2Controller==false">
             <div v-if="checkerForm==false" @click="check()"><font-awesome-icon icon="fa-solid fa-square" /> Farklı bir yerde teslim etmek istiyorum</div>
         <div v-if="checkerForm==true" @click="check()"><font-awesome-icon icon="fa-solid fa-square-check" /> Farklı bir yerde teslim etmek istiyorum</div>
            </div>
          </div>
          <div >
-           <div class="nav-left">
+           <div class="nav-left" v-if="aramaBariController==false && aramaBari2Controller==false">
            <button class="button4" > <Datepicker v-model="date" range :partialRange="false" /></button>
              <button class="button5">Uygun Araçları Bul <font-awesome-icon icon="fa-solid fa-magnifying-glass" /></button>
            </div>
-       
+          <div style="height:30vh" v-if="aramaBariController==true || aramaBari2Controller==true"></div>
          </div>
        </div>
     
@@ -157,8 +177,24 @@
            checkerForm:false,
            metinController:false,
            kiralaController:false,
+           filter: "",
+        filter2: "",
+        selected: null,
+        items: [
+          { id: 1, name: "Istanbul Havalimani" },
+          { id: 2, name: "Ankara Havalimani" },
+          { id: 3, name: "Izmir Havalimani" },
+        ]
          }
        },
+       computed: {
+    filteredItems() {
+      return this.items.filter(item => item.name.includes(this.filter));
+    },
+    filteredItems2() {
+      return this.items.filter(item => item.name.includes(this.filter2));
+    },
+  },
        setup() {
            const date = ref();
            
@@ -170,6 +206,20 @@
        check() {
          this.checkerForm=!this.checkerForm;
        },
+       center(){
+        this.aramaBariController=false;
+        this.aramaBari2Controller=false;
+      },
+          onClickItem(item) {
+      this.selected = item;
+      this.filter = item.name;
+      this.aramaBariController = false;
+    },
+    onClickItem2(item) {
+      this.selected = item;
+      this.filter2 = item.name;
+      this.aramaBari2Controller = false;
+    }
    
      },
      }
@@ -203,7 +253,19 @@
  
 
    }
-   
+   .dropdown {
+  position: absolute;
+  width:90vw;
+
+    margin-top:10px;
+    background-color: #ffffff;
+    margin-left: 1px;
+    font-size: 3vw;/*60pt*/
+  color: #2a2a2a;
+  text-align: left;
+  line-height: 4vh;
+  border:1px solid #2a2a2a;
+}
    .nav-left{
      margin-left: 0;
      left:0 ;

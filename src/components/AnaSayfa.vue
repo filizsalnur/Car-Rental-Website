@@ -23,7 +23,7 @@
     <div class="show-on-mobile"> <mobileAciklama/></div>
 
     <div class="show-on-deskop"> <deskopBlog/></div>
-    <div class="show-on-tablet"> <deskopBlog/></div>
+    <div class="show-on-tablet"> <tabletBlog/></div>
     <div class="show-on-mobile"> <mobileBlog/></div>
 
     <div class="show-on-deskop"> <FooterApp/></div>
@@ -58,6 +58,7 @@ import Aciklama from './componentsAnaSayfa/aciklama.vue';
 import mobileAciklama from './mobil/anaSayfa/companents/aciklama.vue';
 
 import deskopBlog from './componentsAnaSayfa/blog.vue';
+import tabletBlog from './componentsAnaSayfa/tabletBlog.vue';
 import mobileBlog from './mobil/anaSayfa/companents/blog.vue';
 
 
@@ -86,6 +87,7 @@ export default {
     tabletFooter,
     mobileFooter, 
     mobileBlog,
+    tabletBlog,
     tabletAracBul,
   },
   data() {

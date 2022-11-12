@@ -85,9 +85,9 @@ export default {
   .space{
     position:absolute;
     z-index:20;
-    width:24.5vw;
+    width:56.5vw;
 
-    margin-top:9vh;
+    margin-top:6vh;
     background-color: #ffffff;
 
   }
@@ -95,7 +95,7 @@ export default {
 .text1{
   position: relative;
   font-family: "Quicksand" ;
-  font-size: 1vw;/*60pt*/
+  font-size: 1.7vw;/*60pt*/
   color: #2a2a2a;
   text-align: left;
   left:2vw;
@@ -105,7 +105,7 @@ export default {
 .text2{
   position: relative;
   font-family: "Quicksand" ;
-  font-size: 1vw;/*60pt*/
+  font-size: 1.7vw;/*60pt*/
   color: #2a2a2a;
   text-align: left;
 

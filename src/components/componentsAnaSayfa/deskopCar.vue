@@ -92,7 +92,7 @@
   align-items: center;
 }
 .image{
-  width: 15vw;
+  width: 12vw;
 }
 .text7{
     position: relative;
