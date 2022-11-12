@@ -392,7 +392,7 @@ z-index: 1;
 }
 .space5{
   position: relative;
-  z-index: 7;
+  z-index:7;
   width: 100%;
 }
 .image2 {

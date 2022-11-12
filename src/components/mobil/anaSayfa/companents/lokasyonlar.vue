@@ -1,9 +1,9 @@
 <template>
- <div class="center">
-      <div class="container" style="margin-top:3em">
+ <div class="center" >
+      <div class="container" style="margin-bottom:4vh;margin-top:3em">
         <div class="row">
         <div class="col-12">
-          <div class="text7"><b>Popüler Lokasyonlar</b></div>
+          <div class="text17" style="margin-bottom:1vh"><b>Popüler Lokasyonlar</b></div>
         </div>
         </div>
  
@@ -11,7 +11,7 @@
           <div class="card">
             <div class="row ">
               <div class="col-1">
-                <img src="@/images/AnaSayfa/konumIcon.png" alt="..." style="margin:0 auto;width: 75px;">
+                <div class="space2"><font-awesome-icon icon="fa-solid fa-location-arrow" class="icon"/></div>
               </div>
               <div class="col-11">
                 <div class="row ">
@@ -20,7 +20,7 @@
                       <div class="text14">240 TL'den Başlayan Fiyatlarla</div>
                     </div>
                     <div class="col-2">
-                      <img src="@/images/AnaSayfa/ok.png" alt="..." style="margin-top:17px">
+                      <font-awesome-icon icon="fa-solid fa-chevron-right" style="margin-right: 0.5vw;margin-top:17px"/> 
                     </div>
             </div>   
               </div>
@@ -31,7 +31,7 @@
           <div class="card">
             <div class="row ">
               <div class="col-1">
-                <img src="@/images/AnaSayfa/konumIcon.png" alt="..." style="margin:0 auto;width: 75px;">
+                <div class="space2"><font-awesome-icon icon="fa-solid fa-location-arrow" class="icon"/></div>
               </div>
               <div class="col-11">
                 <div class="row ">
@@ -40,7 +40,7 @@
                       <div class="text14">240 TL'den Başlayan Fiyatlarla</div>
                     </div>
                     <div class="col-2">
-                      <img src="@/images/AnaSayfa/ok.png" alt="..." style="margin-top:17px">
+                      <font-awesome-icon icon="fa-solid fa-chevron-right" style="margin-right: 0.5vw;margin-top:17px"/> 
                     </div>
             </div>   
               </div>
@@ -51,7 +51,7 @@
           <div class="card">
             <div class="row ">
               <div class="col-1">
-                <img src="@/images/AnaSayfa/konumIcon.png" alt="..." style="margin:0 auto;width: 75px;">
+                <div class="space2"><font-awesome-icon icon="fa-solid fa-location-arrow" class="icon"/></div>
               </div>
               <div class="col-11">
                 <div class="row ">
@@ -60,7 +60,7 @@
                       <div class="text14">240 TL'den Başlayan Fiyatlarla</div>
                     </div>
                     <div class="col-2">
-                      <img src="@/images/AnaSayfa/ok.png" alt="..." style="margin-top:17px">
+                      <font-awesome-icon icon="fa-solid fa-chevron-right" style="margin-right: 0.5vw;margin-top:17px"/> 
                     </div>
             </div>   
               </div>
@@ -71,7 +71,7 @@
           <div class="card">
             <div class="row ">
               <div class="col-1">
-                <img src="@/images/AnaSayfa/konumIcon.png" alt="..." style="margin:0 auto;width: 75px;">
+                <div class="space2"><font-awesome-icon icon="fa-solid fa-location-arrow" class="icon"/></div>
               </div>
               <div class="col-11">
                 <div class="row ">
@@ -80,7 +80,7 @@
                       <div class="text14">240 TL'den Başlayan Fiyatlarla</div>
                     </div>
                     <div class="col-2">
-                      <img src="@/images/AnaSayfa/ok.png" alt="..." style="margin-top:17px">
+                      <font-awesome-icon icon="fa-solid fa-chevron-right" style="margin-right: 0.5vw;margin-top:17px"/> 
                     </div>
             </div>   
               </div>
@@ -93,7 +93,7 @@
           <div class="card">
             <div class="row ">
               <div class="col-1">
-                <img src="@/images/AnaSayfa/konumIcon.png" alt="..." style="margin:0 auto;width: 75px;">
+                <div class="space2"><font-awesome-icon icon="fa-solid fa-location-arrow" class="icon"/></div>
               </div>
               <div class="col-11">
                 <div class="row ">
@@ -102,7 +102,7 @@
                       <div class="text14">240 TL'den Başlayan Fiyatlarla</div>
                     </div>
                     <div class="col-2">
-                      <img src="@/images/AnaSayfa/ok.png" alt="..." style="margin-top:17px">
+                      <font-awesome-icon icon="fa-solid fa-chevron-right" style="margin-right: 0.5vw;margin-top:17px"/> 
                     </div>
             </div>   
               </div>
@@ -113,7 +113,7 @@
           <div class="card">
             <div class="row ">
               <div class="col-1">
-                <img src="@/images/AnaSayfa/konumIcon.png" alt="..." style="margin:0 auto;width: 75px;">
+                <div class="space2"><font-awesome-icon icon="fa-solid fa-location-arrow" class="icon"/></div>
               </div>
               <div class="col-11">
                 <div class="row ">
@@ -122,14 +122,15 @@
                       <div class="text14">240 TL'den Başlayan Fiyatlarla</div>
                     </div>
                     <div class="col-2">
-                      <img src="@/images/AnaSayfa/ok.png" alt="..." style="margin-top:17px">
+                      <font-awesome-icon icon="fa-solid fa-chevron-right" style="margin-right: 0.5vw;margin-top:17px"/> 
                     </div>
             </div>   
               </div>
             </div>
           </div>
         </div>
-        <a class="text7" href="#">Tüm Lokasyonları Gör</a>
+        <div class="text7" style="float:right;margin-top:0.5vh"><a href="#">Tüm Lokasyonları Gör <font-awesome-icon icon="fa-solid fa-chevron-right" style="margin-right: 0.5vw;"/></a></div>
+
         </div>
       </div><!--lokasyonlar bitiş-->
   
@@ -170,14 +171,20 @@
   align-items: center;
 
 }
+.space2{
+  width:18vw;
+  height: 7vh;
+  background-color: #e6ecf8;
+  align-items: center;
+}
   .text7{
     position: relative;
     font-family: "Quicksand" ;
-    font-size: 4vw;
+    font-size: 3vw;
     color: #2a2a2a;
     margin-top: 1vh;
     float: center;
-  
+    margin-bottom: 2vh;
   }
   
   .text13{
@@ -211,5 +218,19 @@
     margin-top:0.25rem ;
     line-height: 0.50rem;
   }
+  .text17{
+    position: relative;
+    font-family: "Quicksand" ;
+    font-size: 4vw;/*15pt*/
+    color: #4e5e7c;
+    text-align: left;
+    margin-right: 0.8em;
   
+  }
+  .icon{
+    color:#4e5e7c;
+    width: 25px;
+    height: 25px;
+    margin-top: 2vh;
+  }
   </style>

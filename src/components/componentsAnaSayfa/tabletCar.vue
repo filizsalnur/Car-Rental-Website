@@ -1,7 +1,9 @@
 <template>
     <div class="center">
     <div class="container"><!--Araba oklar Büyük Ekranlar-->
-      <div class="row g-3" style="margin-top:4rem"> 
+      
+      <div class="text17" style="margin-top:5vh"><b>Neden Kiralacar?</b></div>
+      <div class="row g-3" style="margin-top:1vh"> 
         <div class="col-6">
           <div class="row">
             <div class="col">

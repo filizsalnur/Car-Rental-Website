@@ -9,14 +9,16 @@
 
        <div class="center2" v-if="kiralaController==false">
        
-           <div style="margin-left:5vw"><button class="button1">Günlük Kiralama</button></div>
-           <div style="margin-right:5vw"><button class="button2" @click="kiralaController=true">Aylık Kiralama</button></div>
+           <div ><button class="button1">Günlük Kiralama</button></div>
+           <div style="width:2vw"></div>
+           <div ><button class="button2" @click="kiralaController=true">Aylık Kiralama</button></div>
          
        </div>
        <div class="center2" v-if="kiralaController==true">
        
-       <div style="margin-left:5vw"><button class="button2" @click="kiralaController=false" >Günlük Kiralama</button></div>
-       <div style="margin-right:5vw"><button class="button1" >Aylık Kiralama</button></div>
+       <div ><button class="button2" @click="kiralaController=false" >Günlük Kiralama</button></div>
+       <div style="width:2vw"></div>
+       <div ><button class="button1" >Aylık Kiralama</button></div>
      
       </div>
 
@@ -359,17 +361,17 @@
     z-index:1;
 }
    .icon{
-     margin-left: 22vw;/*72px*/
+     margin-left: 17vw;/*72px*/
      position: relative; 
      float: left;
-     margin-top: -0.2vh;
+     margin-top: -0.3vh;
      top: 0;
    }
    .icon2{
-     margin-left: 62.5vw;/*72px*/
+     margin-left: 68vw;/*72px*/
      position: relative; 
      float: left;
-     margin-top: -0.2vh;
+     margin-top: -0.3vh;
      top: 0;
    }
 

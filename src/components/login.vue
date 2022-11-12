@@ -37,7 +37,7 @@
         </div>
 
         </div>
-					<div><button class="button3"><b>Üye Ol</b></button></div>
+					<div ><button class="button3"><b>Üye Ol</b></button></div>
 				</form>
 			</div>
 </div>
@@ -50,6 +50,7 @@
     data() {
       return {
         logController:false,
+
       }
     },
     methods: {
@@ -60,29 +61,29 @@
   <style scoped>
   .space{
     position:absolute;
-    z-index:4;
-    width:17vw;
-    height:45vh;
+    z-index:9;
+    width:300px;
+    height:450px;
     background-color: #25459a;
     margin-left: 41vw;
     margin-top:10px;
   }
   .space2{
     position:relative;
-    z-index:5;
-    width:14vw;
-    height:22vh;
+    z-index:9;
+    width:260px;
+    height:200px;
     background-color: #ffffff;
     align-self: center;
     margin:0 auto;
     border-radius: 8px;
-    margin-top: 3vh;
+    margin-top: 30px;
   }
   .space3{
     position:relative;
-    z-index:5;
-    width:14vw;
-    height:30vh;
+    z-index:9;
+    width:260px;
+    height:270px;
     background-color: #ffffff;
     align-self: center;
     margin:0 auto;
@@ -121,7 +122,7 @@ align-items: center;
   }
   .text1{
     font-family: "Quicksand" ;
-    font-size: 1.5vw;
+    font-size: 18pt;
     color: #ffffff;
     margin-bottom: 1vh;
     padding-bottom: 0;
@@ -129,7 +130,7 @@ align-items: center;
   }
   .text2{
     font-family: "Poppins" ;
-    font-size: 12pt;
+    font-size: 14pt;
     color: #ffffff;
     margin-top: 0;
     padding-top: 0;
@@ -137,78 +138,78 @@ align-items: center;
   }
   .text3{
     font-family: "Quicksand" ;
-    font-size: 0.8vw;
+    font-size: 12px;
     color: #ffffff;
     padding-bottom: 0;
-    margin-top:1vh;
+    margin-top:30px;
   }
   .button1 {
-    height: 4vh;
-    width : 6vw;
+    height: 40px;
+    width : 125px;
     background-color: #fcb101;
     color: #2a2a2a;
     border: none;
     font-family: "Quicksand" ;
-    font-size: 0.8vw;
+    font-size: 12pt;
     border-radius: 20px;
     position: absolute;
-    z-index: 5;
+    z-index: 10;
 
   }
   .button2 {
-    height: 4vh;
-    width : 12vw;
+    height: 40px;
+    width : 250px;
     background-color: #ffffff;
     color: #2a2a2a;
     border: 1px solid #98a7cf;
     font-family: "Quicksand" ;
-    font-size: 0.8vw;
+    font-size:  12pt;
     cursor: pointer;
     border-radius: 20px;
     position: relative;
-    z-index: 4;
+    z-index: 9;
     text-align: right;
-    padding-right: 1.5vw;
+    padding-right: 45px;
   }
   .button4 {
-    height: 4vh;
-    width : 6vw;
+    height: 40px;
+    width : 125px;
     background-color: #fcb101;
     color: #2a2a2a;
     border: none;
     font-family: "Quicksand" ;
-    font-size: 0.8vw;
+    font-size: 12pt;
     border-radius: 20px;
     position: absolute;
-    z-index: 5;
-    margin-left: -6vw;
+    z-index: 9;
+    margin-left: -125px;
 
   }
   .button5 {
-    height: 4vh;
-    width : 12vw;
+    height: 40px;
+    width : 250px;
     background-color: #ffffff;
     color: #2a2a2a;
     border: 1px solid #98a7cf;
     font-family: "Quicksand" ;
-    font-size: 0.8vw;
+    font-size: 12pt;
     cursor: pointer;
     border-radius: 20px;
     position: relative;
-    z-index: 4;
+    z-index: 9;
     text-align: left;
-    padding-left: 1.5vw;
+    padding-left: 45px;
 
   }
   
   .button3 {
-    height: 4vh;
-    width : 13vw;
+    height: 40px;
+    width : 250px;
     background-color: #fcb101;
-    color: #2a2a2a;
+    color: #ffffff;
     border: none;
     font-family: "Quicksand" ;
-    font-size: 0.8vw;
+    font-size: 14pt;
     border-radius: 8px;
     margin-top:1vh;
 

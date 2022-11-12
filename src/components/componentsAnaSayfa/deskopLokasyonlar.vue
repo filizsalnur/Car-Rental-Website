@@ -9,31 +9,37 @@
         <div class="row g-0">
         <div class="col-6">
           <div class="card">
-            <div class="row ">
-              <div class="col-2">
-                <img src="@/images/AnaSayfa/konumIcon.png" alt="..." style="margin:0 auto">
+            <div class="space ">
+              <div class="space2">
+                <font-awesome-icon icon="fa-solid fa-location-arrow" class="icon"/>
               </div>
-              <div class="col-10">
-                  <div class="text13" >İzmir Şehir Merkezi Araç Kirala</div>
+              <div >
+  
+                  <div class="text13">İzmir Şehir Merkezi Araç Kirala</div>
                   <div class="space">
                       <div class="text14">240 TL'den Başlayan Fiyatlarla</div>
-                      <div class="text15">En Uygun Araçları Bul<img src="@/images/AnaSayfa/ok.png" alt="..." style="margin-left:0.5rem;margin-right:0.5rem"></div>
+                      <div style="width:2vw"></div>
+                      <div class="text15">En Uygun Araçları Bul <font-awesome-icon icon="fa-solid fa-chevron-right" style="margin-right: 0.5vw;"/> </div>
               </div></div>
+
             </div>
           </div>
         </div>
         <div class="col-6">
           <div class="card">
-            <div class="row ">
-              <div class="col-2">
-                <img src="@/images/AnaSayfa/konumIcon.png" alt="...">
+            <div class="space ">
+              <div class="space2">
+                <font-awesome-icon icon="fa-solid fa-location-arrow" class="icon"/>
               </div>
-              <div class="col-10">
+              <div >
+  
                   <div class="text13">İzmir Şehir Merkezi Araç Kirala</div>
                   <div class="space">
                       <div class="text14">240 TL'den Başlayan Fiyatlarla</div>
-                      <div class="text15">En Uygun Araçları Bul<img src="@/images/AnaSayfa/ok.png" alt="..." style="margin-left:0.5rem;margin-right:0.5rem"></div>
+                      <div style="width:2vw"></div>
+                      <div class="text15">En Uygun Araçları Bul <font-awesome-icon icon="fa-solid fa-chevron-right" style="margin-right: 0.5vw;"/> </div>
               </div></div>
+
             </div>
           </div>
         </div>
@@ -41,33 +47,37 @@
         <div class="row g-1" style="margin-top: 0.2rem;">
         <div class="col-6">
           <div class="card">
-            <div class="row ">
-              <div class="col-2">
-                <img src="@/images/AnaSayfa/konumIcon.png" alt="..." style="margin:0 auto">
+            <div class="space ">
+              <div class="space2">
+                <font-awesome-icon icon="fa-solid fa-location-arrow" class="icon"/>
               </div>
-              <div class="col-10">
-                  <div class="text13">İzmir Şehir Merkezi Araç Kirala</div>
-                  <div class="space">
-                      <div class="text14">240 TL'den Başlayan Fiyatlarla</div>
-                      <div class="text15">En Uygun Araçları Bul<img src="@/images/AnaSayfa/ok.png" alt="..." style="margin-left:0.5rem;margin-right:0.5rem"></div>            </div>
-                    </div>
-                    </div>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="card">
-            <div class="row ">
-              <div class="col-2">
-                <img src="@/images/AnaSayfa/konumIcon.png" alt="..." style="margin:0 auto">
-              </div>
-              <div class="col-10">
+              <div >
   
                   <div class="text13">İzmir Şehir Merkezi Araç Kirala</div>
                   <div class="space">
                       <div class="text14">240 TL'den Başlayan Fiyatlarla</div>
-                      <div class="text15">En Uygun Araçları Bul<img src="@/images/AnaSayfa/ok.png" alt="..." style="margin-left:0.5rem;margin-right:0.5rem"></div>
-                    </div>
-                    </div>
+                      <div style="width:2vw"></div>
+                      <div class="text15">En Uygun Araçları Bul <font-awesome-icon icon="fa-solid fa-chevron-right" style="margin-right: 0.5vw;"/> </div>
+              </div></div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card">
+            <div class="space ">
+              <div class="space2">
+                <font-awesome-icon icon="fa-solid fa-location-arrow" class="icon"/>
+              </div>
+              <div >
+  
+                  <div class="text13">İzmir Şehir Merkezi Araç Kirala</div>
+                  <div class="space">
+                      <div class="text14">240 TL'den Başlayan Fiyatlarla</div>
+                      <div style="width:2vw"></div>
+                      <div class="text15">En Uygun Araçları Bul <font-awesome-icon icon="fa-solid fa-chevron-right" style="margin-right: 0.5vw;"/> </div>
+              </div></div>
+
             </div>
           </div>
         </div>
@@ -75,38 +85,43 @@
         <div class="row g-1" style="margin-top: 0.2rem;">
         <div class="col-6">
           <div class="card">
-            <div class="row ">
-              <div class="col-2">
-                <img src="@/images/AnaSayfa/konumIcon.png" alt="..." style="margin:0 auto">
+            <div class="space ">
+              <div class="space2">
+                <font-awesome-icon icon="fa-solid fa-location-arrow" class="icon"/>
               </div>
-              <div class="col-10">
+              <div >
   
                   <div class="text13">İzmir Şehir Merkezi Araç Kirala</div>
                   <div class="space">
                       <div class="text14">240 TL'den Başlayan Fiyatlarla</div>
-                      <div class="text15">En Uygun Araçları Bul<img src="@/images/AnaSayfa/ok.png" alt="..." style="margin-left:0.5rem;margin-right:0.5rem"></div>
+                      <div style="width:2vw"></div>
+                      <div class="text15">En Uygun Araçları Bul <font-awesome-icon icon="fa-solid fa-chevron-right" style="margin-right: 0.5vw;"/> </div>
               </div></div>
+
             </div>
           </div>
         </div>
         <div class="col-6">
           <div class="card">
-            <div class="row ">
-              <div class="col-2">
-                <img src="@/images/AnaSayfa/konumIcon.png" alt="..." style="margin:0 auto">
+            <div class="space ">
+              <div class="space2">
+                <font-awesome-icon icon="fa-solid fa-location-arrow" class="icon"/>
               </div>
-              <div class="col-10">
+              <div >
   
                   <div class="text13">İzmir Şehir Merkezi Araç Kirala</div>
                   <div class="space">
                       <div class="text14">240 TL'den Başlayan Fiyatlarla</div>
-                      <div class="text15">En Uygun Araçları Bul<img src="@/images/AnaSayfa/ok.png" alt="..." style="margin-left:0.5rem;margin-right:0.5rem"></div>
+                      <div style="width:2vw"></div>
+                      <div class="text15">En Uygun Araçları Bul <font-awesome-icon icon="fa-solid fa-chevron-right" style="margin-right: 0.5vw;"/> </div>
               </div></div>
+
             </div>
           </div>
         </div>
         </div>
         </div>
+        <div style="float:right;margin-top:0.5vh"><a href="#">Tüm Lokasyonları Gör <font-awesome-icon icon="fa-solid fa-chevron-right" style="margin-right: 0.5vw;"/></a></div>
       </div><!--lokasyonlar bitiş-->
   
   
@@ -144,6 +159,13 @@
   display:flex;
   justify-content: space-between;
   align-items: center;
+
+}
+.space2{
+  width:6vw;
+  height: 7vh;
+  background-color: #e6ecf8;
+  align-items: center;
 }
   .text7{
     position: relative;
@@ -160,8 +182,7 @@
     font-size: 1vw;/*15pt*/
     color: #7a7a7a;
     text-align: left;
-    margin-left: 3rem;
-    margin-top: 1vh;
+    margin-left: 1vw;
     padding-top:1vh;
     line-height: 0.1vw;
     top:0;
@@ -172,7 +193,7 @@
     font-size: 0.75vw;/*15pt*/
     color: #2a2a2a;
     text-align: left;
-    margin-left: 3rem;
+    margin-left: 1vw;
     margin-top:2vh ;
     
   }
@@ -186,5 +207,10 @@
     margin-top:2vh ;
     line-height: 0.50rem;
   }
-  
+  .icon{
+    color:#4e5e7c;
+    width: 30px;
+    height: 30px;
+    margin-top: 2vh;
+  }
   </style>

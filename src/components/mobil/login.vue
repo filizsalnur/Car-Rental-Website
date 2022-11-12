@@ -1,7 +1,7 @@
 <template>
 
 <div class="space" v-if="logController==false">
-  <div  style="margin-top:2vh;"><button class="button1">Giriş Yap</button><button class="button2" @click="logController=true">Üye Ol </button></div>
+  <div  style="margin-top:50px;"><button class="button1">Giriş Yap</button><button class="button2" @click="logController=true">Üye Ol </button></div>
  <div class="text1">Hoşgeldiniz</div>  
  <div class="text2">Giriş Yapın</div>  
  <div class="space2">
@@ -21,7 +21,7 @@
  
  
    <div class="space" v-if="logController==true">
-  <div style="margin-top:2vh"><button class="button5" @click="logController=false">Giriş Yap</button><button class="button4">Üye Ol</button></div>
+  <div style="margin-top:50px"><button class="button5" @click="logController=false">Giriş Yap</button><button class="button4">Üye Ol</button></div>
   <div class="space3">
          <form id="register">
            <input class="box" type="text" name="name" placeholder="Ad/Soyad" required="" style="width:70vw;margin-top:2.5vh">
@@ -37,7 +37,7 @@
        
  
          </div>
-           <div><button class="button3"><b>Üye Ol</b></button></div>
+           <div><button class="button3" style="margin-top:8vh"><b>Üye Ol</b></button></div>
          </form>
        </div>
  </div>
@@ -72,14 +72,14 @@
     width:100vw;
     height:150vh;
     background-color: #25459a;
-
-
+    position: fixed;
+    margin-top: 80px;
   }
   .space2{
     position:relative;
     z-index:5;
     width:80vw;
-    height:40vh;
+    height:30vh;
     background-color: #ffffff;
     align-self: center;
     margin:0 auto;
@@ -90,12 +90,12 @@
     position:relative;
     z-index:5;
     width:80vw;
-    height:60vh;
+    height:45vh;
     background-color: #ffffff;
     align-self: center;
     margin:0 auto;
     border-radius: 8px;
-    margin-top: 3vh;
+    margin-top: 7vh;
 
   }
   .checkLine{

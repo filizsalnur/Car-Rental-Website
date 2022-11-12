@@ -1,9 +1,13 @@
 <template>
-    <div class="center" style="margin-bottom:5vh">
-    <div class="container"><!--Araba oklar Büyük Ekranlar-->
-      <div class="row g-0" style="margin-top:4rem"> 
+    <div class="center" >
+    <div class="container" style="margin-bottom:5vh"><!--Araba oklar Büyük Ekranlar-->
+      <div class="row g-0" style="margin-top:2vh">
+    <div class="col-12">
+      <div class="text7">Neden Kiralacar?</div>
+    </div></div>
+      <div class="row g-0" style="margin-top:1vh"> 
         <div class="col-4">
-          <div class="row" style="margin-top:15px">
+          <div class="row" style="margin-top:5px">
             <div class="col">
               <div class="text17"><b>Ön Ödeme İmkanı</b></div>
               <img src="@/images/AnaSayfa/line1.png" alt="..." style="width:100%">
@@ -29,7 +33,7 @@
           <img src="@/images/AnaSayfa/car2.png" alt="..." class="image">
         </div>
         <div class="col-4">
-          <div class="row" style="margin-top:15px">
+          <div class="row" style="margin-top:5px">
             <div class="col">
               <div class="text19"><b>En Uygun Fiyatlar</b></div>
               <img src="@/images/AnaSayfa/line2.png" alt="..." style="width:100%">
@@ -90,6 +94,16 @@
 .image{
   width: 15vw;
 }
+.text7{
+    position: relative;
+    font-family: "Quicksand" ;
+    font-size: 19pt;
+    color: #2a2a2a;
+    margin-top: 30px;
+    float: left;
+  
+  }
+  
   .text16{
     position: relative;
     font-family: "Quicksand" ;

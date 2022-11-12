@@ -18,7 +18,8 @@ export default {
     HeaderApp,
     mobileHeader,
     tabletHeader,
-}
+},
+
 }
 </script>
 

@@ -1,7 +1,7 @@
 <template>
     <!--Cards kısmı-->
-    <div class="center">
-      <div class="text7" @click="planeController=true" style="margin-top:3em;"><b>Popüler Havalimanları</b></div>
+    <div class="center" style="margin-top:5vh">
+      <div class="text17" style="margin-bottom:1vh"><b>Popüler Havalimanları</b></div>
       <div v-if="planeController==true">
     
 
@@ -15,8 +15,8 @@
         <div class="text12" >240 TL'den Başlayan Fiyatlarla</div>
         <button class="button7">Hemen Kirala</button>
               </div>
-              <div class="col-5" style="padding-top:2vh">
-                <img src="@/images/mobil/AnaSayfa/plane.png" alt="..." style="margin:0 auto">
+              <div class="col-5" >
+                <img src="@/images/mobil/AnaSayfa/plane.png" alt="..." style="margin:0 auto" class="image">
               </div>
  
           </div>
@@ -29,8 +29,8 @@
         <div class="text12">240 TL'den Başlayan Fiyatlarla</div>
         <button class="button7" >Hemen Kirala</button>
       </div>
-      <div class="col-5" style="padding-top:2vh">
-        <img src="@/images/mobil/AnaSayfa/plane.png" alt="..." style="margin:0 auto">
+      <div class="col-5" >
+        <img src="@/images/mobil/AnaSayfa/plane.png" alt="..." style="margin:0 auto " class="image">
       </div>
     </div>
     </div>
@@ -42,8 +42,8 @@
         <div class="text12">240 TL'den Başlayan Fiyatlarla</div>
         <button class="button7" >Hemen Kirala</button>
       </div>
-      <div class="col-5" style="padding-top:2vh">
-        <img src="@/images/mobil/AnaSayfa/plane.png" alt="..." style="margin:0 auto">
+      <div class="col-5" s>
+        <img src="@/images/mobil/AnaSayfa/plane.png" alt="..." style="margin:0 auto" class="image">
       </div>
     </div>
     </div>
@@ -55,13 +55,14 @@
         <div class="text12">240 TL'den Başlayan Fiyatlarla</div>
         <button class="button7" >Hemen Kirala</button>
       </div>
-      <div class="col-5" style="padding-top:2vh">
-        <img src="@/images/mobil/AnaSayfa/plane.png" alt="..." style="margin:0 auto">
+      <div class="col-5" >
+        <img src="@/images/mobil/AnaSayfa/plane.png" alt="..." style="margin:0 auto" class="image">
       </div>
     </div>
     </div>
   </div>
-  <a class="text7" href="#">Tüm Havalimanlarıni Gör</a>
+  <div class="text7" style="float:right;margin-top:0.5vh"><a href="#">Tüm Lokasyonları Gör <font-awesome-icon icon="fa-solid fa-chevron-right" style="margin-right: 0.5vw;"/></a></div>
+
 </div><!--cards bitiş-->
 </template>
 
@@ -101,7 +102,7 @@ margin-top:2vh;
 .text7{
 position: relative;
 font-family: "Quicksand" ;
-font-size: 4vw;
+font-size: 3vw;
 color: #2a2a2a;
 margin-top: 5vh;
 float: center;
@@ -135,6 +136,15 @@ color: #ffffff;
 text-align: right;
 
 }
+.text17{
+    position: relative;
+    font-family: "Quicksand" ;
+    font-size: 4vw;/*15pt*/
+    color: #4e5e7c;
+    text-align: left;
+    margin-right: 0.8em;
+  
+  }
 
 .button7 {
 height: 2.125em;/*34px*/
@@ -156,5 +166,10 @@ border-radius: 3px;
   z-index: 4;
   position: relative;
   align-items: center;
+}
+.image{
+width:17vh;
+float:center;
+padding-top: 1vh;
 }
 </style>

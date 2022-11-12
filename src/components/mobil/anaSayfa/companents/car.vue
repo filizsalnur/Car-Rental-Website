@@ -1,30 +1,38 @@
 <template>
     <div class="center">
-    <div class="container" style="margin-top:5vw"><!--Araba oklar Büyük Ekranlar-->
+    <div class="container" style="margin-top:5vh;margin-bottom: 2vh;"><!--Araba oklar Büyük Ekranlar-->
 
-    
-          <div class="row">
-            <div class="col">
+    <div class="text17" style="margin-bottom:1vh"><b>Neden Kiralacar?</b></div>
+          <div >
               <div class="text17"><b>Ön Ödeme İmkanı</b></div>
               <img src="@/images/AnaSayfa/line1.png" alt="..." style="width:100%">
               <div class="text16">Rezervasyon işlemlerinde ücretin ufak bir kısmını ödeyebilir, kalan ücreti aracınızı teslim alırken ödeyebilirsiniz.</div>
-            </div>
           </div>
-          <div class="row" style="margin-top:3rem">
-            <div class="col">
+          <div style="margin-top:1vh">
               <div class="text17"><b>Ücretsiz İptal Garantisi</b></div>
               <img src="@/images/AnaSayfa/line1.png" alt="..." style="width:100%">
               <div class="text16">Rezervasyon işlemlerinde ücretin ufak bir kısmını ödeyebilir, kalan ücreti aracınızı teslim alırken ödeyebilirsiniz.</div>
-            </div>
-          </div>
-          <div class="row" style="margin-top:3rem">
-            <div class="col">
+         </div>
+         <div style="margin-top:1vh">
               <div class="text17"><b>7/24 Misafir Hizmetleri</b></div>
               <img src="@/images/AnaSayfa/line1.png" alt="..." style="width:100%">
               <div class="text16">Tüm rezervasyon işlemlerinizde misafir hizmetleri ekibimiz 7/24 hizmetinizde.</div>
-            </div>
           </div>
-        
+          <div style="margin-top:1vh">
+              <div class="text17"><b>Ön Ödeme İmkanı</b></div>
+              <img src="@/images/AnaSayfa/line1.png" alt="..." style="width:100%">
+              <div class="text16">Rezervasyon işlemlerinde ücretin ufak bir kısmını ödeyebilir, kalan ücreti aracınızı teslim alırken ödeyebilirsiniz.</div>
+          </div>
+          <div style="margin-top:1vh">
+              <div class="text17"><b>Ücretsiz İptal Garantisi</b></div>
+              <img src="@/images/AnaSayfa/line1.png" alt="..." style="width:100%">
+              <div class="text16">Rezervasyon işlemlerinde ücretin ufak bir kısmını ödeyebilir, kalan ücreti aracınızı teslim alırken ödeyebilirsiniz.</div>
+         </div>
+         <div style="margin-top:1vh">
+              <div class="text17"><b>7/24 Misafir Hizmetleri</b></div>
+              <img src="@/images/AnaSayfa/line1.png" alt="..." style="width:100%">
+              <div class="text16">Tüm rezervasyon işlemlerinizde misafir hizmetleri ekibimiz 7/24 hizmetinizde.</div>
+          </div>
         
 
     </div><!--Araba oklar bitiş-->

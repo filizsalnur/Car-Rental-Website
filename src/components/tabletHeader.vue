@@ -9,11 +9,11 @@
 <div class="space"></div>
 
       <div style="float:right">
-      <button class="button1" v-if="clickController==false" @click="logController=!logController">Giriş Yap | Üye Ol</button>
+      <button class="button1" v-if="clickController==false" @click="logController=!logController  , rezervasyonController=false , dilController=false">Giriş Yap | Üye Ol</button>
         <button class="button1" v-if="clickController==true" @click="clickController=!clickController"><img alt="Turkey" src="@/images/Header/LogIcon.png" style="margin-top:0px"> Enver Yıldırım
         </button>
-        <button class="button2">Rezervasyon Sorgula</button>
-        <button class="button3">Türkçe <img alt="Turkey" src="@/images/Header/Turkey.png" style="width:1vw"> TRY <font-awesome-icon icon="fa-solid fa-chevron-down" style="width:1vw"/></button>
+        <button class="button2" @click="rezervasyonController=!rezervasyonController, logController=false,dilController=false">Rezervasyon Sorgula</button>
+        <button class="button3" @click="dilController=!dilController,rezervasyonController=false,logController=false">Türkçe <img alt="Turkey" src="@/images/Header/Turkey.png" style="width:1vw"> TRY <font-awesome-icon icon="fa-solid fa-chevron-down" style="width:1vw"/></button>
       </div>
           <div>
         
@@ -29,17 +29,26 @@
   
         
   </div>
-  
+  <div class="blur-content" v-if="logController==true" @click="logController=false"></div>
+  <div class="blur-content" v-if="rezervasyonController==true" @click="rezervasyonController=false"></div>
+  <div class="blur-content" v-if="dilController==true" @click="dilController=false"></div>
   <div v-if="logController==true"><deskopLogin/></div>
+  <div v-if="rezervasyonController==true"><deskopRezervasyon/></div>
+  <div v-if="dilController==true"><deskopDil/></div>
 
 </template>
 
 <script>
 import deskopLogin from './login.vue';
+import deskopRezervasyon from './rezervasyon.vue';
+import deskopDil from './dil.vue';
+
 export default ({
   name:'HeaderApp',
   components: {
-        deskopLogin,
+    deskopLogin,
+        deskopRezervasyon,
+        deskopDil,
     },
   data() {
     return {
@@ -48,7 +57,10 @@ export default ({
     }
   },
   methods: {
-    
+    logController:false,
+      clickController:false,
+      rezervasyonController:false,
+      dilController:false,
   }
 })
 </script>
@@ -147,6 +159,14 @@ export default ({
 .button3:hover {
   background-color: #25459a;
   color: #ffffff;
+}
+.blur-content{
+  background-color: #ffffff;
+  opacity:0.8;
+  position: absolute;
+  z-index: 8;
+  width:100%;
+  height: 400%;
 }
 @media screen and (min-width:700px) and (max-width:844px){
   .space{
