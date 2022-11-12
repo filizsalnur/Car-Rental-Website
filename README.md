@@ -26,7 +26,7 @@ npm install vue-router@4
 npm install vue3-carousel
 npm install @vuepic/vue-datepicker
 npm install vue-material --save
-
+npm i --save @fortawesome/fontawesome-svg-core
 ```
 
 ### Customize configuration
