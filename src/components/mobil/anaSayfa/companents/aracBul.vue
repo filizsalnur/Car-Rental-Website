@@ -33,13 +33,13 @@
      
 
            <div class="nav-left">
-           <button class="button3" @click="aramaBariController=!aramaBariController"><div class="text4"> <img src="@/images/AnaSayfa/BlueIcon.png" alt="icon"> Nereden Alacaksınız?</div></button>
+           <button class="button3" @click="aramaBariController=!aramaBariController"><div class="text4"> <font-awesome-icon icon="fa-solid fa-location-dot" style="color:#25459a"/> Nereden Alacaksınız?</div></button>
            </div>
            <div v-if="aramaBariController==true"><aramaBari/></div>
            <div class="nav-left">
            <div v-if="checkerForm==true">
             <div v-if="aramaBari2Controller==true"><aramaBari/></div>
-           <button class="button3"  @click="aramaBari2Controller=!aramaBari2Controller"><div class="text4"> <img src="@/images/AnaSayfa/RedIcon.png" alt="icon"> Nerede Bırakacaksınız?</div></button>
+           <button class="button3"  @click="aramaBari2Controller=!aramaBari2Controller"><div class="text4"> <font-awesome-icon icon="fa-solid fa-location-dot" style="color:#ea002a"/> Nerede Bırakacaksınız?</div></button>
            </div>
     
            <div class="text6">
@@ -97,7 +97,7 @@
       </div>
   </div>
  
-    <a href="#">Tüm Kampanyaları Gör <img src="@/images/AnaSayfa/KampanyaIcon.png" alt="icon" ></a>
+    <a href="#">Tüm Kampanyaları Gör <font-awesome-icon icon="fa-solid fa-chevron-right" style="margin-right: 0.5vw;"/></a>
   </div>
 </div>
 <!--Kampanyalar bitiş-->
@@ -230,7 +230,7 @@
     margin-bottom:2vh;
    }
    .text4{
-     padding-left: 28px;
+     padding-left: 10px;
      text-align: left;
      position: relative; 
    

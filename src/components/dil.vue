@@ -116,10 +116,10 @@
     height: 40px;
     width : 250px;
     background-color: #fcb101;
-    color: #2a2a2a;
+    color: #ffffff;
     border: none;
     font-family: "Quicksand" ;
-    font-size: 10pt;
+    font-size: 12pt;
     border-radius: 8px;
     margin-top:2vh;
 

@@ -7,9 +7,9 @@
 
   <div class="space2">
 				<form id="login">
-					<input class="box" type="email" name="email" v-model="email" placeholder="E-Posta" required="" style="width:13vw;margin-top:2.5vh">
+					<input class="box" type="email" name="email" v-model="email" placeholder="E-Posta" required="" style="width:250px;margin-top:40px">
           
-					<input class="box" type="text" v-model="parola" name="kod" placeholder="Rezervasyon Kodu" required="" style="width:13vw;margin-top:0.5vh;margin-bottom:2vh">
+					<input class="box" type="text" v-model="parola" name="kod" placeholder="Rezervasyon Kodu" required="" style="width:250px;margin-top:10px;margin-bottom:2vh">
         
 					<div><button class="button3"><b> <font-awesome-icon icon="fa-solid fa-magnifying-glass" /> Sorgulama Yap</b></button></div>
 				</form>

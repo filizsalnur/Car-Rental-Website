@@ -136,7 +136,7 @@
        </div>
       
       <div class="text7"><a href="#">Gizlilik Politikası </a> | <a href="#"> Açık Rıza Beyanı </a></div>
-            <div class="text7"> <a href="#"> Aydınlatma Metni </a> | <a href="#"> Veri İşleme Politikası </a></div>
+            <div class="text7"> <a href="#" style="margin-left:10px"> Aydınlatma Metni </a> | <a href="#"> Veri İşleme Politikası </a></div>
       </div>
       <div style="margin-top:1vh">
         <img src="@/images/Footer/cart1.png" alt="..." style="width:10%">
@@ -251,7 +251,7 @@ align-items: center;
 .text6{
   position: relative;
   font-family: "Quicksand" ;
-  font-size: 3vw;/*20pt*/
+  font-size: 6pt;/*20pt*/
   color: #2a2a2a;
   text-align: left;
 }
@@ -288,7 +288,7 @@ align-items: center;
   color: #2a2a2a;
   border: 1px solid #2a2a2a;
   font-family: "Quicksand" ;
-  font-size: 2vw;
+  font-size: 7;
   border-radius: 3px;
 }
 </style>

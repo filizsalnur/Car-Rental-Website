@@ -168,7 +168,7 @@ export default ({
   position: absolute;
   z-index: 8;
   width:100%;
-  height: 400%;
+  height: 500%;
 }
 @media screen and (min-width:701px) and (max-width:1284px){
   .space{

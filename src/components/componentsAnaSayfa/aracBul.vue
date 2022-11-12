@@ -1,7 +1,7 @@
 <template>
 
-<div class="background"></div>
-<div class="center"> <!--Ana Sayfanın kenar kısıtlamlarını belirler-->
+<div class="background" @click="center()"></div>
+<div class="center" > <!--Ana Sayfanın kenar kısıtlamlarını belirler-->
 
   <div class="text1">SENİN İÇİN EN UYGUN ARACI</div>
   <div class="text2">ara, bul ve kirala</div>
@@ -10,7 +10,7 @@
 <!--Uygun araç bul-->
 
  
-    <div class="row g-1" v-if="kiralaController==false">
+    <div class="row g-1" v-if="kiralaController==false"  @click="center()">
     <div class="col">
       <div class="nav-left">
       <button class="button1">Günlük Kiralama</button>
@@ -20,7 +20,7 @@
     <div class="col">
     </div>
   </div>
-  <div class="row g-1" v-if="kiralaController==true">
+  <div class="row g-1" v-if="kiralaController==true"  @click="center()">
     <div class="col">
       <div class="nav-left">
       <button class="button2" @click="kiralaController=false">Günlük Kiralama</button>
@@ -30,7 +30,7 @@
     <div class="col">
     </div>
   </div>
-  <div class="row g-1">
+  <div class="row g-1" @click="center()">
     <div class="col" v-if="kiralaController==false">
       <img src="@/images/AnaSayfa/Icon.png" alt="icon" class="icon"> 
     </div>
@@ -43,13 +43,13 @@
   <div class="row g-1">
     <div class="col-5">
       <div class="nav-left">
-      <button class="button3" @click="aramaBariController=!aramaBariController"><div class="text4"> <img src="@/images/AnaSayfa/BlueIcon.png" alt="icon"> Nereden Alacaksınız?</div></button>
+      <button class="button3" @click="aramaBariController=!aramaBariController"><div class="text4"> <font-awesome-icon icon="fa-solid fa-location-dot" style="color:#25459a"/> Nereden Alacaksınız?</div></button>
       </div>
       <div v-if="aramaBariController==true"><aramaBari/></div>
       <div class="nav-left">
       <div v-if="checkerForm==true">
         <div v-if="aramaBari2Controller==true" style="margin-top:1vh"><aramaBari/></div>  
-      <button class="button3" @click="aramaBari2Controller=!aramaBari2Controller"><div class="text4"> <img src="@/images/AnaSayfa/RedIcon.png" alt="icon"> Nerede Bırakacaksınız?</div></button>
+      <button class="button3" @click="aramaBari2Controller=!aramaBari2Controller"><div class="text4"> <font-awesome-icon icon="fa-solid fa-location-dot" style="color:#ea002a"/> Nerede Bırakacaksınız?</div></button>
 
     </div>
       
@@ -109,7 +109,7 @@
       </div>
   </div>
 </div>
-    <a href="#">Tüm Kampanyaları Gör <img src="@/images/AnaSayfa/KampanyaIcon.png" alt="icon" ></a>
+    <a href="#">Tüm Kampanyaları Gör <font-awesome-icon icon="fa-solid fa-chevron-right" style="margin-right: 0.5vw;"/></a>
 <!--Kampanyalar bitiş-->
 </div> <!--div class="center" kapanış-->
 
@@ -187,7 +187,10 @@ export default {
     check() {
       this.checkerForm=!this.checkerForm;
     },
-
+    center(){
+      this.aramaBariController=false;
+      this.aramaBari2Controller=false;
+    }
   },
 }
 </script>
@@ -249,7 +252,7 @@ export default {
 
 }
 .text4{
-  padding-left: 28px;
+  padding-left: 10px;
   text-align: left;
   position: relative; 
 

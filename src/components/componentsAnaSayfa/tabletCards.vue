@@ -76,6 +76,7 @@
   </div>
 </div>
 <div style="float:right;margin-top:0.5vh"><a href="#">Tüm Havalimanlarını Gör <font-awesome-icon icon="fa-solid fa-chevron-right" style="margin-right: 0.5vw;"/></a></div>
+
   </div><!--cards bitiş-->
 </template>
 
@@ -99,13 +100,7 @@ methods: {
 </script>
 
 <style scoped>
-.center{
-  margin:0 auto;
-  width: 60%;/*1220px*/
-  z-index: 2;
-  position: relative;
-  align-items: center;
-}
+
 .text7{
 position: relative;
 font-family: "Quicksand" ;
@@ -129,7 +124,7 @@ margin-right: 0.8em;
 .text11{
 position: relative;
 font-family: "Quicksand" ;
-font-size: 1.25vw;/*15pt*/
+font-size: 10pt;/*15pt*/
 color: #ffffff;
 text-align: right;
 margin-right: 0.8em;
@@ -145,16 +140,43 @@ margin-right: 0.8em;
 }
 
 .button7 {
-height: 2.125em;/*34px*/
-width : 7.875em;/*126px*/
+height: 30px;/*34px*/
+width : 90px;/*126px*/
 background-color: transparent;
 color: #ffffff;
 border: 2px solid #ffffff;
 font-family: "Quicksand" ;
-font-size: 0,6669vw;
+font-size: 8pt;
 float: right;
 margin-right: 0.8em;
 margin-top: 0.5vh;
 border-radius: 3px;
+}
+@media screen and (min-width:740px) and (max-width:821px){
+  .center{
+  margin:0 auto;
+  width: 90%;/*1220px*/
+  z-index: 2;
+  position: relative;
+  align-items: center;
+}
+  }
+@media screen and (min-width:822px) and (max-width:1094px){
+  .center{
+  margin:0 auto;
+  width: 80%;/*1220px*/
+  z-index: 2;
+  position: relative;
+  align-items: center;
+}
+  }
+  @media screen and (min-width:1095px){
+    .center{
+  margin:0 auto;
+  width: 60%;/*1220px*/
+  z-index: 2;
+  position: relative;
+  align-items: center;
+}
 }
 </style>
