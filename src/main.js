@@ -15,12 +15,12 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
-import { faUserSecret,faHeadset,faChevronDown,faSquare,faSquareCheck, faUserPlus, faCaretRight, faMagnifyingGlass, faPlaneDeparture, faLocationArrow, faChevronRight ,faEarthAmericas, faCoins, faCircleXmark, faCircleDown, faLocationDot} from '@fortawesome/free-solid-svg-icons'
+import { faUserSecret,faHeadset,faChevronDown,faSquare,faSquareCheck, faUserPlus, faCaretRight, faMagnifyingGlass, faPlaneDeparture, faLocationArrow, faChevronRight ,faEarthAmericas, faCoins, faCircleXmark, faCircleDown, faLocationDot, faChevronUp, faCircleDot} from '@fortawesome/free-solid-svg-icons'
 
 
 
 /* add icons to the library */
-library.add(faUserSecret,faHeadset,faChevronDown,faSquare,faSquareCheck,faUserPlus,faTwitter,faFacebook,faInstagram,faYoutube,faCaretRight,faMagnifyingGlass,faPlaneDeparture,faLocationArrow,faChevronRight,faEarthAmericas,faCoins,faCircleXmark,faCircleDown,faLocationDot)
+library.add(faUserSecret,faHeadset,faChevronDown,faSquare,faSquareCheck,faUserPlus,faTwitter,faFacebook,faInstagram,faYoutube,faCaretRight,faMagnifyingGlass,faPlaneDeparture,faLocationArrow,faChevronRight,faEarthAmericas,faCoins,faCircleXmark,faCircleDown,faLocationDot,faChevronUp,faCircleDot)
 
 
 

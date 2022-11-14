@@ -436,6 +436,19 @@
      margin-top: -0.3vh;
      top: 0;
    }
-
+   .carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1px !important;
+    margin-left: 15%;
+    list-style: none;
+}
    
      </style>

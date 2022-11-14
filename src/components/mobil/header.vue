@@ -109,7 +109,6 @@
         this.rezervasyonController=false;
       },
       menu(){
-        console.log("filiz");
         this.menuController=!this.menuController;
         this.logController=false;
         this.dilController=false;

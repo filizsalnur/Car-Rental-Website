@@ -9,167 +9,152 @@
             <div class="text1" style="margin-right:1vw"> Filtreyi Temizle</div>
       </div>
       <!--Fiyat Aralığı-->
-      <div class="text2" style="margin-right:1vw;margin-top:10px;"><b>Fiyat Aralığı</b></div>
+      <div class="main" v-if="fiyatController==false"><div class="text2" style="margin-right:1vw;padding-top:5px;" @click="fiyatController=true">
+        <b>Fiyat Aralığı <font-awesome-icon icon="fa-solid fa-chevron-down" style="margin-left: 5px;"/></b></div></div>
+      <div v-if="fiyatController==true" class="dropdown">
+      <div class="text2" style="margin-right:1vw;padding-top: 5px;"  @click="fiyatController=false"><b>Fiyat Aralığı <font-awesome-icon icon="fa-solid fa-chevron-up" style="margin-left: 5px;" /></b></div>
       <div class="space" style="margin-top:10px;padding-bottom:10px;border-bottom:1px solid black;">
             <div class="text1"><input type="text" id="min" placeholder="En Az" class="button4"></div>
             <div class="text1"><input type="text" id="max" placeholder="En Çok" class="button4"></div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="min-max" id="min-max"  checked style="margin-right:1vw">
-            </div>
+       
+              
+              <div v-if="fiyatForm==false" @click="fiyatForm=true"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text6" style="padding-right: 1vw;"/></div>
+        <div v-if="fiyatForm==true" @click="fiyatForm=false"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text7" style="padding-right: 1vw;"/></div>
+           
     </div>
+  </div>
  <!--Vites Tipi-->
- <div class="text2" style="margin-right:1vw;margin-top:10px;"><b>Vites Tipi</b></div>
+ <div class="main" v-if="vitesController==false"><div class="text2" style="margin-right:1vw;padding-top:5px;" @click="vitesController=true">
+        <b>Vites Tipi <font-awesome-icon icon="fa-solid fa-chevron-down" style="margin-left: 5px;"/></b></div></div>
+      <div v-if="vitesController==true" class="dropdown">
+ <div class="text2" style="margin-right:1vw;padding-top: 5px;" @click="vitesController=false"><b>Vites Tipi <font-awesome-icon icon="fa-solid fa-chevron-up" style="margin-left: 5px;"/></b></div>
       <div class="container" style="margin-top:10px;">
         <div class="row">
-          <div class="col-6">
-        <input class="form-check-input" type="radio" name="vites" id="otomatik" value="otomatik" checked style="float:left">
-        <label class="text3" for="otomatik">
-          Otomatik
-        </label>
+        <div class="col-6">            
+        <div v-if="vites1Form==false" @click="vites1Form=true" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text7" style="padding-right: 0.5vw;"/>Otomatik</div>
+        <div v-if="vites1Form==true" @click="vites1Form=false" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text6" style="padding-right: 0.5vw;"/>Otomatik</div>
         </div>
       
         <div class="col-6">
-        <input class="form-check-input" type="radio" name="vites" id="manuel" value="manuel" checked style="float:left">
-        <label class="text3" for="manuel">
-          Manuel
-        </label>
+          <div v-if="vites2Form==false" @click="vites2Form=true" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text7" style="padding-right: 0.5vw;"/>Manuel</div>
+        <div v-if="vites2Form==true" @click="vites2Form=false" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text6" style="padding-right: 0.5vw;"/>Manuel</div>
         </div>
 </div>
       <div class="row" style="margin-top:5px;padding-bottom:10px;border-bottom:1px solid black;">
         <div class="col-6">
-        <input class="form-check-input" type="radio" name="vites" id="triptonik" value="triptonik" checked style="float:left">
-        <label class="text3" for="triptonik">
-          Triptonik
-        </label>
+          <div v-if="vites3Form==false" @click="vites3Form=true" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text7" style="padding-right: 0.5vw;"/>Triptonik</div>
+        <div v-if="vites3Form==true" @click="vites3Form=false" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text6" style="padding-right: 0.5vw;"/>Triptonik</div>
         </div>
         <div class="col-6">
-        <input class="form-check-input" type="radio" name="vites" id="all" value="all" checked style="float:left">
-        <label class="text3" for="all">
-          Tümü
-        </label>
+          <div v-if="vitesAllForm==false && (vites1Form==false || vites2Form==false || vites3Form==false) " @click="vitesAll()" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text7" style="padding-right: 0.5vw;"/>Tümü</div>
+        <div v-if="(vites1Form==true && vites2Form==true && vites3Form==true) || vitesAllForm==true" @click="vitesNotAll()" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text6" style="padding-right: 0.5vw;"/>Tümü</div>
         </div>
       </div>
+</div>
 </div>
  <!--Yakıt Tipi-->
- <div class="text2" style="margin-right:1vw;margin-top:10px;"><b>Yakıt Tipi</b></div>
+ <div class="main" v-if="yakitController==false"><div class="text2" style="margin-right:1vw;padding-top:5px;" @click="yakitController=true">
+        <b>Yakıt Tipi <font-awesome-icon icon="fa-solid fa-chevron-down" style="margin-left: 5px;"/></b></div></div>
+      <div v-if="yakitController==true" class="dropdown">
+ <div class="text2" style="margin-right:1vw;padding-top: 5px;" @click="yakitController=false"><b>Yakıt Tipi <font-awesome-icon icon="fa-solid fa-chevron-up" style="margin-left: 5px;"/></b></div>
       <div class="container" style="margin-top:10px;">
         <div class="row" style="margin-top:5px">
           <div class="col-6">
-        <input class="form-check-input" type="radio" name="yakit" id="benzin" value="benzin" checked style="float:left">
-        <label class="text3" for="benzin">
-          Benzin
-        </label>
+            <div v-if="yakit1Form==false" @click="yakit1Form=true" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text7" style="padding-right: 0.5vw;"/>Benzin</div>
+        <div v-if="yakit1Form==true" @click="yakit1Form=false" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text6" style="padding-right: 0.5vw;"/>Benzin</div>
         </div>
       
         <div class="col-6">
-        <input class="form-check-input" type="radio" name="yakit" id="dizel" value="dizel" checked style="float:left">
-        <label class="text3" for="dizel">
-          Dizel
-        </label>
+          <div v-if="yakit2Form==false" @click="yakit2Form=true" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text7" style="padding-right: 0.5vw;"/>Dizel</div>
+        <div v-if="yakit2Form==true" @click="yakit2Form=false" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text6" style="padding-right: 0.5vw;"/>Dizel</div>
         </div>
 </div>
 <div class="row" style="margin-top:5px">
           <div class="col-6">
-        <input class="form-check-input" type="radio" name="yakit" id="hibrit" value="hibrit" checked style="float:left">
-        <label class="text3" for="hibrit">
-          Hibrit
-        </label>
+            <div v-if="yakit3Form==false" @click="yakit3Form=true" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text7" style="padding-right: 0.5vw;"/>Hibrit</div>
+        <div v-if="yakit3Form==true" @click="yakit3Form=false" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text6" style="padding-right: 0.5vw;"/>Hibrit</div>
         </div>
       
         <div class="col-6">
-        <input class="form-check-input" type="radio" name="yakit" id="lpg" value="lpg" checked style="float:left">
-        <label class="text3" for="lpg">
-          LPG
-        </label>
+          <div v-if="yakit4Form==false" @click="yakit4Form=true" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text7" style="padding-right: 0.5vw;"/>LPG</div>
+        <div v-if="yakit4Form==true" @click="yakit4Form=false" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text6" style="padding-right: 0.5vw;"/>LPG</div>
         </div>
 </div>
 <div class="row" style="margin-top:5px">
           <div class="col-6">
-        <input class="form-check-input" type="radio" name="yakit" id="elektrik" value="elektrik" checked style="float:left">
-        <label class="text3" for="elektrik">
-          Elektrik
-        </label>
+            <div v-if="yakit5Form==false" @click="yakit5Form=true" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text7" style="padding-right: 0.5vw;"/>Elektrik</div>
+        <div v-if="yakit5Form==true" @click="yakit5Form=false" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text6" style="padding-right: 0.5vw;"/>Elektrik</div>
         </div>
       
         <div class="col-6">
-        <input class="form-check-input" type="radio" name="yakit" id="benzinLpg" value="benzinLpg" checked style="float:left">
-        <label class="text3" for="benzinLpg">
-          Benzin-LPG
-        </label>
+          <div v-if="yakit6Form==false" @click="yakit6Form=true" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text7" style="padding-right: 0.5vw;"/>Benzin-LPG</div>
+        <div v-if="yakit6Form==true" @click="yakit6Form=false" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text6" style="padding-right: 0.5vw;"/>Benzin-LPG</div>
         </div>
 </div>
       <div class="row" style="margin-top:5px;padding-bottom:10px;border-bottom:1px solid black;">
         <div class="col-6">
-        <input class="form-check-input" type="radio" name="yakit" id="all1" value="all" checked style="float:left">
-        <label class="text3" for="all1">
-          Tümü
-        </label>
+          <div v-if="yakitAllForm==false && (yakit1Form==false || yakit2Form==false || yakit3Form==false || yakit4Form==false || yakit5Form==false || yakit6Form==false) " @click="yakitAll()" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text7" style="padding-right: 0.5vw;"/>Tümü</div>
+        <div v-if="(yakit1Form==true && yakit2Form==true && yakit3Form==true && yakit4Form==true && yakit5Form==true && yakit6Form==true) || yakitAllForm==true" @click="yakitNotAll()" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text6" style="padding-right: 0.5vw;"/>Tümü</div>
         </div>
         <div class="col-6">
         </div>
       </div>
+</div>
 </div>
  <!--Araç Sınıfı-->
- <div class="text2" style="margin-right:1vw;margin-top:10px;"><b>Araç Sınıfı</b></div>
-      <div class="container" style="margin-top:10px;">
+ <div class="main" v-if="sinifController==false"><div class="text2" style="margin-right:1vw;padding-top:5px;" @click="sinifController=true">
+        <b>Araç Sınıfı <font-awesome-icon icon="fa-solid fa-chevron-down" style="margin-left: 5px;"/></b></div></div>
+      <div v-if="sinifController==true" class="dropdown">
+ <div class="text2" style="margin-right:1vw;padding-top: 5px;" @click="sinifController=false"><b>Araç Sınıfı <font-awesome-icon icon="fa-solid fa-chevron-up" style="margin-left: 5px;"/></b></div>
+      <div class="container" style="padding-top: 5px;">
         <div class="row" style="margin-top:5px">
           <div class="col-6">
-        <input class="form-check-input" type="radio" name="sinif" id="comfort" value="comfort" checked style="float:left">
-        <label class="text3" for="comfort">
-          Comfort
-        </label>
+            <div v-if="sinif1Form==false" @click="sinif1Form=true" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text7" style="padding-right: 0.5vw;"/>Comfort</div>
+        <div v-if="sinif1Form==true" @click="sinif1Form=false" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text6" style="padding-right: 0.5vw;"/>Comfort</div>
         </div>
       
         <div class="col-6">
-        <input class="form-check-input" type="radio" name="sinif" id="ekonomi" value="ekonomi" checked style="float:left">
-        <label class="text3" for="ekonomi">
-          Ekonomi(44)
-        </label>
+          <div v-if="sinif2Form==false" @click="sinif2Form=true" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text7" style="padding-right: 0.5vw;"/>Ekonomi</div>
+        <div v-if="sinif2Form==true" @click="sinif2Form=false" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text6" style="padding-right: 0.5vw;"/>Ekonomi</div>
         </div>
 </div>
 <div class="row" style="margin-top:5px">
           <div class="col-6">
-        <input class="form-check-input" type="radio" name="sinif" id="suv" value="suv" checked style="float:left">
-        <label class="text3" for="suv">
-          SUV(77)
-        </label>
+            <div v-if="sinif3Form==false" @click="sinif3Form=true" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text7" style="padding-right: 0.5vw;"/>SUV(77)</div>
+        <div v-if="sinif3Form==true" @click="sinif3Form=false" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text6" style="padding-right: 0.5vw;"/>SUV(77)</div>
         </div>
       
         <div class="col-6">
-        <input class="form-check-input" type="radio" name="premium" id="premium" value="premium" checked style="float:left">
-        <label class="text3" for="premium">
-          Premium(9)
-        </label>
+          <div v-if="sinif4Form==false" @click="sinif4Form=true" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text7" style="padding-right: 0.5vw;"/>Premium(7)</div>
+        <div v-if="sinif4Form==true" @click="sinif4Form=false" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text6" style="padding-right: 0.5vw;"/>Premium(7)</div>
         </div>
 </div>
 <div class="row" style="margin-top:5px">
           <div class="col-6">
-        <input class="form-check-input" type="radio" name="sinif" id="combi" value="combi" checked style="float:left">
-        <label class="text3" for="combi">
-          Combi
-        </label>
+            <div v-if="sinif5Form==false" @click="sinif5Form=true" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text7" style="padding-right: 0.5vw;"/>Combi</div>
+        <div v-if="sinif5Form==true" @click="sinif5Form=false" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text6" style="padding-right: 0.5vw;"/>Combi</div>
         </div>
       
         <div class="col-6">
-        <input class="form-check-input" type="radio" name="sinif" id="minivan" value="minivan" checked style="float:left">
-        <label class="text3" for="minivan">
-          Minivan
-        </label>
+          <div v-if="sinif6Form==false" @click="sinif6Form=true" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text7" style="padding-right: 0.5vw;"/>Minivan</div>
+        <div v-if="sinif6Form==true" @click="sinif6Form=false" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text6" style="padding-right: 0.5vw;"/>Minivan</div>
         </div>
 </div>
       <div class="row" style="margin-top:5px;padding-bottom:10px;border-bottom:1px solid black;">
         <div class="col-6">
-        <input class="form-check-input" type="radio" name="sinif" id="all2" value="all" checked style="float:left">
-        <label class="text3" for="all2">
-          Tümü
-        </label>
+          <div v-if="sinifAllForm==false && (sinif1Form==false || sinif2Form==false || sinif3Form==false || sinif4Form==false || sinif5Form==false || sinif6Form==false) " @click="sinifAll()" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text7" style="padding-right: 0.5vw;"/>Tümü</div>
+        <div v-if="(sinif1Form==true && sinif2Form==true && sinif3Form==true && sinif4Form==true && sinif5Form==true && sinif6Form==true) || sinifAllForm==true" @click="sinifNotAll()" class="text3"><font-awesome-icon icon="fa-solid fa-circle-dot" class="text6" style="padding-right: 0.5vw;"/>Tümü</div>
         </div>
         <div class="col-6">
         </div>
       </div>
 </div>
+</div>
 <!--Markalar-->
-<div class="text2" style="margin-right:1vw;margin-top:10px;"><b>Markalar</b></div>
+<div class="main" v-if="markaController==false"><div class="text2" style="margin-right:1vw;padding-top:5px;" @click="markaController=true">
+        <b>Markalar <font-awesome-icon icon="fa-solid fa-chevron-down" style="margin-left: 5px;"/></b></div></div>
+      <div v-if="markaController==true" class="dropdown">
+ <div class="text2" style="margin-right:1vw;padding-top: 5px;" @click="markaController=false"><b>Markalar <font-awesome-icon icon="fa-solid fa-chevron-up" style="margin-left: 5px;"/></b></div>
       <div class="container" style="margin-top:10px;">
         <div class="row" style="margin-top:5px">
           <div class="col-6">
@@ -272,8 +257,12 @@
         </div>
       </div>
 </div>
+      </div>
 <!--KM Sınırı-->
-<div class="text2" style="margin-right:1vw;margin-top:10px;"><b>KM Sınırı</b></div>
+<div class="main" v-if="kmController==false"><div class="text2" style="margin-right:1vw;padding-top:5px;" @click="kmController=true">
+        <b>KM Sınırı <font-awesome-icon icon="fa-solid fa-chevron-down" style="margin-left: 5px;"/></b></div></div>
+      <div v-if="kmController==true" class="dropdown">
+ <div class="text2" style="margin-right:1vw;padding-top: 5px;" @click="kmController=false"><b>KM Sınırı <font-awesome-icon icon="fa-solid fa-chevron-up" style="margin-left: 5px;"/></b></div>
       <div class="container" style="margin-top:10px;">
         <div class="row" style="margin-top:5px">
           <div class="col-6">
@@ -332,8 +321,12 @@
         </div>
       </div>
 </div>
+      </div>
  <!--Deposito Bedeli-->
- <div class="text2" style="margin-right:1vw;margin-top:10px;"><b>Deposito Bedeli</b></div>
+ <div class="main" v-if="depositoController==false"><div class="text2" style="margin-right:1vw;padding-top:5px;" @click="depositoController=true">
+        <b>Deposito Bedeli <font-awesome-icon icon="fa-solid fa-chevron-down" style="margin-left: 5px;"/></b></div></div>
+      <div v-if="depositoController==true" class="dropdown">
+ <div class="text2" style="margin-right:1vw;padding-top: 5px;" @click="depositoController=false"><b>Deposito Bedeli <font-awesome-icon icon="fa-solid fa-chevron-up" style="margin-left: 5px;"/></b></div>
       <div class="space" style="margin-top:10px;padding-bottom:10px;border-bottom:1px solid black;">
             <div class="text1"><input type="text" id="min" placeholder="En Az" class="button4"></div>
             <div class="text1"><input type="text" id="max" placeholder="En Çok" class="button4"></div>
@@ -341,8 +334,12 @@
               <input class="form-check-input" type="radio" name="deposito" id="min-max"  checked style="margin-right:1vw">
             </div>
     </div>
+  </div>
 <!--Kredi Kartı-->
-<div class="text2" style="margin-right:1vw;margin-top:10px;"><b>Kredi Kartı Zorunluluğu</b></div>
+<div class="main" v-if="kartController==false"><div class="text2" style="margin-right:1vw;padding-top:5px;" @click="kartController=true">
+        <b>Kredi Kartı Zorunluluğu <font-awesome-icon icon="fa-solid fa-chevron-down" style="margin-left: 5px;"/></b></div></div>
+      <div v-if="kartController==true" class="dropdown">
+ <div class="text2" style="margin-right:1vw;padding-top: 5px;" @click="kartController=false"><b>Kredi Kartı Zorunluluğu <font-awesome-icon icon="fa-solid fa-chevron-up" style="margin-left: 5px;"/></b></div>
       <div class="container" style="margin-top:10px;">
         <div class="row" style="margin-top:5px">
           <div class="col-6">
@@ -358,7 +355,7 @@
           Hayır
         </label>
         </div>
-</div>
+
 
       <div class="row" style="margin-top:5px;padding-bottom:10px;border-bottom:1px solid black;">
         <div class="col-6">
@@ -371,8 +368,14 @@
         </div>
       </div>
 </div>
+      </div>
+    </div>
+
 <!--Kiralama Firmaları-->
-<div class="text2" style="margin-right:1vw;margin-top:10px;"><b>Kiralama Firmaları</b></div>
+<div class="main" v-if="firmaController==false"><div class="text2" style="margin-right:1vw;padding-top:5px;" @click="firmaController=true">
+        <b>Kiralama Firmaları <font-awesome-icon icon="fa-solid fa-chevron-down" style="margin-left: 5px;"/></b></div></div>
+      <div v-if="firmaController==true" class="dropdown">
+ <div class="text2" style="margin-right:1vw;padding-top: 5px;" @click="firmaController=false"><b>Kiralama Firmaları <font-awesome-icon icon="fa-solid fa-chevron-up" style="margin-left: 5px;"/></b></div>
       <div class="container" style="margin-top:10px;">
         <div class="row" style="margin-top:5px">
           <div class="col-6">
@@ -475,8 +478,12 @@
         </div>
       </div>
       </div>
+    </div>
       <!--Teslimat Noktası-->
-<div class="text2" style="margin-right:1vw;margin-top:10px;"><b>Teslimat Noktası</b></div>
+      <div class="main" v-if="teslimatController==false"><div class="text2" style="margin-right:1vw;padding-top:5px;" @click="teslimatController=true">
+        <b>Teslimat Noktası <font-awesome-icon icon="fa-solid fa-chevron-down" style="margin-left: 5px;"/></b></div></div>
+      <div v-if="teslimatController==true" class="dropdown">
+ <div class="text2" style="margin-right:1vw;padding-top: 5px;" @click="teslimatController=false"><b>Teslimat Noktası<font-awesome-icon icon="fa-solid fa-chevron-up" style="margin-left: 5px;"/></b></div>
       <div class="container" style="margin-top:10px;">
         <div class="row" style="margin-top:5px">
           <div class="col-6">
@@ -519,7 +526,7 @@
         </div>
       </div>
       </div>
-
+    </div>
 </div>
 
     <div class="space3" >
@@ -536,7 +543,7 @@
     </div>
     </div>
   </div>
-  </div>
+</div>
 
 
 </template>
@@ -554,7 +561,35 @@ export default {
   },
   data() {
     return {
-  
+      fiyatController:false,
+      vitesController:false,
+      yakitController:false,
+      sinifController:false,
+      markaController:false,
+      kmController:false,
+      depositoController:false,
+      kartController:false,
+      firmaController:false,
+      teslimatController:false,
+      fiyatForm:false,
+      vites1Form:false,
+      vites2Form:false,
+      vites3Form:false,
+      vitesAllForm:false,
+      yakit1Form:false,
+      yakit2Form:false,
+      yakit3Form:false,
+      yakit4Form:false,
+      yakit5Form:false,
+      yakit6Form:false,
+      yakitAllForm:false,
+      sinif1Form:false,
+      sinif2Form:false,
+      sinif3Form:false,
+      sinif4Form:false,
+      sinif5Form:false,
+      sinif6Form:false,
+      sinifAllForm:false,
     }
   },
   setup() {
@@ -573,8 +608,54 @@ export default {
         }
     },
   methods: {
-    
-
+    vitesAll(){
+      this.vites1Form=true;
+      this.vites2Form=true;
+      this.vites3Form=true;
+      this.vitesAllForm=true;
+    },
+    vitesNotAll(){
+      this.vites1Form=false;
+      this.vites2Form=false;
+      this.vites3Form=false;
+      this.vitesAllForm=false;
+    },
+    yakitAll(){
+      this.yakit1Form=true;
+      this.yakit2Form=true;
+      this.yakit3Form=true;
+      this.yakit4Form=true;
+      this.yakit5Form=true;
+      this.yakit6Form=true;
+      this.yakitAllForm=true;
+    },
+    yakitNotAll(){
+      this.yakit1Form=false;
+      this.yakit2Form=false;
+      this.yakit3Form=false;
+      this.yakit4Form=false;
+      this.yakit5Form=false;
+      this.yakit6Form=false;
+      this.yakitAllForm=false;
+    },
+    sinifAll(){
+      this.sinif1Form=true;
+      this.sinif2Form=true;
+      this.sinif3Form=true;
+      this.sinif4Form=true;
+      this.sinif5Form=true;
+      this.sinif6Form=true;
+      this.sinifAllForm=true;
+    },
+    sinifNotAll(){
+      this.sinif1Form=false;
+      this.sinif2Form=false;
+      this.sinif3Form=false;
+      this.sinif4Form=false;
+      this.sinif5Form=false;
+      this.sinif6Form=false;
+      this.sinifAllForm=false;
+    },
   },
 }
 </script>
@@ -595,16 +676,28 @@ export default {
 .space2 {
 position: relative;
 width:17vw;
-height: 100%;
+align-self: flex-start;
 z-index: 1;
-border-right: 1px solid black;
-border-left: 1px solid black;
+
+
 }
 .space3 {
 position: relative;
 width:43vw;
-height: 150vh;
+
 z-index: 1;
+align-self: flex-start;
+}
+.main{
+  position: relative;
+width:17vw;
+height: 30px;
+z-index: 1;
+border-bottom: 1px solid black;
+border-right: 1px solid black;
+}
+.dropdown{
+  border-right: 1px solid black;
 }
 .text1{
   font-family: "Quicksand" ;
@@ -622,6 +715,7 @@ z-index: 1;
   font-size: 8pt;
   float:left;
   color: #909090;
+  padding-bottom:6px;
 }
 .text4{
   font-family: "Quicksand" ;
@@ -636,6 +730,19 @@ z-index: 1;
   color: #86c6d6;
   padding-top:0.4vh;
   padding-right: 0.4vw;
+}
+.text6{
+  font-family: "Quicksand" ;
+  font-size: 14pt;
+  color: #25459a;
+
+
+}
+.text7{
+  font-family: "Quicksand" ;
+  font-size: 14pt;
+  color: #909090;
+
 }
 .button1 {
     height: 6vh;/*59px*/
