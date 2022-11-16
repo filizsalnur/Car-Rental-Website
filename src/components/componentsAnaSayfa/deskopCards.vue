@@ -57,7 +57,7 @@
     </div>
     <div class="col-3">
       <div class="card ">
-      <img src="@/images/AnaSayfa/plane5.png" class="card-img" alt="icon">
+      <img src="@/images/AnaSayfa/plane5.png" class="card-img" alt="icon" >
       <div class="card-img-overlay">
       </div>
       </div>
@@ -101,7 +101,7 @@ methods: {
 <style scoped>
 .center{
   margin:0 auto;
-  width: 60%;/*1220px*/
+  width: 65%;/*1220px*/
   z-index: 2;
   position: relative;
   align-items: center;
@@ -145,16 +145,20 @@ margin-right: 0.8em;
 }
 
 .button7 {
-height: 2.125em;/*34px*/
-width : 7.875em;/*126px*/
+height: 30px;/*34px*/
+width : 8vw;/*126px*/
 background-color: transparent;
 color: #ffffff;
-border: 2px solid #ffffff;
+border: 1px solid #ffffff;
 font-family: "Quicksand" ;
-font-size: 0,6669vw;
+font-size: 0.8vw;
 float: right;
 margin-right: 0.8em;
 margin-top: 0.5vh;
-border-radius: 3px;
+border-radius: 5px;
+}
+.card-img, .card-img-top, .card-img-bottom {
+    width: 100%;
+    height: 17vh;
 }
 </style>

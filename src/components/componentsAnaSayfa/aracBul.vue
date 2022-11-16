@@ -43,14 +43,14 @@
     <div class="row g-1">
       <div class="col-5">
         <div class="nav-left">
-          <div class="nav-left" v-if="aramaBariController==false">
+          <div class="nav-left" v-if="aramaBariController==false" @click="Show()">
         <button class="button3" @click="aramaBariController=!aramaBariController"><div class="text4"> <font-awesome-icon icon="fa-solid fa-location-dot" style="color:#25459a"/> Nereden Alacaksınız?</div></button>
         </div></div>
         <div v-if="aramaBariController==true">
         <input v-model="filter" placeholder=" Nereden Alacaksınız?" class="button3" />
         <div class="dropdown" v-if="aramaBariController==true && filter!='' ">
         <div v-for="item in filteredItems" :key="item.id" @click="onClickItem(item)" class="text5">
-          {{ item.name }}
+          {{ item.text }}
         </div>
       </div>
       <div v-if="aramaBariController==true && filter=='' " style="margin-top:-7vh"><aramaBari/></div> 
@@ -78,9 +78,21 @@
         </div>
       </div>
       <div class="col-7">
-        <div class="space4">
-        <div><button class="button4" > <Datepicker v-model="date"  range :partialRange="false"   minutesIncrement="30" /></button></div>
-        <div><router-link to="/kiralama"><button class="button5">Uygun Araçları Bul <font-awesome-icon icon="fa-solid fa-magnifying-glass" /></button></router-link></div>
+        <div class="space4"> 
+          
+        <div><button class="button4">
+          <date-picker 
+            v-model:value="tarihController" 
+            type="datetime"
+            range
+            :minute-step="30"
+            :hour-options="hours"
+            format="DD.MM.YYYY HH:mm"
+            value-type="format"
+            placeholder="Alış-Bırakılış Tarihi"
+          />
+        </button></div>
+        <div><router-link to="/kiralama"><button class="button5"><b>Uygun Araçları Bul </b><font-awesome-icon icon="fa-solid fa-magnifying-glass" /></button></router-link></div>
         </div>
     
       </div>
@@ -90,7 +102,7 @@
   </div>
   <div classs="center">
   
-      <div class="space1"><img src="@/images/AnaSayfa/carDeskop.png" alt="icon" style="  width: 60vw;"></div>
+      <div class="space1"><img src="@/images/AnaSayfa/carDeskop.png" alt="icon" style="  width: 65vw;"></div>
       
   <!--Kampanyalar-->
   <div class="space5">
@@ -167,12 +179,14 @@
   </template>
   
   <script >
-  import { ref, onMounted } from 'vue';
+  import axiosInstance from '@/plugins/axios';
   import aramaBari from './aramaBari.vue';
+  import DatePicker from 'vue-datepicker-next';
   export default {
     name: "AnaSayfa",
     components: {
       aramaBari,
+      DatePicker,
     },
     data() {
       return {
@@ -185,28 +199,15 @@
         filter: "",
         filter2: "",
         selected: null,
-        items: [
-          { id: 1, name: "Istanbul Havalimani" },
-          { id: 2, name: "Ankara Havalimani" },
-          { id: 3, name: "Izmir Havalimani" },
-        ]
+        items: [{
+        "id":"",
+        "text":""}]
       }
     },
-    setup() {
-          const date = ref();
-   
-          // For demo purposes assign range from the current date
-          onMounted(() => {
-              const startDate = new Date();
-              const endDate = new Date(new Date().setDate(startDate.getDate() + 7));
-              date.value = [startDate, endDate];
-          })
-          
-          return {
-              date,
-              countCheck:0,
-          }
-      },
+    mounted(){
+      this.getLocations();
+    },
+  
       computed: {
     filteredItems() {
       return this.items.filter(item => item.name.includes(this.filter));
@@ -216,6 +217,11 @@
     },
   },
     methods: {
+      async getLocations(){
+        const response = await axiosInstance.get('locations?LangID=1&p=sa')
+        console.log(response)
+        
+      },
       check() {
         this.checkerForm=!this.checkerForm;
       },
@@ -240,7 +246,7 @@
   <style scoped>
   .center{
     margin:0 auto;
-    width: 60%;/*1220px*/
+    width: 65%;/*1220px*/
     z-index: 2;
     position: relative;
     align-items: center;
@@ -321,7 +327,7 @@
     font-size: 0.9rem;/*11pt*/
     margin-right: 6px;/*6px*/
     margin-top: 18px;/*18px*/
-    border-radius: 1px;
+    border-radius: 5px;
   }
   .button2 {
     height: 2.5em; /*40px*/
@@ -332,45 +338,43 @@
     font-family: "Quicksand" ;
     font-size: 0.9rem;/*11pt*/
     margin-top: 18px;/*18px*/
-    border-radius: 1px;
+    border-radius: 5px;
     margin-right: 6px;/*6px*/
   }
   .button3 {
       height:60px;/*59px*/
-    width : 24.5vw;/*349px*/
+    width : 26vw;/*349px*/
     background-color: #ffffff;
     color: #2a2a2a;
     border: none;
     font-family: "Quicksand" ;
-    font-size: 1vw;
+    font-size: 12pt;
     margin-top: 6px;/*6px*/
-    border-radius: 1px;
+    border-radius: 5px;
   }
   .button4 {
     height: 60px;/*59px*/
-    width : 22.5vw;/*349px*/
+    width : 23vw;/*349px*/
     background-color: #ffffff;
     color: #2a2a2a;
     border: none;
     font-family: "Quicksand" ;
-    font-size: 1vw;
+    font-size: 12pt;
     margin-top: 6px;/*6px*/
-    border-radius: 1px;
-    margin-left:0.5vw;/*15px*/
-    float:left;
+    border-radius: 5px;
   }
   .button5 {
   height: 60px;/*59px*/
-    width : 11vw;/*349px*/
-    float:right;
+    width : 13.5vw;/*349px*/
+
     background-color: #e51c3d;
     color: #ffffff;
     border: none;
     font-family: "Quicksand" ;
     font-size: 0.8vw;
     margin-top: 6px;/*6px*/
-    margin-left:0.5vw;/*15px*/
-    border-radius: 1px;
+
+    border-radius: 7px;
   }
   .carousel-indicators [data-bs-target] {
       box-sizing: content-box;
@@ -426,7 +430,7 @@
   }
   .image2 {
     margin-top: 4em;/*50px*/
-    width:60%;
+    width:65vw;
     z-index: 3;
   }
   .icon{

@@ -162,6 +162,7 @@
      </template>
      
      <script >
+     import axios from "axios";
     import aramaBari from './aramaBari.vue';
      import { ref } from 'vue';
    
@@ -203,6 +204,10 @@
            }
        },
        methods: {
+        Show() {
+      axios
+        .get("https://test.kiralacar.com/api/locations?LangID=1&p=sa", this.items)
+    },
        check() {
          this.checkerForm=!this.checkerForm;
        },
@@ -411,7 +416,7 @@
    }
    .space3 {
   height: 16vh;/*200px*/
-  width : 100vw;/*1928px*/
+  width : 100%;/*1928px*/
   background-color: #e6ecf8;
   color: #2a2a2a;
   border: none;

@@ -7,11 +7,11 @@
   <div class="show-on-mobile"> <mobileAracBul/></div>
 
     <div class="show-on-deskop"> <deskopCards/></div>
-    <div class="show-on-tablet"> <tabletCards/></div>
+    <div class="show-on-tablet"> <deskopCards/></div>
     <div class="show-on-mobile"> <mobileCards/></div>
 
     <div class="show-on-deskop"> <deskopLokasyonlar/></div>
-    <div class="show-on-tablet"> <tabletLokasyonlar/></div>
+    <div class="show-on-tablet"> <deskopLokasyonlar/></div>
     <div class="show-on-mobile"><mobileLokasyonlar/></div>
 
     <div class="show-on-deskop"> <deskopCar/></div>
@@ -47,10 +47,8 @@ import mobileCar from './mobil/anaSayfa/companents/car.vue';
 
 import deskopCards from './componentsAnaSayfa/deskopCards.vue';
 import mobileCards from './mobil/anaSayfa/companents/havalimanları.vue';
-import tabletCards from './componentsAnaSayfa/tabletCards.vue';
 
 import deskopLokasyonlar from './componentsAnaSayfa/deskopLokasyonlar.vue';
-import tabletLokasyonlar from './componentsAnaSayfa/tabletLokasyonlar.vue';
 import mobileLokasyonlar from './mobil/anaSayfa/companents/lokasyonlar.vue';
 
 
@@ -69,8 +67,6 @@ export default {
   name: "AnaSayfa",
   components: {
     FooterApp,
-
-    tabletLokasyonlar ,
     deskopLokasyonlar,
     deskopCards,
     tabletCar,
@@ -78,7 +74,6 @@ export default {
     deskopCar,
     mobileLokasyonlar,
     mobileCards,
-    tabletCards,
     deskopAracBul,
     Aciklama,
     mobileAciklama,

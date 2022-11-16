@@ -80,7 +80,7 @@ export default ({
 }
 .center{
   margin:0 auto;
-  width: 60%;
+  width: 65%;
   display:flex;
     justify-content: space-between;
     align-items: center;
@@ -124,8 +124,8 @@ export default ({
   border: 1px solid #25459a;
   font-family: "Quicksand" ;
   font-size: 0.8vw;
-  margin-right: 8px;
-  border-radius: 1px;
+  border-radius: 5px;
+  margin-right: 10px;
 }
 .button2 {
   height: 36px;
@@ -135,9 +135,9 @@ export default ({
   border: 1px solid #98a7cf;
   font-family: "Quicksand" ;
   font-size: 0.8vw;
-  margin-right: 4px;
   cursor: pointer;
-  border-radius: 1px;
+  border-radius: 5px;
+  margin-right: 10px;
 }
 .button3 {
   height: 36px;
@@ -147,8 +147,8 @@ export default ({
   border: 1px solid #25459a;
   font-family: "Quicksand" ;
   font-size: 0.8vw;
-  margin-right: 10px;
-  border-radius: 1px;
+
+  border-radius: 5px;
 }
 .button1:hover {
   background-color: #ffffff;

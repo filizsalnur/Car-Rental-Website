@@ -33,21 +33,21 @@
           <img src="@/images/AnaSayfa/car2.png" alt="..." class="image">
         </div>
         <div class="col-4">
-          <div class="row" style="margin-top:5px">
+          <div class="row" style="height: 22vh;">
             <div class="col">
               <div class="text19"><b>En Uygun Fiyatlar</b></div>
               <img src="@/images/AnaSayfa/line2.png" alt="..." style="width:100%">
               <div class="text18">İhtiyacınız olan her yerde, istediğiniz tarih aralığında bütçenize en uygun araçları karşılaştırma imkanı.</div>
             </div>
           </div>
-          <div class="row" style="margin-top:6rem">
+          <div class="row" style="height: 22vh;">
             <div class="col">
               <div class="text19"><b>Kolay ve Güvenli Kiralama</b></div>
               <img src="@/images/AnaSayfa/line2.png" alt="..." style="width:100%">
               <div class="text18">Kurumsal ve bireysel müşteri memnuniyetine önem veren firmalardan güvenli araç kiralama imkanı.</div>
             </div>
           </div>
-          <div class="row" style="margin-top:6rem">
+          <div class="row" style="height: 22vh;">
             <div class="col">
               <div class="text19"><b>Yüzlerce Marka ve Model</b></div>
               <img src="@/images/AnaSayfa/line2.png" alt="..." style="width:100%">
@@ -86,13 +86,14 @@
 
   .center{
   margin:0 auto;
-  width: 60%;/*1220px*/
+  width: 65%;/*1220px*/
   z-index: 2;
   position: relative;
   align-items: center;
 }
 .image{
-  width: 12vw;
+  width: 13vw;
+  padding-top: 3vh;
 }
 .text7{
     position: relative;
@@ -125,7 +126,7 @@
   .text18{
     position: relative;
     font-family: "Quicksand" ;
-    font-size: 0.65vw;/*15pt*/
+    font-size: 10pt;/*15pt*/
     color: #2a2a2a;
     text-align: right;
     margin-right: 0.8em;
