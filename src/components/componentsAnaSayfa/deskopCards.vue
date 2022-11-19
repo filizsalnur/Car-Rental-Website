@@ -1,6 +1,6 @@
 <template>
-  <div class="center">
-    <div class="container" style="margin-top:3em;"><!--Cards kısmı-->
+  <div class="center" style="margin-top:3em;">
+ 
     <div class="row g-0">
     <div class="col-12">
       <div class="text7">Popüler Havalimanları</div>
@@ -74,7 +74,7 @@
       </div>
     </div>
   </div>
-</div>
+
 <div style="float:right;margin-top:0.5vh"><a href="#">Tüm Havalimanlarını Gör <font-awesome-icon icon="fa-solid fa-chevron-right" style="margin-right: 0.5vw;"/></a></div>
   </div><!--cards bitiş-->
 </template>
@@ -145,7 +145,7 @@ margin-right: 0.8em;
 }
 
 .button7 {
-height: 30px;/*34px*/
+height: 2vw;/*34px*/
 width : 8vw;/*126px*/
 background-color: transparent;
 color: #ffffff;
@@ -159,6 +159,6 @@ border-radius: 5px;
 }
 .card-img, .card-img-top, .card-img-bottom {
     width: 100%;
-    height: 17vh;
+    height: 10vw;
 }
 </style>

@@ -2,7 +2,7 @@
   <footer class="footer">
    <div class="footer1">
     <div class="center">
-      <div class="container">
+ 
         <div class="text1"><font-awesome-icon icon="fa-solid fa-user-plus" /> Şimdi Üye Olun!</div>
         <div class="text2">Şize özel kampanyalardan ve indirimlerden faydalanın. Rezervasyonlarınızı kolayca yönetin.</div>
         <div class="row g-1">
@@ -26,7 +26,8 @@
           <button type="submit" class="button1 "><b>Üye Ol</b></button>
         </div>
         </div>
-      </div>
+   
+  
       <div class="text3">
         <div v-if="checkerForm==false" @click="check()"><font-awesome-icon icon="fa-solid fa-square" /> <a href="#" class="a"> Gizlilik Politikası</a>, <a href="#" class="a"> Açık Rıza Beyanı </a> ve 
             <a href="#" class="a"> Aydınlatma Metnini</a> okuduğumu ve onayladığımı kabul ediyorum.</div>
@@ -34,7 +35,8 @@
             <a href="#" class="a"> Aydınlatma Metnini</a> okuduğumu ve onayladığımı kabul ediyorum.</div>
         </div>
     </div>
-   </div>
+  </div>
+
    <div class="footer2">
     <div class="center">
       <div class="text4"><b>Bize Katılın! </b>Markanız veya Firmanız adına <b>Kurumsal</b> Üyelik için
@@ -44,7 +46,7 @@
 
    <div class="footer3">
     <div class="center">
-      <div class="container">
+
         <div class="row g-1">
         <div class="col-10">
         <div class="row g-1">
@@ -136,7 +138,7 @@
        </div>
         </div>
         </div>
-      </div>
+      
       <div class="text7"><a href="#">Gizlilik Politikası </a> | <a href="#"> Açık Rıza Beyanı </a> | 
             <a href="#"> Aydınlatma Metni </a> | <a href="#"> Veri İşleme Politikası </a></div>
       </div>
@@ -171,7 +173,7 @@ export default {
 <style scoped>
 .center{
   margin:0 auto;
-  width: 60%;/*1220px*/
+  width: 65%;/*1220px*/
   z-index: 2;
   position: relative;
   align-items: center;
@@ -228,7 +230,7 @@ align-items: center;
   font-size: 0.75vw;/*20pt*/
   color: #ffffff;
   text-align: left;
-  margin-left: 0.75rem;
+
   padding-top: 0.75rem;
 }
 .text4{
@@ -270,6 +272,7 @@ align-items: center;
   border: none;
   font-family: "Quicksand" ;
   font-size: 0.9rem;/*11pt*/
+  border-radius: 5px;
 }
 .button2 {
   height: 2.45em; /*40px*/
@@ -280,6 +283,7 @@ align-items: center;
   font-family: "Quicksand" ;
   font-size: 0.8rem;/*11pt*/
   margin-left: 1rem;
+  border-radius: 7px;
 }
 .button3 {
   height: 5vh;/*34px*/
@@ -292,6 +296,6 @@ align-items: center;
   float: right;
   margin-right: 0.8em;
   margin-top: 1em;
-  border-radius: 3px;
+  border-radius: 7px;
 }
 </style>

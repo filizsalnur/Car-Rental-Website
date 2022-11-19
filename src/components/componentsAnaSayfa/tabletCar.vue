@@ -80,7 +80,7 @@
   <style scoped>
 .center{
   margin:0 auto;
-  width: 60%;/*1220px*/
+  width: 65%;/*1220px*/
   z-index: 2;
   position: relative;
   align-items: center;

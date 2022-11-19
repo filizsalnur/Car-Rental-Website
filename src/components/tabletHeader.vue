@@ -9,7 +9,7 @@
 <div class="space"></div>
 
       <div style="float:right">
-      <button class="button1" v-if="clickController==false" @click="logController=!logController  , rezervasyonController=false , dilController=false">Giriş Yap | Üye Ol</button>
+      <button class="button1"  @click="logController=!logController  , rezervasyonController=false , dilController=false">Giriş Yap | Üye Ol</button>
         <button class="button1" v-if="clickController==true" @click="clickController=!clickController"><img alt="Turkey" src="@/images/Header/LogIcon.png" style="margin-top:0px"> Enver Yıldırım
         </button>
         <button class="button2" @click="rezervasyonController=!rezervasyonController, logController=false,dilController=false">Rezervasyon Sorgula</button>
@@ -79,7 +79,7 @@ export default ({
 }
 .center{
   margin:0 auto;
-  width: 60%;
+  width: 65%;
   display:flex;
     justify-content: space-between;
     align-items: center;

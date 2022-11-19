@@ -116,7 +116,7 @@ export default {
     z-index:20;
     width:90vw;
 
-    margin-top:11vh;
+    margin-top:16vh;
     background-color: #ffffff;
 
   }

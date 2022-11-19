@@ -7,21 +7,21 @@
     </div></div>
       <div class="row g-0" style="margin-top:1vh"> 
         <div class="col-4">
-          <div class="row" style="margin-top:5px">
+          <div class="row" style="height: 22vh;">
             <div class="col">
               <div class="text17"><b>Ön Ödeme İmkanı</b></div>
               <img src="@/images/AnaSayfa/line1.png" alt="..." style="width:100%">
               <div class="text16">Rezervasyon işlemlerinde ücretin ufak bir kısmını ödeyebilir, kalan ücreti aracınızı teslim alırken ödeyebilirsiniz.</div>
             </div>
           </div>
-          <div class="row" style="margin-top:6rem">
+          <div class="row" style="height: 22vh;">
             <div class="col">
               <div class="text17"><b>Ücretsiz İptal Garantisi</b></div>
               <img src="@/images/AnaSayfa/line1.png" alt="..." style="width:100%">
               <div class="text16">Rezervasyon işlemlerinde ücretin ufak bir kısmını ödeyebilir, kalan ücreti aracınızı teslim alırken ödeyebilirsiniz.</div>
             </div>
           </div>
-          <div class="row" style="margin-top:6rem">
+          <div class="row" style="height: 22vh;">
             <div class="col">
               <div class="text17"><b>7/24 Misafir Hizmetleri</b></div>
               <img src="@/images/AnaSayfa/line1.png" alt="..." style="width:100%">
@@ -108,7 +108,7 @@
   .text16{
     position: relative;
     font-family: "Quicksand" ;
-    font-size: 0.65vw;/*15pt*/
+    font-size: 9pt;/*15pt*/
     color: #2a2a2a;
     text-align: left;
     margin-right: 0.8em;
@@ -126,7 +126,7 @@
   .text18{
     position: relative;
     font-family: "Quicksand" ;
-    font-size: 10pt;/*15pt*/
+    font-size: 9pt;/*15pt*/
     color: #2a2a2a;
     text-align: right;
     margin-right: 0.8em;

@@ -9,7 +9,7 @@
   
   <!--Uygun araç bul-->
   
-    <div class="container" style="border:0px;margin:0px;">
+
       <div class="row g-1" v-if="kiralaController==false" >
       <div class="col">
         <div class="nav-left">
@@ -28,7 +28,7 @@
       <div class="col">
       </div>
     </div>
-    <div class="row g-1">
+    <div class="row g-0">
       <div class="col" v-if="kiralaController==false">
         <img src="@/images/AnaSayfa/Icon.png" alt="icon" class="icon"> 
       </div>
@@ -85,19 +85,29 @@
       </div></div>
       <div >
         <div class="center2" v-if="aramaBariController==false && aramaBari2Controller==false">
-        <button class="button4" > <Datepicker v-model="date"  range :partialRange="false"   minutesIncrement="30" /></button>
+          <div><button class="button4">
+          <date-picker 
+            v-model:value="tarihController" 
+            type="datetime"
+            range
+            :minute-step="30"
+            :hour-options="hours"
+            format="DD.MM.YYYY HH:mm"
+            value-type="format"
+            placeholder="Alış-Bırakılış Tarihi"
+          /></button></div>
           <button class="button5">Uygun Araçları Bul <font-awesome-icon icon="fa-solid fa-magnifying-glass" /></button>
         </div>
     
       </div>
-    </div>
+    
    
   </div>
   <!--Uygun araç bul bitiş-->
   </div>
   <div classs="center">
   
-      <div class="space1"><img src="@/images/AnaSayfa/carDeskop.png" alt="icon" style="  width: 60vw;"></div>
+      <div class="space1"><img src="@/images/AnaSayfa/carDeskop.png" alt="icon" style="  width: 65vw;"></div>
       
   <!--Kampanyalar-->
     <div id="demo5" class="carousel slide" data-bs-ride="carousel">
@@ -132,42 +142,35 @@
         </div>
     </div>
    
-      <a href="#">Tüm Kampanyaları Gör <img src="@/images/AnaSayfa/KampanyaIcon.png" alt="icon" ></a>
+    <a href="#" class="text8">Tüm Kampanyaları Gör <font-awesome-icon icon="fa-solid fa-chevron-right" style="margin-right: 0.5vw;"/></a>
   <!--Kampanyalar bitiş-->
   </div> <!--div class="center" kapanış-->
   
   
     <div class="space3"><!--İş ortaklarımız-->
       <div class="center">
-      <div class="text7">İş Ortaklarımız</div>
-      
-      <div id="demo4" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#demo4" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#demo4" data-bs-slide-to="1"></button>
-  
+        <div class="space4">
+      <div class="text7"><b>İş Ortaklarımız</b><font-awesome-icon icon="fa-solid fa-chevron-down" style="margin-left: 1vw;font-size: 10pt;"/></div>
+      <a href="#" class="text8">Tüm Firmaları Gör <font-awesome-icon icon="fa-solid fa-chevron-right"/></a>
       </div>
-  
-      <div class="carousel-inner" >
-        <div class="carousel-item active">
-          <img src="@/images/AnaSayfa/logo/logo1.png" alt="..." style="margin-right:2vw" class="logo">
-  
-          <img src="@/images/AnaSayfa/logo/logo2.png" alt="..." style="margin-right:2vw" class="logo">
-  
-          <img src="@/images/AnaSayfa/logo/logo3.png" alt="..."  style="margin-right:2vw" class="logo">
-  
-          <img src="@/images/AnaSayfa/logo/logo4.png" alt="..." class="logo">
-        </div>
-        <div class="carousel-item">
-          <img src="@/images/AnaSayfa/logo/logo5.png" alt="..." style="margin-right:2vw" class="logo">
-  
-          <img src="@/images/AnaSayfa/logo/logo6.png" alt="..." style="margin-right:2vw" class="logo">
-  
-          <img src="@/images/AnaSayfa/logo/logo7.png" alt="..." style="margin-right:2vw" class="logo">
-        </div>
-        </div>
-    </div>
-  
+      <div class="space4" >
+   
+     <img src="@/images/AnaSayfa/logo/logo1.png" alt="..." class="logo">
+
+     <img src="@/images/AnaSayfa/logo/logo2.png" alt="..." class="logo">
+
+     <img src="@/images/AnaSayfa/logo/logo3.png" alt="..." class="logo">
+
+     <img src="@/images/AnaSayfa/logo/logo4.png" alt="..."  class="logo">
+
+
+     <img src="@/images/AnaSayfa/logo/logo5.png" alt="..."  class="logo">
+
+     <img src="@/images/AnaSayfa/logo/logo6.png" alt="..." class="logo">
+
+     <img src="@/images/AnaSayfa/logo/logo7.png" alt="..." class="logo">
+
+</div>
       </div>
     </div><!--İş ortaklarımız bitiş-->
   </template>
@@ -175,11 +178,12 @@
   <script >
   import { ref, onMounted } from 'vue';
   import aramaBari from './tabletAramaBari.vue';
+  import DatePicker from 'vue-datepicker-next';
   export default {
     name: "AnaSayfa",
     components: {
       aramaBari,
-  
+      DatePicker,
     },
     data() {
       return {
@@ -268,7 +272,7 @@
   }
   .center{
     margin:0 auto;
-    width: 60%;/*1220px*/
+    width: 65%;/*1220px*/
     z-index: 2;
     position: relative;
     align-items: center;
@@ -332,11 +336,20 @@
   .text7{
     position: relative;
     font-family: "Quicksand" ;
-    font-size: 19pt;
+    font-size: 14pt;
     color: #2a2a2a;
-    margin-top: 30px;
+    margin-top: 10px;
     float: left;
-  
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+  }
+  .text8{
+    position: relative;
+    font-family: "Quicksand" ;
+    font-size: 1vw;
+    color: #7f7f7f;
+    margin-top: 1vh;
+    float: center;
   }
   
   .button1 {
@@ -348,7 +361,7 @@
     font-family: "Quicksand" ;
     font-size: 0.9rem;/*11pt*/
     margin-top: 18px;/*18px*/
-    border-radius: 1px;
+    border-radius: 5px;
   
   }
   .button2 {
@@ -360,8 +373,8 @@
     font-family: "Quicksand" ;
     font-size: 0.9rem;/*11pt*/
     margin-top: 18px;/*18px*/
-    border-radius: 1px;
-
+    border-radius: 5px;
+    
   }
   .button3 {
       height: 45px;/*59px*/
@@ -372,7 +385,7 @@
     font-family: "Quicksand" ;
     font-size: 12pt;
     margin-top: 6px;/*6px*/
-    border-radius: 1px;
+    border-radius: 5px;
   
   }
   .button4 {
@@ -384,7 +397,7 @@
     font-family: "Quicksand" ;
     font-size: 1vw;
     margin-top: 6px;/*6px*/
-    border-radius: 1px;
+    border-radius: 5px;
 
     float:left;
   
@@ -400,10 +413,12 @@
     font-size: 10pt;
     margin-top: 6px;/*6px*/
     margin-left:0.5vw;/*15px*/
-    border-radius: 1px;
+    border-radius: 7px;
   
   }
   .logo{
+    height: 1.5vw;
+
   filter:grayscale(1);
 }
 .logo:hover{
@@ -417,7 +432,7 @@
   }
   
   .space3 {
-    height: 200px;/*200px*/
+    height: 10vw;/*200px*/
     width : 100%;/*1928px*/
     background-color: #e6ecf8;
     color: #2a2a2a;
@@ -429,10 +444,14 @@
     top: 45px;/*45px*/
   
   }
-  
+  .space4{
+    display:flex;
+      justify-content: space-between;
+      align-items: center;
+  }
   .image2 {
     margin-top: 4em;/*50px*/
-    width:60%;
+    width:65vw;
   }
   .icon{
     margin-left: 3.8em;/*72px*/
@@ -468,5 +487,25 @@
   text-align: left;
   line-height: 4vh;
   border:1px solid #2a2a2a;
+}
+.mx-input {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 0;
+    height: 34px;
+    padding: 6px 30px;
+    padding-left: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #555;
+    background-color: #fff;
+    border: none !important;
+    border-radius: 4px;
+    box-shadow: none !important;
+}
+.mx-datepicker-range {
+  width: 33vw !important;
+  border: none !important;
+  padding-left: 0 !important;
 }
   </style>

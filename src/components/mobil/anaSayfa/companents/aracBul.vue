@@ -62,17 +62,28 @@
       </div>
       </div>           </div>
     
-           <div class="text6" v-if="aramaBariController==false && aramaBari2Controller==false">
+           <div class="text6" >
             <div v-if="checkerForm==false" @click="check()"><font-awesome-icon icon="fa-solid fa-square" /> Farklı bir yerde teslim etmek istiyorum</div>
         <div v-if="checkerForm==true" @click="check()"><font-awesome-icon icon="fa-solid fa-square-check" /> Farklı bir yerde teslim etmek istiyorum</div>
            </div>
          </div>
          <div >
-           <div class="nav-left" v-if="aramaBariController==false && aramaBari2Controller==false">
-           <button class="button4" > <Datepicker v-model="date" range :partialRange="false" /></button>
-             <button class="button5">Uygun Araçları Bul <font-awesome-icon icon="fa-solid fa-magnifying-glass" /></button>
+           <div class="nav-left">
+            <div><button class="button4">
+          <date-picker 
+            v-model:value="tarihController" 
+            type="datetime"
+            range
+            :minute-step="30"
+            :hour-options="hours"
+            format="DD.MM.YYYY HH:mm"
+            value-type="format"
+            placeholder="Alış-Bırakılış Tarihi"
+          />
+        </button></div>
+            <button class="button5">Uygun Araçları Bul <font-awesome-icon icon="fa-solid fa-magnifying-glass" /></button>
            </div>
-          <div style="height:30vh" v-if="aramaBariController==true || aramaBari2Controller==true"></div>
+    
          </div>
        </div>
     
@@ -164,12 +175,14 @@
      <script >
      import axios from "axios";
     import aramaBari from './aramaBari.vue';
+    import DatePicker from 'vue-datepicker-next';
      import { ref } from 'vue';
    
      export default {
        name: "AnaSayfa",
        components: {
         aramaBari,
+        DatePicker,
        },
        data() {
          return {
@@ -328,7 +341,7 @@
        font-family: "Quicksand" ;
        font-size: 0.9rem;/*11pt*/
        margin-top: 18px;/*18px*/
-       border-radius: 1px;
+       border-radius: 5px;
    
    }
    .button2 {
@@ -340,7 +353,7 @@
      font-family: "Quicksand" ;
      font-size: 0.9rem;/*11pt*/
      margin-top: 18px;/*18px*/
-     border-radius: 1px;
+     border-radius: 5px;
    
    }
    .button3 {
@@ -352,7 +365,7 @@
      font-family: "Quicksand" ;
      font-size: 14pt;
      margin-top: 6px;/*6px*/
-     border-radius: 1px;
+     border-radius: 5px;
    
    }
    .button4 {
@@ -364,7 +377,7 @@
      font-family: "Quicksand" ;
      font-size: 12pt;
      margin-top: 6px;/*6px*/
-     border-radius: 1px;
+     border-radius: 5px;
    
    
    }
@@ -379,7 +392,7 @@
      font-size: 12pt;
      margin-top: 6px;/*6px*/
    
-     border-radius:1px;
+     border-radius:7px;
    
    }
    .logo{
@@ -455,5 +468,24 @@
     margin-left: 15%;
     list-style: none;
 }
-   
+.mx-input {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 0;
+    height: 34px;
+    padding: 6px 30px;
+    padding-left: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #555;
+    background-color: #fff;
+    border: none !important;
+    border-radius: 4px;
+    box-shadow: none !important;
+}
+.mx-datepicker-range {
+  width: 88vw !important;
+  border: none !important;
+  padding-left: 0 !important;
+}
      </style>

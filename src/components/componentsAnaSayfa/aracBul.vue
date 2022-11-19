@@ -1,8 +1,8 @@
 <template>
-
+  <div class="hero">
   <div class="background" @click="center()"></div>
-  <div class="center" > <!--Ana Sayfanın kenar kısıtlamlarını belirler-->
-  
+  <div class="center2" > <!--Ana Sayfanın kenar kısıtlamlarını belirler-->
+  <div class="center">
     <div class="text1">SENİN İÇİN EN UYGUN ARACI</div>
     <div class="text2">ara, bul ve kirala</div>
     <div class="text3">En uygun fiyat garantisi ile ister online öde, ister aracı teslim alırken öde!</div>
@@ -41,7 +41,7 @@
       </div>
     </div>
     <div class="row g-1">
-      <div class="col-5">
+      <div class="col-6">
         <div class="nav-left">
           <div class="nav-left" v-if="aramaBariController==false" @click="Show()">
         <button class="button3" @click="aramaBariController=!aramaBariController"><div class="text4"> <font-awesome-icon icon="fa-solid fa-location-dot" style="color:#25459a"/> Nereden Alacaksınız?</div></button>
@@ -77,7 +77,7 @@
   
         </div>
       </div>
-      <div class="col-7">
+      <div class="col-6">
         <div class="space4"> 
           
         <div><button class="button4">
@@ -94,16 +94,17 @@
         </button></div>
         <div><router-link to="/kiralama"><button class="button5"><b>Uygun Araçları Bul </b><font-awesome-icon icon="fa-solid fa-magnifying-glass" /></button></router-link></div>
         </div>
-    
+      </div>
       </div>
     </div>
-  
-  <!--Uygun araç bul bitiş-->
   </div>
-  <div classs="center">
+</div>
+  <!--Uygun araç bul bitiş-->
+  
+
   
       <div class="space1"><img src="@/images/AnaSayfa/carDeskop.png" alt="icon" style="  width: 65vw;"></div>
-      
+      <div class="center" >  
   <!--Kampanyalar-->
   <div class="space5">
     <div id="demo" class="carousel slide" data-bs-ride="carousel">
@@ -138,40 +139,36 @@
         </div>
     </div>
   </div>
-      <a href="#">Tüm Kampanyaları Gör <font-awesome-icon icon="fa-solid fa-chevron-right" style="margin-right: 0.5vw;"/></a>
+      <a href="#" class="text8">Tüm Kampanyaları Gör <font-awesome-icon icon="fa-solid fa-chevron-right" style="margin-right: 0.5vw;"/></a>
   <!--Kampanyalar bitiş-->
   </div> <!--div class="center" kapanış-->
   
   
     <div class="space3"><!--İş ortaklarımız-->
       <div class="center">
-      <div class="text7">İş Ortaklarımız</div>
-      
-      <div id="demo2" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#demo2" data-bs-slide-to="0" class="active" ></button>
-        <button type="button" data-bs-target="#demo2" data-bs-slide-to="1"></button>
-  
+      <div class="space4">
+      <div class="text7"><b>İş Ortaklarımız</b><font-awesome-icon icon="fa-solid fa-chevron-down" style="margin-left: 1vw;font-size: 10pt;"/></div>
+      <a href="#" class="text8">Tüm Firmaları Gör <font-awesome-icon icon="fa-solid fa-chevron-right"/></a>
       </div>
+      <div class="space4" >
+     
   
-      <div class="carousel-inner" >
-        <div class="carousel-item active">
-          <img src="@/images/AnaSayfa/logo/logo1.png" alt="..." style="margin-right:2vw" class="logo">
+   
+          <img src="@/images/AnaSayfa/logo/logo1.png" alt="..." class="logo">
   
-          <img src="@/images/AnaSayfa/logo/logo2.png" alt="..." style="margin-right:2vw" class="logo">
+          <img src="@/images/AnaSayfa/logo/logo2.png" alt="..." class="logo">
   
-          <img src="@/images/AnaSayfa/logo/logo3.png" alt="..."  style="margin-right:2vw" class="logo">
+          <img src="@/images/AnaSayfa/logo/logo3.png" alt="..." class="logo">
   
           <img src="@/images/AnaSayfa/logo/logo4.png" alt="..."  class="logo">
-        </div>
-        <div class="carousel-item">
-          <img src="@/images/AnaSayfa/logo/logo5.png" alt="..." style="margin-right:2vw" class="logo">
+    
+
+          <img src="@/images/AnaSayfa/logo/logo5.png" alt="..."  class="logo">
   
-          <img src="@/images/AnaSayfa/logo/logo6.png" alt="..." style="margin-right:2vw" class="logo">
+          <img src="@/images/AnaSayfa/logo/logo6.png" alt="..." class="logo">
   
-          <img src="@/images/AnaSayfa/logo/logo7.png" alt="..." style="margin-right:2vw" class="logo">
-        </div>
-        </div>
+          <img src="@/images/AnaSayfa/logo/logo7.png" alt="..." class="logo">
+
     </div>
   
       </div>
@@ -218,7 +215,7 @@
   },
     methods: {
       async getLocations(){
-        const response = await axiosInstance.get('locations?LangID=1&p=sa')
+        const response = await axiosInstance.get('locations?LangID=1')
         console.log(response)
         
       },
@@ -251,16 +248,27 @@
     position: relative;
     align-items: center;
   }
+  .center2{
+
+    z-index: 2;
+    position: absolute;
+
+    top:0;
+  }
+  .hero{
+    position: relative;
+    height: 60vh;
+  }
   .background{
     background: url("@/images/AnaSayfa/background.png") ;
     background-repeat: no-repeat;
     background-size:cover;
-    height: 80vh;/*739px*/
+    height: 100%;/*739px*/
     width: 100%;
     left:0;
     right:0;
     z-index: 1;
-    position:absolute;
+
     overflow: hidden;
   }
   .nav-left{
@@ -273,26 +281,26 @@
   .text1{
     position: relative;
     font-family: "Quicksand" ;
-    font-size: 1.5vw;/*60pt*/
+    font-size: 1.25vw;/*60pt*/
     color: #ffffff;
     text-align: left;
-    padding-top: 100px;
+    padding-top: 8vh;
   }
   .text2{
     position: relative;
     font-family: "Quicksand" ;
-    font-size: 5vw; /*60pt*/
+    font-size: 3.5vw; /*60pt*/
     color: #ffffff;
     text-align: left;
     line-height: 4vw;
   }
   .text3{
     position: relative;
-    font-family: "PoppinsBold" ;
-    font-size: 1.3vw;
+    font-family: "Poppins" ;
+    font-size: 0.75vw;
     color: #ffffff;
     text-align: left;
-    padding-top: 35px;
+    padding-top: 20px;
   }
   .text4{
     padding-left: 10px;
@@ -312,10 +320,20 @@
   .text7{
     position: relative;
     font-family: "Quicksand" ;
-    font-size: 19pt;
+    font-size: 14pt;
     color: #2a2a2a;
     margin-top: 10px;
     float: left;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+  }
+  .text8{
+    position: relative;
+    font-family: "Quicksand" ;
+    font-size: 0.8vw;
+    color: #7f7f7f;
+    margin-top: 1vh;
+    float: center;
   }
   .button1 {
     height: 2.5em; /*40px*/
@@ -342,8 +360,8 @@
     margin-right: 6px;/*6px*/
   }
   .button3 {
-      height:60px;/*59px*/
-    width : 26vw;/*349px*/
+      height:3.2vw;/*59px*/
+    width : 31.5vw;/*349px*/
     background-color: #ffffff;
     color: #2a2a2a;
     border: none;
@@ -351,10 +369,11 @@
     font-size: 12pt;
     margin-top: 6px;/*6px*/
     border-radius: 5px;
+    float: left;
   }
   .button4 {
-    height: 60px;/*59px*/
-    width : 23vw;/*349px*/
+    height: 3.2vw;/*59px*/
+    width : 18.2vw;/*349px*/
     background-color: #ffffff;
     color: #2a2a2a;
     border: none;
@@ -364,14 +383,14 @@
     border-radius: 5px;
   }
   .button5 {
-  height: 60px;/*59px*/
-    width : 13.5vw;/*349px*/
+  height: 3.2vw;/*59px*/
+    width : 13vw;/*349px*/
 
     background-color: #e51c3d;
     color: #ffffff;
     border: none;
     font-family: "Quicksand" ;
-    font-size: 0.8vw;
+    font-size: 0.9vw;
     margin-top: 6px;/*6px*/
 
     border-radius: 7px;
@@ -395,28 +414,28 @@
       transition: opacity 0.6s ease;
   }
   .logo{
-    height: 3vh;
+    height: 1.5vw;
     filter:grayscale(1);
+
   }
   .logo:hover{
     filter:grayscale(0);
   }
   .space1 {
   position: relative;
-  top: 5vh;/*45px*/
+  top: 2vh;/*45px*/
   z-index: 1;
+  margin-top:-25vh;
   }
   .space3 {
-    height: 100px;/*200px*/
+    height: 16vh;/*200px*/
     width : 100%;/*1928px*/
     background-color: #e6ecf8;
     color: #2a2a2a;
     border: none;
     font-family: "Quicksand" ;
-    font-size: 12pt;
-    border-radius: 8px;
     position: relative;
-    top: 45px;/*45px*/
+    top: 4vh;/*45px*/
   }
   .space4{
     display:flex;
@@ -459,5 +478,25 @@
   text-align: left;
   line-height: 4vh;
   border:1px solid #2a2a2a;
+}
+.mx-input {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 34px;
+    padding: 6px 30px;
+    padding-left: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #555;
+    background-color: #fff;
+    border: none !important;
+    border-radius: 4px;
+    box-shadow: none !important; 
+}
+.mx-datepicker-range {
+  width: 10vw !important;
+  border: none !important;
+  padding-left: 0 !important;
 }
   </style>

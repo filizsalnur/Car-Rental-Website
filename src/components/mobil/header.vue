@@ -122,12 +122,12 @@
   .navbar{
   height: 80px;
   background: #ffffff;
-  width:100vw;
+  width:100%;
 }
 .navbar2{
   height:80px;
   background: #ffffff;
-  width:100vw;
+  width:100%;
   position: fixed;
   z-index: 10;
 }

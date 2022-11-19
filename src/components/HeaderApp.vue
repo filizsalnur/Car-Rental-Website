@@ -50,6 +50,7 @@ export default ({
         deskopLogin,
         deskopRezervasyon,
         deskopDil,
+        
     },
   data() {
     return {
@@ -68,7 +69,7 @@ export default ({
 
 <style scoped>
 .navbar1{
-  height: 80px;
+  height: 4vw;
   background: #ffffff;
   width: 100%;
   display:flex;
@@ -164,7 +165,7 @@ export default ({
 }
 .blur-content{
   background-color: #ffffff;
-  opacity:0.8;
+  opacity:0.5;
   position: absolute;
   z-index: 8;
   width:100%;

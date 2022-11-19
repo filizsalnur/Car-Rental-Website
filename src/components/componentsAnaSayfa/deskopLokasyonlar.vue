@@ -1,9 +1,13 @@
 <template>
- <div class="center">
-      <div class="container" style="margin-top:3em">
+ <div class="center" style="margin-top:4vh">
         <div class="row">
         <div class="col-12">
-          <div class="text7">Popüler Lokasyonlar</div>
+          <div class="space">
+            <div class="text7"><b>Popüler Lokasyonlar</b><font-awesome-icon icon="fa-solid fa-chevron-down" style="margin-left: 1vw;font-size: 10pt;"/></div>
+            <a href="#" class="text8">Tüm Lokasyonları Gör <font-awesome-icon icon="fa-solid fa-chevron-right" /></a>
+
+          </div>
+          
         </div>
         </div>
         <div class="row g-0">
@@ -120,8 +124,6 @@
           </div>
         </div>
         </div>
-        </div>
-        <div style="float:right;margin-top:0.5vh"><a href="#">Tüm Lokasyonları Gör <font-awesome-icon icon="fa-solid fa-chevron-right" style="margin-right: 0.5vw;"/></a></div>
       </div><!--lokasyonlar bitiş-->
   
   
@@ -167,14 +169,23 @@
   background-color: #e6ecf8;
   align-items: center;
 }
+
   .text7{
     position: relative;
     font-family: "Quicksand" ;
-    font-size: 19pt;
+    font-size: 14pt;
     color: #2a2a2a;
-    margin-top: 30px;
+    margin-top: 10px;
     float: left;
-  
+    margin-bottom: 2vh;
+  }
+  .text8{
+    position: relative;
+    font-family: "Quicksand" ;
+    font-size: 0.8vw;
+    color: #7f7f7f;
+    margin-top: 1vh;
+    float: center;
   }
   
   .text13{
@@ -214,7 +225,7 @@
     margin-top: 2vh;
   }
   .space3{
-    width: 4vw;
+    width: 5vw;
   }
   @media screen and (min-width:701px) and (max-width:965px){
   .space3{

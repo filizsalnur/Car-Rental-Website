@@ -78,7 +78,7 @@ export default {
 
 .center{
   margin:0 auto;
-  width: 60%;/*1220px*/
+  width: 65%;/*1220px*/
   z-index: 2;
   position: relative;
   align-items: center;
@@ -95,12 +95,12 @@ export default {
 
 .image2 {
   margin-right: 1vw;
-  width:19vw;
+  width:20vw;
   float:left;
 }
 .image3 {
 
-width:19vw;
+width:20vw;
 }
 
 

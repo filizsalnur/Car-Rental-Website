@@ -1,5 +1,7 @@
 <template>
-
+<div class="show-on-deskop"><HeaderApp/></div>
+<div class="show-on-tablet"><HeaderApp/></div>
+<div class="show-on-mobile"><mobileHeader/></div>
 
   
   <div class="show-on-deskop"> <deskopAracBul/></div>
@@ -35,7 +37,9 @@
 <script >
 import { ref, onMounted } from 'vue';
 
-
+import HeaderApp from './HeaderApp.vue'
+import tabletHeader from './tabletHeader.vue'
+import mobileHeader from './mobil/header.vue'
 
 import deskopAracBul from './componentsAnaSayfa/aracBul.vue';
 import tabletAracBul from './componentsAnaSayfa/tabletAracBul.vue';
@@ -66,6 +70,9 @@ import mobileFooter from './mobil/anaSayfa/companents/footer.vue';
 export default {
   name: "AnaSayfa",
   components: {
+    HeaderApp,
+    mobileHeader,
+    tabletHeader,
     FooterApp,
     deskopLokasyonlar,
     deskopCards,

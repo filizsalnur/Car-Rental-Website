@@ -146,7 +146,7 @@ justify-content: space-between;
     font-family: "Quicksand" ;
     font-size: 12pt;
     border-radius: 8px;
-    margin-top:4vh;
+    margin-top:10px;
 
   }
   
