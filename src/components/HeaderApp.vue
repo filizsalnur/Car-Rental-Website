@@ -13,7 +13,7 @@
         <button class="button1" v-if="clickController==true" @click="clickController=!clickController"><img alt="Turkey" src="@/images/Header/LogIcon.png" style="margin-top:0px"> Enver Yıldırım
         </button>
         <button class="button2" @click="rezervasyonController=!rezervasyonController, logController=false,dilController=false">Rezervasyon Sorgula</button>
-        <button class="button3" @click="dilController=!dilController,rezervasyonController=false,logController=false">Türkçe <img alt="Turkey" src="@/images/Header/Turkey.png"> TRY <font-awesome-icon icon="fa-solid fa-chevron-down" style="width:1vw"/></button>
+        <button class="button3" @click="dilController=!dilController,rezervasyonController=false,logController=false">Türkçe <img alt="Turkey" src="@/images/Header/Turkey.png" class="icon2"> TRY <font-awesome-icon icon="fa-solid fa-chevron-down" style="width:1vw"/></button>
       </div>
           <div>
         
@@ -90,24 +90,30 @@ export default ({
 .logo{
   position: relative;
   width: 100%;
-  height: 27px;
+  height: 1.5vw;
   left: 0px;
 
 }
 .icon{
   position: relative;
-  width: 30px;
-  height: 30px;
+
+  height: 2vw;
   margin-right: 10px;
   margin-top:0.5vh;
 }
+.icon2{
+  position: relative;
+
+  height: 1vw;
+
+}
 .text1{
   font-family: "Quicksand" ;
-  font-size: 0.6vw;
+  font-size: 0.8vw;
   color: #25459a;
   margin-bottom: 0;
   padding-bottom: 0;
-  line-height: 16pt;
+  padding-top: 0.3vh;
 }
 .text2{
   font-family: "Poppins" ;
@@ -115,10 +121,10 @@ export default ({
   color: #373737;
   margin-top: 0;
   padding-top: 0;
-  line-height: 9pt;
+  line-height: 0.5vw;
 }
 .button1 {
-  height: 36px;
+  height: 2vw;
   width : 8vw;
   background-color: #25459a;
   color: #ffffff;
@@ -129,7 +135,7 @@ export default ({
   margin-right: 10px;
 }
 .button2 {
-  height: 36px;
+  height: 2vw;
   width : 10vw;
   background-color: #ffffff;
   color: #25459a;
@@ -141,7 +147,7 @@ export default ({
   margin-right: 10px;
 }
 .button3 {
-  height: 36px;
+  height: 2vw;
   width : 9vw;
   background-color: #ffffff;
   color: #2a2a2a;
@@ -170,6 +176,31 @@ export default ({
   z-index: 8;
   width:100%;
   height: 500%;
+}
+@media screen and (min-width:845px) and (max-width:962px){
+  .space{
+    width:0%;
+  }
+  .icon{
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-right: 2px;
+  margin-top: 0.5vh;
+}
+.button3 {
+  margin-right: 1px;
+}
+  }
+  @media screen and (min-width:963px) and (max-width:1070px){
+  .space{
+    width:5%;
+  }
+  }
+  @media screen and (min-width:1071px){
+  .space{
+    width:10%;
+  }
 }
 @media screen and (min-width:701px) and (max-width:1284px){
   .space{

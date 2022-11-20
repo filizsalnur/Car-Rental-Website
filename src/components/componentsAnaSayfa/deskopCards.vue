@@ -1,11 +1,11 @@
 <template>
   <div class="center" style="margin-top:3em;">
  
-    <div class="row g-0">
-    <div class="col-12">
-      <div class="text7">Popüler Havalimanları</div>
-    </div>
-    </div>
+    <div class="space">
+            <div class="text7"><b>Popüler Havalimanları</b><font-awesome-icon icon="fa-solid fa-chevron-down" style="margin-left: 1vw;font-size: 10pt;"/></div>
+            <a href="#" class="text8">Tüm Havalimanlarını Gör <font-awesome-icon icon="fa-solid fa-chevron-right" /></a>
+
+          </div>
     <div class="row g-1">
     <div class="col-6">
       <div class="card " style="border:0; margin:0;padding: 0;">
@@ -75,7 +75,6 @@
     </div>
   </div>
 
-<div style="float:right;margin-top:0.5vh"><a href="#">Tüm Havalimanlarını Gör <font-awesome-icon icon="fa-solid fa-chevron-right" style="margin-right: 0.5vw;"/></a></div>
   </div><!--cards bitiş-->
 </template>
 
@@ -106,15 +105,29 @@ methods: {
   position: relative;
   align-items: center;
 }
-.text7{
-position: relative;
-font-family: "Quicksand" ;
-font-size: 19pt;
-color: #2a2a2a;
-margin-top: 30px;
-float: left;
+.space{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
 
 }
+.text7{
+    position: relative;
+    font-family: "Quicksand" ;
+    font-size: 22px;
+    color: #2a2a2a;
+    margin-top: 10px;
+    float: left;
+    margin-bottom: 2vh;
+  }
+  .text8{
+    position: relative;
+    font-family: "Quicksand" ;
+    font-size: 0.8vw;
+    color: #7f7f7f;
+    margin-top: 1vh;
+    float: center;
+  }
 
 .text10{
 position: relative;

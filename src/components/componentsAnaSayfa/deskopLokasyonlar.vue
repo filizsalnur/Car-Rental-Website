@@ -173,7 +173,7 @@
   .text7{
     position: relative;
     font-family: "Quicksand" ;
-    font-size: 14pt;
+    font-size: 22px;
     color: #2a2a2a;
     margin-top: 10px;
     float: left;

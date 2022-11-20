@@ -1,6 +1,6 @@
 <template>
-    <div class="center">
-    <div class="container"><!--Araba oklar Büyük Ekranlar-->
+    <div class="center" style="margin-bottom:2vh">
+
       
       <div class="text17" style="margin-top:5vh"><b>Neden Kiralacar?</b></div>
       <div class="row g-3" style="margin-top:1vh"> 
@@ -12,14 +12,14 @@
               <div class="text16">Rezervasyon işlemlerinde ücretin ufak bir kısmını ödeyebilir, kalan ücreti aracınızı teslim alırken ödeyebilirsiniz.</div>
             </div>
           </div>
-          <div class="row" style="margin-top:3rem">
+          <div class="row" style="margin-top:1vh">
             <div class="col">
               <div class="text17"><b>Ücretsiz İptal Garantisi</b></div>
               <img src="@/images/AnaSayfa/line1.png" alt="..." style="width:100%">
               <div class="text16">Rezervasyon işlemlerinde ücretin ufak bir kısmını ödeyebilir, kalan ücreti aracınızı teslim alırken ödeyebilirsiniz.</div>
             </div>
           </div>
-          <div class="row" style="margin-top:3rem">
+          <div class="row" style="margin-top:1vh">
             <div class="col">
               <div class="text17"><b>7/24 Misafir Hizmetleri</b></div>
               <img src="@/images/AnaSayfa/line1.png" alt="..." style="width:100%">
@@ -35,14 +35,14 @@
               <div class="text18">İhtiyacınız olan her yerde, istediğiniz tarih aralığında bütçenize en uygun araçları karşılaştırma imkanı.</div>
             </div>
           </div>
-          <div class="row" style="margin-top:3rem">
+          <div class="row" style="margin-top:1vh">
             <div class="col">
               <div class="text19"><b>Kolay ve Güvenli Kiralama</b></div>
               <img src="@/images/AnaSayfa/line2.png" alt="..." style="width:100%">
               <div class="text18">Kurumsal ve bireysel müşteri memnuniyetine önem veren firmalardan güvenli araç kiralama imkanı.</div>
             </div>
           </div>
-          <div class="row" style="margin-top:3em">
+          <div class="row" style="margin-top:1vh">
             <div class="col">
               <div class="text19"><b>Yüzlerce Marka ve Model</b></div>
               <img src="@/images/AnaSayfa/line2.png" alt="..." style="width:100%">
@@ -50,7 +50,7 @@
             </div>
           </div>
         </div>
-      </div>
+
     </div><!--Araba oklar bitiş-->
   </div>
 
@@ -90,7 +90,7 @@
   .text16{
     position: relative;
     font-family: "Quicksand" ;
-    font-size: 0.7vw;/*15pt*/
+    font-size: 01vw;/*15pt*/
     color: #2a2a2a;
     text-align: left;
     margin-right: 0.8em;
@@ -108,7 +108,7 @@
   .text18{
     position: relative;
     font-family: "Quicksand" ;
-    font-size: 0.7vw;/*15pt*/
+    font-size: 01vw;/*15pt*/
     color: #2a2a2a;
     text-align: right;
     margin-right: 0.8em;

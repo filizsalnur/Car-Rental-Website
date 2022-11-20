@@ -5,24 +5,21 @@
  
         <div class="text1"><font-awesome-icon icon="fa-solid fa-user-plus" /> Şimdi Üye Olun!</div>
         <div class="text2">Şize özel kampanyalardan ve indirimlerden faydalanın. Rezervasyonlarınızı kolayca yönetin.</div>
-        <div class="row g-1">
-        <div class="col-10">
-          <div class="row g-2">
-          <div class="col">
+        <div class="logo">
+          <div>
           <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Adınız">
           </div>
-          <div class="col">
+          <div >
           <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Soyadınız">
           </div>
-          <div class="col">
+          <div>
           <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-posta Adresiniz">
           </div>
-          <div class="col">
+          <div >
           <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Parolanız">
           </div>
-        </div>
-        </div>
-        <div class="col-2">
+        
+        <div >
           <button type="submit" class="button1 "><b>Üye Ol</b></button>
         </div>
         </div>
@@ -34,7 +31,7 @@
         <div v-if="checkerForm==true" @click="check()"><font-awesome-icon icon="fa-solid fa-square-check" /><a href="#" class="a"> Gizlilik Politikası</a>, <a href="#" class="a"> Açık Rıza Beyanı </a> ve 
             <a href="#" class="a"> Aydınlatma Metnini</a> okuduğumu ve onayladığımı kabul ediyorum.</div>
         </div>
-    </div>
+      </div>
   </div>
 
    <div class="footer2">
@@ -50,7 +47,7 @@
         <div class="row g-1">
         <div class="col-10">
         <div class="row g-1">
-        <div class="col-4">
+        <div class="col-3">
           <div class="text5"><b>Kiracalar</b></div>
           <div class="text5"><a class="text5" href="#"><font-awesome-icon icon="fa-solid fa-caret-right" /> Müşteri Hizmetleri</a></div>
           <div class="text5"><a class="text5" href="#"><font-awesome-icon icon="fa-solid fa-caret-right" /> Kiracalar Blog</a></div>
@@ -60,7 +57,7 @@
           <div class="text5"><a class="text5" href="#"><font-awesome-icon icon="fa-solid fa-caret-right" /> Sıkça Sorulan Sorular</a></div>
           <div class="text5"><a class="text5" href="#"><font-awesome-icon icon="fa-solid fa-caret-right" /> Kampanyalar</a></div>       
         </div>
-        <div class="col-4">
+        <div class="col-4" style="margin-left:1vw">
           <div class="text5"><b>Popüler Havalimanları</b></div>
           <div class="text5"><a class="text5" href="#"><font-awesome-icon icon="fa-solid fa-caret-right" /> İstanbul Havalimanı</a></div>
           <div class="text5"><a class="text5" href="#"><font-awesome-icon icon="fa-solid fa-caret-right" /> Sabiha Gökçen Havalimanı</a></div>
@@ -85,10 +82,10 @@
           <div style="padding-top: 4rem;"></div>
           <button class="button3">
             <div class="row">
-              <div class="col-2">
-                <img src="@/images/Footer/apple.png" alt="..." style="margin:0 auto">
+              <div class="col-3">
+                <img src="@/images/Footer/apple.png" alt="..." style="margin:0 auto;margin-left:0.1vw">
               </div>
-              <div class="col-10">
+              <div class="col-9">
                 <div class="text6"><b>App Store'dan İndirin</b></div>
                 <div class="text6" style="line-height:0.5rem">Download App Store</div>
               </div>
@@ -96,10 +93,10 @@
           </button>
           <button class="button3">
             <div class="row">
-              <div class="col-2">
-                <img src="@/images/Footer/play.png" alt="..." style="margin:0 auto">
+              <div class="col-3">
+                <img src="@/images/Footer/play.png" alt="..." style="margin:0 auto;margin-left:0.1vw">
               </div>
-              <div class="col-10">
+              <div class="col-9">
                 <div class="text6"><b>Google Play'den İndirin</b></div>
                 <div class="text6" style="line-height:0.5rem">Download Google Play</div>
               </div>
@@ -107,10 +104,10 @@
           </button>
           <button class="button3">
             <div class="row">
-              <div class="col-2">
-                <img src="@/images/Footer/huawei.png" alt="..." style="margin:0 auto">
+              <div class="col-3">
+                <img src="@/images/Footer/huawei.png" alt="..." style="margin:0 auto;margin-left:0.1vw">
               </div>
-              <div class="col-10">
+              <div class="col-9">
                 <div class="text6"><b>App Galery'den İndirin</b></div>
                 <div class="text6" style="line-height:0.5rem">Download App Galery</div>
               </div>
@@ -180,7 +177,7 @@ export default {
 }
 .footer1{
   background-color: #25459a;
-  height: 13.25rem;
+  height: 11vw;
   margin-top:4rem;
   width: 100%;
 }
@@ -211,7 +208,7 @@ align-items: center;
   font-size: 1.2vw;/*20pt*/
   color: #ffffff;
   text-align: left;
-  padding-top:2rem;
+  padding-top:1vh;
 }
 .text2{
   position: relative;
@@ -264,9 +261,13 @@ align-items: center;
   text-align: center;
   margin-top:2.75rem;
 }
+.form-control{
+height: 40px;
+width: 14vw;
+}
 .button1 {
-  height: 2.45em; /*40px*/
-  width : 10.125em;/*162px*/
+  height: 40px; /*40px*/
+  width : 6vw;/*162px*/
   background-color: #fcb101;
   color: #ffffff;
   border: none;
@@ -286,7 +287,7 @@ align-items: center;
   border-radius: 7px;
 }
 .button3 {
-  height: 5vh;/*34px*/
+  height: 4vw;/*34px*/
   width : 13vw;/*126px*/
   background-color: transparent;
   color: #2a2a2a;

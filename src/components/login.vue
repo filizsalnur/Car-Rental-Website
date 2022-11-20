@@ -80,7 +80,7 @@
     position:relative;
     z-index:9;
     width:260px;
-    height:200px;
+    height:210px;
     background-color: #ffffff;
     align-self: center;
     margin:0 auto;
@@ -91,7 +91,7 @@
     position:relative;
     z-index:9;
     width:260px;
-    height:290px;
+    height:320px;
     background-color: #ffffff;
     align-self: center;
     margin:0 auto;
@@ -152,7 +152,7 @@ align-items: center;
     margin-top:30px;
   }
   .text6{
-  color: #98a7cf;
+  color: #585858;
   position: relative; 
   float: left;
   font-size: 8pt;
@@ -160,7 +160,7 @@ align-items: center;
   margin-right: 10px;
 }
 .a{
-  color: #98a7cf;
+  color: #585858;
   text-decoration: underline;
 }
   .button1 {
@@ -181,7 +181,7 @@ align-items: center;
     width : 250px;
     background-color: #ffffff;
     color: #2a2a2a;
-    border: 1px solid #98a7cf;
+    border: 1px solid #585858;
     font-family: "Quicksand" ;
     font-size:  12pt;
     cursor: pointer;

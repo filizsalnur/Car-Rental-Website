@@ -116,7 +116,7 @@ export default ({
 }
 .button1 {
   height: 25px;
-  width : 8.5vw;
+  width : 9vw;
   background-color: #25459a;
   color: #ffffff;
   border: 1px solid #25459a;
@@ -127,7 +127,7 @@ export default ({
 }
 .button2 {
   height: 25px;
-  width : 10vw;
+  width : 11vw;
   background-color: #ffffff;
   color: #25459a;
   border: 1px solid #98a7cf;
@@ -139,7 +139,7 @@ export default ({
 }
 .button3 {
   height: 25px;
-  width : 9vw;
+  width : 10vw;
   background-color: #ffffff;
   color: #2a2a2a;
   border: 1px solid #25459a;
@@ -184,6 +184,11 @@ export default ({
   height: 15px;
   left: 0px;
 
+}
+.button1 {
+  font-size: 0.4vw;
+  margin-right: 8px;
+  border-radius: 1px;
 }
 
   }

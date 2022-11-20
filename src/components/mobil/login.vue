@@ -119,7 +119,7 @@ align-items: center;
       align-items: center;
   }
   .a{
-  color:#98a7cf;
+  color:#585858;
   text-decoration: underline;
 }
   .text1{
@@ -165,7 +165,7 @@ align-items: center;
     width : 70vw;
     background-color: #ffffff;
     color: #2a2a2a;
-    border: 1px solid #98a7cf;
+    border: 1px solid #585858;
     font-family: "Quicksand" ;
     font-size: 5vw;
     cursor: pointer;
@@ -194,7 +194,7 @@ align-items: center;
     width : 70vw;
     background-color: #ffffff;
     color: #2a2a2a;
-    border: 1px solid #98a7cf;
+    border: 1px solid #585858;
     font-family: "Quicksand" ;
     font-size: 5vw;
     cursor: pointer;

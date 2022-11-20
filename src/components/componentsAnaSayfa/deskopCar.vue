@@ -1,6 +1,6 @@
 <template>
     <div class="center" >
-    <div class="container" style="margin-bottom:5vh"><!--Araba oklar Büyük Ekranlar-->
+  
       <div class="row g-0" style="margin-top:2vh">
     <div class="col-12">
       <div class="text7">Neden Kiralacar?</div>
@@ -55,7 +55,7 @@
             </div>
           </div>
         </div>
-      </div>
+
     </div><!--Araba oklar bitiş-->
   </div>
 
@@ -108,7 +108,7 @@
   .text16{
     position: relative;
     font-family: "Quicksand" ;
-    font-size: 9pt;/*15pt*/
+    font-size: 1vw;/*15pt*/
     color: #2a2a2a;
     text-align: left;
     margin-right: 0.8em;
@@ -126,7 +126,7 @@
   .text18{
     position: relative;
     font-family: "Quicksand" ;
-    font-size: 9pt;/*15pt*/
+    font-size: 1vw;/*15pt*/
     color: #2a2a2a;
     text-align: right;
     margin-right: 0.8em;
