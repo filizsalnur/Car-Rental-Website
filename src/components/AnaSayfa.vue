@@ -4,7 +4,7 @@
 <div class="show-on-mobile"><mobileHeader/></div>
 
   
-  <div class="show-on-deskop"> <deskopAracBul/></div>
+  <div class="show-on-deskop" style="margin-bottom:50 px"> <deskopAracBul/></div>
     <div class="show-on-tablet"> <tabletAracBul/></div>
   <div class="show-on-mobile"> <mobileAracBul/></div>
 
