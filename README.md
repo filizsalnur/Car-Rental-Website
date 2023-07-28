@@ -1,4 +1,3 @@
-# kiralacar
 
 ## Project setup
 ```
