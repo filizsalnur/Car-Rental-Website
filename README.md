@@ -33,6 +33,8 @@ $ npm install vue-material --save
 $ npm i --save @fortawesome/fontawesome-svg-core
 ```
 
+## Screenshots
+
 ![image](https://github.com/filizsalnur/Car-Rental-Website/assets/92436947/3bb21832-3b07-4fc4-99fc-32409e989ebf)
 ![image](https://github.com/filizsalnur/Car-Rental-Website/assets/92436947/aa7a297f-c4a6-4c19-af43-3f8d4526bcd2)
 ![image](https://github.com/filizsalnur/Car-Rental-Website/assets/92436947/b648fa05-1b54-44af-92e5-fa5ef16cf924)
