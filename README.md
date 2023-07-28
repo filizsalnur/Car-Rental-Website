@@ -1,12 +1,17 @@
+## Installation
 
-## Project setup
-```
-npm install
-```
+To run the project locally, follow these steps:
 
-### Compiles and hot-reloads for development
+1. Clone the repository: `git clone https://github.com/filizsalnur/Car-Rental-Website.git`
+2. Navigate to the project directory: `cd Car-Rental-Website`
+3. Install the dependencies: `npm install`
+4. Start the development server: `npm run serve`
+
 ```
-npm run serve
+$ git clone https://github.com/filizsalnur/Car-Rental-Website.git
+$ cd Car-Rental-Website
+$ npm install
+$ npm run serve
 ```
 
 ### Compiles and minifies for production
