@@ -35,7 +35,6 @@ $ npm i --save @fortawesome/fontawesome-svg-core
 
 ## Screenshots
 
-![image](https://github.com/filizsalnur/Car-Rental-Website/assets/92436947/74fb0ee1-2239-43c5-ab45-3419aff59547)
 ![image](https://github.com/filizsalnur/Car-Rental-Website/assets/92436947/b179977e-70b6-4e59-8514-8a47d3333b5c)
 
 
