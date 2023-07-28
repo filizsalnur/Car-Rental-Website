@@ -424,7 +424,6 @@
   position: relative;
   top: 2vh;/*45px*/
   z-index: 1;
-  margin-top:-25vh;
   }
   .space3 {
     height: 16vh;/*200px*/
